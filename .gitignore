@@ -371,3 +371,5 @@ docs/api/.manifest
 /Core/TestDatabase
 
 VulcanAI.Demo/*.context.json
+VulcanAI.Demo/secrets.json
+VulcanAI.Demo/agent-config.json
