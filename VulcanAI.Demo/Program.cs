@@ -1,0 +1,125 @@
+using System;
+using System.IO;
+using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
+using VulcanAI.Core.Agent;
+using VulcanAI.Core.LLM;
+using VulcanAI.Infrastructure.Discord;
+using VulcanAI.Core.Configuration;
+using Discord.WebSocket;
+using System.Net.Http;
+using System.Threading;
+using Discord;
+
+namespace VulcanAI.Demo
+{
+    public class Program
+    {
+        public static async Task Main(string[] args)
+        {
+            // Create logger factory with debug level
+            var loggerFactory = LoggerFactory.Create(builder =>
+            {
+                builder
+                    .SetMinimumLevel(LogLevel.Debug)  // Set minimum level to Debug
+                    .AddConsole();                    // Add console logging
+            });
+
+            var logger = loggerFactory.CreateLogger<Program>();
+            logger.LogInformation("Starting VulcanAI demo application");
+
+            try
+            {
+                // Load configuration
+                var config = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("secrets.json", optional: false)
+                    .AddJsonFile("agent-config.json", optional: false)
+                    .Build();
+
+                var discordConfig = config.GetSection("Discord").Get<Core.Configuration.DiscordConfig>();
+                if (discordConfig == null || string.IsNullOrEmpty(discordConfig.Token) || discordConfig.ChannelId == 0)
+                {
+                    logger.LogError("Invalid Discord configuration. Please check secrets.json");
+                    logger.LogInformation("Sample configuration: {SampleConfig}", @"
+{
+    ""Discord"": {
+        ""Token"": ""your_discord_bot_token"",
+        ""ChannelId"": 123456789012345678
+    }
+}");
+                    return;
+                }
+
+                var agentConfig = config.Get<AgentConfig>();
+                if (agentConfig == null || string.IsNullOrEmpty(agentConfig.SystemPrompt) || string.IsNullOrEmpty(agentConfig.Name))
+                {
+                    logger.LogError("Invalid agent configuration. Please check agent-config.json");
+                    logger.LogInformation("Sample configuration: {SampleConfig}", @"
+{
+    ""SystemPrompt"": ""You are a helpful AI assistant. Respond to user messages in a friendly and informative way."",
+    ""Name"": ""AI Assistant""
+}");
+                    return;
+                }
+
+                // Create LLM client
+                var llmLogger = loggerFactory.CreateLogger<LocalLLMClient>();
+                var httpClient = new HttpClient();
+                var httpClientWrapper = new HttpClientWrapper(httpClient);
+                var llmClient = new LocalLLMClient(
+                    httpClientWrapper,
+                    "local-model",  // Model name
+                    "http://localhost:1234",  // Base URL
+                    llmLogger,
+                    useOpenAIFormat: false);  // Use LM Studio format
+                
+                // Create Discord interface
+                var discordLogger = loggerFactory.CreateLogger<DiscordInterface>();
+                var socketConfig = new DiscordSocketConfig
+                {
+                    GatewayIntents = GatewayIntents.All
+                };
+                var discordClient = new DiscordSocketClient(socketConfig);
+                var discordInterface = new DiscordInterface(
+                    discordClient,
+                    discordLogger,
+                    discordConfig.Token,
+                    discordConfig.ChannelId);
+
+                llmClient.MaxPromptLength = 6000;
+
+                // Create agent
+                var agentLogger = loggerFactory.CreateLogger<Agent>();
+                var agent = new Agent(
+                    llmClient,
+                    agentLogger,
+                    agentConfig,
+                    discordInterface);
+
+                // Start Discord bot
+                await discordInterface.StartAsync();
+
+                // Handle graceful shutdown
+                var cts = new CancellationTokenSource();
+                Console.CancelKeyPress += (s, e) =>
+                {
+                    e.Cancel = true;
+                    cts.Cancel();
+                };
+
+                logger.LogInformation("VulcanAI demo application started. Press Ctrl+C to exit.");
+                await Task.Delay(-1, cts.Token);
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Error starting AI Actions application");
+            }
+            finally
+            {
+                loggerFactory.Dispose();
+            }
+        }
+    }
+} 
