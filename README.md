@@ -17,6 +17,18 @@ VulcanAI is a powerful, modular toolkit designed for building AI-powered applica
 - `VulcanAI/`: Core library containing the main framework components
 - `VulcanAI.Demo/`: Example applications demonstrating various use cases
 
+### Submodules
+
+This project uses Git submodules for external dependencies. After cloning the repository, you'll need to initialize and update the submodules:
+
+```bash
+git submodule update --init --recursive
+```
+
+Current submodules:
+- [ObsidianDB](https://github.com/StevenGann/ObsidianDB): A powerful C# library for programmatically managing Obsidian vaults
+- [HyperVectorDB](https://github.com/StevenGann/HyperVectorDB): A local vector database built in C# that supports various distance/similarity measures
+
 ## Usage
 
 [Usage examples and documentation will be added here]
