@@ -7,6 +7,7 @@ using VulcanAI.Core.Agent;
 using VulcanAI.Core.LLM;
 using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Core.Configuration;
+using VulcanAI.Core.Interfaces;
 using Discord.WebSocket;
 using System.Net.Http;
 using System.Threading;
@@ -38,20 +39,6 @@ namespace VulcanAI.Demo
                     .AddJsonFile("agent-config.json", optional: false)
                     .Build();
 
-                var discordConfig = config.GetSection("Discord").Get<Core.Configuration.DiscordConfig>();
-                if (discordConfig == null || string.IsNullOrEmpty(discordConfig.Token) || discordConfig.ChannelId == 0)
-                {
-                    logger.LogError("Invalid Discord configuration. Please check secrets.json");
-                    logger.LogInformation("Sample configuration: {SampleConfig}", @"
-{
-    ""Discord"": {
-        ""Token"": ""your_discord_bot_token"",
-        ""ChannelId"": 123456789012345678
-    }
-}");
-                    return;
-                }
-
                 var agentConfig = config.Get<AgentConfig>();
                 if (agentConfig == null || string.IsNullOrEmpty(agentConfig.SystemPrompt) || string.IsNullOrEmpty(agentConfig.Name))
                 {
@@ -74,21 +61,64 @@ namespace VulcanAI.Demo
                     "http://localhost:1234",  // Base URL
                     llmLogger,
                     useOpenAIFormat: false);  // Use LM Studio format
-                
-                // Create Discord interface
-                var discordLogger = loggerFactory.CreateLogger<DiscordInterface>();
-                var socketConfig = new DiscordSocketConfig
-                {
-                    GatewayIntents = GatewayIntents.All
-                };
-                var discordClient = new DiscordSocketClient(socketConfig);
-                var discordInterface = new DiscordInterface(
-                    discordClient,
-                    discordLogger,
-                    discordConfig.Token,
-                    discordConfig.ChannelId);
 
                 llmClient.MaxPromptLength = 6000;
+
+                // Choose interface type
+                IMessageInterface messageInterface;
+                Console.WriteLine("Choose interface type:");
+                Console.WriteLine("1. Discord");
+                Console.WriteLine("2. Console");
+                Console.Write("Enter your choice (1 or 2): ");
+                
+                var choice = Console.ReadLine();
+                switch (choice)
+                {
+                    case "1":
+                        var discordConfig = config.GetSection("Discord").Get<Core.Configuration.DiscordConfig>();
+                        if (discordConfig == null || string.IsNullOrEmpty(discordConfig.Token) || discordConfig.ChannelId == 0)
+                        {
+                            logger.LogError("Invalid Discord configuration. Please check secrets.json");
+                            logger.LogInformation("Sample configuration: {SampleConfig}", @"
+{
+    ""Discord"": {
+        ""Token"": ""your_discord_bot_token"",
+        ""ChannelId"": 123456789012345678
+    }
+}");
+                            return;
+                        }
+
+                        var discordLogger = loggerFactory.CreateLogger<VulcanAI.Infrastructure.Discord.DiscordInterface>();
+                        var socketConfig = new DiscordSocketConfig
+                        {
+                            GatewayIntents = GatewayIntents.All
+                        };
+                        var discordClient = new DiscordSocketClient(socketConfig);
+                        messageInterface = new VulcanAI.Infrastructure.Discord.DiscordInterface(
+                            discordClient,
+                            discordLogger,
+                            discordConfig.Token,
+                            discordConfig.ChannelId);
+                        break;
+
+                    case "2":
+                        // For console interface, set log level to Error to avoid cluttering the console
+                        loggerFactory = LoggerFactory.Create(builder =>
+                        {
+                            builder
+                                .SetMinimumLevel(LogLevel.Error)  // Set minimum level to Error
+                                .AddConsole();                    // Add console logging
+                        });
+                        logger = loggerFactory.CreateLogger<Program>();
+                        var consoleLogger = loggerFactory.CreateLogger<ConsoleInterface>();
+                        messageInterface = new ConsoleInterface(consoleLogger);
+                        break;
+
+                    default:
+                        logger.LogError("Invalid choice. Please enter 1 or 2.");
+                        return;
+                }
 
                 // Create agent
                 var agentLogger = loggerFactory.CreateLogger<Agent>();
@@ -96,10 +126,10 @@ namespace VulcanAI.Demo
                     llmClient,
                     agentLogger,
                     agentConfig,
-                    discordInterface);
+                    messageInterface);
 
-                // Start Discord bot
-                await discordInterface.StartAsync();
+                // Start the chosen interface
+                await messageInterface.StartAsync();
 
                 // Handle graceful shutdown
                 var cts = new CancellationTokenSource();
