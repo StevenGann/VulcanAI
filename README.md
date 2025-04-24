@@ -22,12 +22,42 @@ VulcanAI is a powerful, modular toolkit designed for building AI-powered applica
 This project uses Git submodules for external dependencies. After cloning the repository, you'll need to initialize and update the submodules:
 
 ```bash
+# Initialize and update all submodules (including nested ones)
 git submodule update --init --recursive
+
+# Update all submodules to their latest commits
+git submodule update --recursive --remote
+
+# Pull latest changes for all submodules
+git submodule foreach git pull
 ```
 
 Current submodules:
 - [ObsidianDB](https://github.com/StevenGann/ObsidianDB): A powerful C# library for programmatically managing Obsidian vaults
 - [HyperVectorDB](https://github.com/StevenGann/HyperVectorDB): A local vector database built in C# that supports various distance/similarity measures
+
+#### Submodule Management
+
+When working with submodules, here are some common commands you might need:
+
+```bash
+# Add a new submodule
+git submodule add <repository-url> <path>
+
+# Remove a submodule
+git submodule deinit <path>
+git rm <path>
+rm -rf .git/modules/<path>
+
+# Update a specific submodule
+cd <submodule-path>
+git pull
+cd ..
+git add <submodule-path>
+git commit -m "Update submodule <name>"
+```
+
+Note: Some submodules may have their own nested submodules. The `--recursive` flag ensures that all nested submodules are properly initialized and updated.
 
 ## Usage
 
