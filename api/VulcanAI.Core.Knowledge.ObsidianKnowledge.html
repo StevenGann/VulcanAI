@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ObsidianKnowledge | VulcanAI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ObsidianKnowledge | VulcanAI ">
+      
+      <meta name="description" content="Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Knowledge_ObsidianKnowledge.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Knowledge.ObsidianKnowledge%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VulcanAI">
+            VulcanAI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge">
+
+
+
+  <h1 id="VulcanAI_Core_Knowledge_ObsidianKnowledge" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge" class="text-break">
+Class ObsidianKnowledge  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.Knowledge.html">Knowledge</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VulcanAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObsidianKnowledge : IKnowledgeStore</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ObsidianKnowledge</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="VulcanAI.Core.Interfaces.IKnowledgeStore.html">IKnowledgeStore</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="VulcanAI_Core_Knowledge_ObsidianKnowledge_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class provides a bridge between the VulcanAI knowledge system and Obsidian vaults.
+It allows querying and managing knowledge stored in Obsidian markdown files.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VulcanAI_Core_Knowledge_ObsidianKnowledge__ctor_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.#ctor*"></a>
+
+  <h3 id="VulcanAI_Core_Knowledge_ObsidianKnowledge__ctor_System_String_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.#ctor(System.String)">
+  ObsidianKnowledge(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ObsidianKnowledge class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObsidianKnowledge(string vaultPath)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vaultPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The path to the Obsidian vault directory.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when vaultPath is null or empty.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directorynotfoundexception">DirectoryNotFoundException</a></dt>
+    <dd><p>Thrown when the vault directory does not exist.</p>
+</dd>
+  </dl>
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VulcanAI_Core_Knowledge_ObsidianKnowledge_AddKnowledgeAsync_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.AddKnowledgeAsync*"></a>
+
+  <h3 id="VulcanAI_Core_Knowledge_ObsidianKnowledge_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)">
+  AddKnowledgeAsync(Knowledge)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a new knowledge item to the store.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task AddKnowledgeAsync(Knowledge knowledge)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>knowledge</code> <a class="xref" href="VulcanAI.Core.Knowledge.Knowledge.html">Knowledge</a></dt>
+    <dd><p>The knowledge item to add.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when knowledge is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the store is not started.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.notimplementedexception">NotImplementedException</a></dt>
+    <dd><p>Thrown as this feature is not yet implemented in ObsidianDB.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VulcanAI_Core_Knowledge_ObsidianKnowledge_QueryKnowledgeAsync_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.QueryKnowledgeAsync*"></a>
+
+  <h3 id="VulcanAI_Core_Knowledge_ObsidianKnowledge_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})">
+  QueryKnowledgeAsync(string, int?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Queries the knowledge store for relevant knowledge items based on the provided query.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;KnowledgeCollection&gt; QueryKnowledgeAsync(string query, int? maxResults = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>query</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The search query string.</p>
+</dd>
+    <dt><code>maxResults</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>?</dt>
+    <dd><p>The maximum number of results to return. If null, returns all results.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">KnowledgeCollection</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains
+a <a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">KnowledgeCollection</a> of relevant knowledge items sorted by relevance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when query is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when query is empty or whitespace.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the store is not started.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VulcanAI_Core_Knowledge_ObsidianKnowledge_StartAsync_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.StartAsync*"></a>
+
+  <h3 id="VulcanAI_Core_Knowledge_ObsidianKnowledge_StartAsync" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.StartAsync">
+  StartAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L108"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Starts the knowledge store and performs any necessary initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StartAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the store is already started.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VulcanAI_Core_Knowledge_ObsidianKnowledge_StopAsync_" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.StopAsync*"></a>
+
+  <h3 id="VulcanAI_Core_Knowledge_ObsidianKnowledge_StopAsync" data-uid="VulcanAI.Core.Knowledge.ObsidianKnowledge.StopAsync">
+  StopAsync()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Stops the knowledge store and performs any necessary cleanup.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task StopAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that represents the asynchronous operation.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the store is not started.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Knowledge/ObsidianKnowledge.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class LocalLLMClient | VulcanAI </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class LocalLLMClient | VulcanAI ">
+      
+      <meta name="description" content="Implements the  interface for local language model services, supporting both OpenAI-compatible and LM Studio formats. The client handles prompt validation, token limits, and response deserialization.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_LLM_LocalLLMClient.md&amp;value=---%0Auid%3A%20VulcanAI.Core.LLM.LocalLLMClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="VulcanAI">
+            VulcanAI
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="VulcanAI.Core.LLM.LocalLLMClient">
+
+
+
+  <h1 id="VulcanAI_Core_LLM_LocalLLMClient" data-uid="VulcanAI.Core.LLM.LocalLLMClient" class="text-break">
+Class LocalLLMClient  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.LLM.html">LLM</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>VulcanAI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Implements the <a class="xref" href="VulcanAI.Core.LLM.ILLMClient.html">ILLMClient</a> interface for local language model services,
+supporting both OpenAI-compatible and LM Studio formats. The client handles prompt
+validation, token limits, and response deserialization.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LocalLLMClient : ILLMClient</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">LocalLLMClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="VulcanAI.Core.LLM.ILLMClient.html">ILLMClient</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="VulcanAI_Core_LLM_LocalLLMClient__ctor_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.#ctor*"></a>
+
+  <h3 id="VulcanAI_Core_LLM_LocalLLMClient__ctor_VulcanAI_Core_Interfaces_IHttpClient_System_String_System_String_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_LocalLLMClient__System_Boolean_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.#ctor(VulcanAI.Core.Interfaces.IHttpClient,System.String,System.String,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.LocalLLMClient},System.Boolean)">
+  LocalLLMClient(IHttpClient, string, string, ILogger&lt;LocalLLMClient&gt;, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VulcanAI.Core.LLM.LocalLLMClient.html">LocalLLMClient</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalLLMClient(IHttpClient httpClient, string model, string baseUrl, ILogger&lt;LocalLLMClient&gt; logger, bool useOpenAIFormat = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>httpClient</code> <a class="xref" href="VulcanAI.Core.Interfaces.IHttpClient.html">IHttpClient</a></dt>
+    <dd><p>The HTTP client used to communicate with the LLM service.</p>
+</dd>
+    <dt><code>model</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The name of the language model to use.</p>
+</dd>
+    <dt><code>baseUrl</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The base URL of the LLM service.</p>
+</dd>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="VulcanAI.Core.LLM.LocalLLMClient.html">LocalLLMClient</a>&gt;</dt>
+    <dd><p>The logger instance for recording diagnostic information.</p>
+</dd>
+    <dt><code>useOpenAIFormat</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Whether to use the OpenAI API format for requests. If false, uses LM Studio format.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="VulcanAI_Core_LLM_LocalLLMClient__ctor_VulcanAI_Core_Interfaces_IHttpClient_System_String_System_String_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_LocalLLMClient__System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The client supports two request formats:</p>
+<ol>
+<li>OpenAI format: Uses the standard OpenAI API request structure</li>
+<li>LM Studio format: Uses a simplified request structure compatible with LM Studio
+Both formats use the same endpoint (/v1/chat/completions) but with different request bodies.</li>
+</ol>
+</div>
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="VulcanAI_Core_LLM_LocalLLMClient_MaxPromptLength_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.MaxPromptLength*"></a>
+
+  <h3 id="VulcanAI_Core_LLM_LocalLLMClient_MaxPromptLength" data-uid="VulcanAI.Core.LLM.LocalLLMClient.MaxPromptLength">
+  MaxPromptLength
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the maximum length of prompts that can be sent to the LLM.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxPromptLength { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="VulcanAI_Core_LLM_LocalLLMClient_MaxPromptLength_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This value is used to validate prompts before sending them to the LLM.
+The default value is 4096 tokens, which is a common limit for many language models.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="VulcanAI_Core_LLM_LocalLLMClient_GetCompletionAsync_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.GetCompletionAsync*"></a>
+
+  <h3 id="VulcanAI_Core_LLM_LocalLLMClient_GetCompletionAsync_System_String_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.GetCompletionAsync(System.String)">
+  GetCompletionAsync(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a completion from the language model.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;string&gt; GetCompletionAsync(string prompt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The prompt to send to the language model.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>A task that represents the asynchronous operation. The task result contains the model's response.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="VulcanAI_Core_LLM_LocalLLMClient_GetCompletionAsync_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method sends a prompt to the language model and returns its response.
+The response format depends on whether the client is configured to use the OpenAI-compatible format
+or the LM Studio format. In either case, the method extracts the completion text from the response
+and returns it as a string.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the prompt is null or empty.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the prompt exceeds the maximum length or when no completion is returned.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="VulcanAI_Core_LLM_LocalLLMClient_GetCompletionAsync_" data-uid="VulcanAI.Core.LLM.LocalLLMClient.GetCompletionAsync*"></a>
+
+  <h3 id="VulcanAI_Core_LLM_LocalLLMClient_GetCompletionAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="VulcanAI.Core.LLM.LocalLLMClient.GetCompletionAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+  GetCompletionAsync&lt;T&gt;(string, Dictionary&lt;string, object&gt;?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a completion from the LLM and deserializes it into the specified type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;T&gt; GetCompletionAsync&lt;T&gt;(string prompt, Dictionary&lt;string, object&gt;? options = null) where T : class</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>prompt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The prompt to send to the LLM</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>Additional options for the completion</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</dt>
+    <dd><p>The deserialized completion</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type to deserialize the completion into</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when the prompt is null or empty</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>Thrown when the prompt length exceeds MaxPromptLength or deserialization fails</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/LLM/LocalLLMClient.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

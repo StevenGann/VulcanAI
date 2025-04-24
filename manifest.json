@@ -1,0 +1,375 @@
+{
+  "source_base_path": "/github/workspace/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Agent.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Agent.Agent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Agent.AgentContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Agent.AgentContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Agent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Agent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.AgentContextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.AgentContextData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Configuration.AgentConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Configuration.AgentConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Configuration.DiscordConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Configuration.DiscordConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.ConsoleInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.ConsoleInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.DiscordInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.DiscordInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.IHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.IHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.IKnowledgeStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.IKnowledgeStore.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.IMessageInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.IMessageInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.Message.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.NullMessageInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.NullMessageInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Interfaces.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Interfaces.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Knowledge.Knowledge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Knowledge.Knowledge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Knowledge.KnowledgeCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Knowledge.KnowledgeCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Knowledge.ObsidianKnowledge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Knowledge.ObsidianKnowledge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.Knowledge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.Knowledge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.GeminiClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.GeminiClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.HttpClientWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.HttpClientWrapper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.ILLMClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.ILLMClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.LLMClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.LLMClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.LocalLLMClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.LocalLLMClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.OpenAIClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.OpenAIClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.LLM.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.LLM.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Core.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Core.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Infrastructure.Configuration.DiscordConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Infrastructure.Configuration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Infrastructure.Configuration.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordInterface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordInterface.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Infrastructure.Discord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
