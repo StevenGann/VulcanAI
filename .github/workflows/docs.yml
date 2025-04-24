@@ -10,6 +10,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      NUGET_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -23,9 +26,9 @@ jobs:
           source-url: https://api.nuget.org/v3/index.json
 
       - name: Restore NuGet Packages
-        env:
-          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        run: dotnet restore
+        run: |
+          dotnet nuget add source https://nuget.pkg.github.com/index.json --name github --username ${{ github.actor }} --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text
+          dotnet restore
 
       - name: Build Solution
         run: dotnet build --no-restore
