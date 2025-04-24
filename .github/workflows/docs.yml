@@ -23,6 +23,8 @@ jobs:
           source-url: https://api.nuget.org/v3/index.json
 
       - name: Restore NuGet Packages
+        env:
+          NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: dotnet restore
 
       - name: Build Solution
