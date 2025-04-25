@@ -9,9 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: read
 
     steps:
     - uses: actions/checkout@v4
@@ -41,9 +38,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'  # Only run on main branch
-    permissions:
-      contents: write
-      packages: read
 
     steps:
     - uses: actions/checkout@v4
