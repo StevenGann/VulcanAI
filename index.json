@@ -154,14 +154,9 @@
     "title": "Namespace VulcanAI.Infrastructure.Discord | VulcanAI",
     "keywords": "Namespace VulcanAI.Infrastructure.Discord Classes DiscordInterface Implements the IMessageInterface for Discord, allowing the agent to send and receive messages through a Discord channel. Messages longer than Discord's 2000-character limit are automatically split into multiple messages."
   },
-  "articles/getting-started.html": {
-    "href": "articles/getting-started.html",
-    "title": "Getting Started with VulcanAI | VulcanAI",
-    "keywords": "Getting Started with VulcanAI This guide will help you get started with VulcanAI and understand its basic concepts. Prerequisites .NET 8.0 SDK or later Git (for source control) Installation Clone the repository: git clone https://github.com/yourusername/VulcanAI.git cd VulcanAI Initialize submodules: git submodule update --init --recursive Build the solution: dotnet build Basic Usage [Documentation in progress] Next Steps Explore the API Documentation Read about the Architecture Learn about Contributing"
-  },
   "index.html": {
     "href": "index.html",
     "title": "VulcanAI Documentation | VulcanAI",
-    "keywords": "VulcanAI Documentation Welcome to the VulcanAI documentation. This documentation provides comprehensive information about the VulcanAI project, its components, and how to use them. Getting Started VulcanAI is an AI-powered system that combines various technologies to provide intelligent solutions. The documentation is organized into the following sections: API Documentation: Detailed documentation of the VulcanAI API Articles: Guides and tutorials for using VulcanAI Architecture: Overview of VulcanAI's architecture Contributing We welcome contributions to both the codebase and documentation. Please see our contribution guidelines for more information."
+    "keywords": "VulcanAI Documentation Getting Started To get started with VulcanAI, check out our API Documentation. Contributing We welcome contributions! Please see our GitHub repository for more information on how to contribute. License This project is licensed under the MIT License - see the LICENSE file for details."
   }
 }

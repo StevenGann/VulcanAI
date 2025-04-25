@@ -335,16 +335,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "articles/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "articles/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
