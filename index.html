@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>VulcanAI Documentation | VulcanAI </title>
+      <title>VulcanAI | VulcanAI </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="VulcanAI Documentation | VulcanAI ">
+      <meta name="title" content="VulcanAI | VulcanAI ">
       
       
       <link rel="icon" href="favicon.ico">
@@ -39,7 +39,7 @@
 
   </head>
 
-  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+  <body class="tex2jax_ignore" data-layout="landing" data-yaml-mime="">
     <header class="bg-body border-bottom">
       <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
         <div class="container-xxl flex-nowrap">
@@ -71,12 +71,64 @@
         </div>
 
         <article data-uid="">
-<h1 id="vulcanai-documentation">VulcanAI Documentation</h1>
+<h1 id="vulcanai">VulcanAI</h1>
 
-<h2 id="getting-started">Getting Started</h2>
-<p>To get started with VulcanAI, check out our <a href="api/">API Documentation</a>.</p>
+<p>VulcanAI is a powerful, modular toolkit designed for building AI-powered applications. Whether you're creating data analyzers, chatbots, or complex AI agents, VulcanAI provides the tools and framework you need to bring your AI applications to life.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Modular Architecture</strong>: Build applications by combining different AI components</li>
+<li><strong>Versatile Applications</strong>: Support for various AI use cases including:
+<ul>
+<li>Data analysis and processing</li>
+<li>Chatbot development</li>
+<li>Complex AI agent systems</li>
+</ul>
+</li>
+<li><strong>Extensible Framework</strong>: Easy to extend and customize for specific needs</li>
+</ul>
+<h2 id="project-structure">Project Structure</h2>
+<ul>
+<li><code>VulcanAI/</code>: Core library containing the main framework components</li>
+<li><code>VulcanAI.Demo/</code>: Example applications demonstrating various use cases</li>
+</ul>
+<h3 id="submodules">Submodules</h3>
+<p>This project uses Git submodules for external dependencies. After cloning the repository, you'll need to initialize and update the submodules:</p>
+<pre><code class="lang-bash"># Initialize and update all submodules (including nested ones)
+git submodule update --init --recursive
+
+# Update all submodules to their latest commits
+git submodule update --recursive --remote
+
+# Pull latest changes for all submodules
+git submodule foreach git pull
+</code></pre>
+<p>Current submodules:</p>
+<ul>
+<li><a href="https://github.com/StevenGann/ObsidianDB">ObsidianDB</a>: A powerful C# library for programmatically managing Obsidian vaults</li>
+<li><a href="https://github.com/StevenGann/HyperVectorDB">HyperVectorDB</a>: A local vector database built in C# that supports various distance/similarity measures</li>
+</ul>
+<h4 id="submodule-management">Submodule Management</h4>
+<p>When working with submodules, here are some common commands you might need:</p>
+<pre><code class="lang-bash"># Add a new submodule
+git submodule add &lt;repository-url&gt; &lt;path&gt;
+
+# Remove a submodule
+git submodule deinit &lt;path&gt;
+git rm &lt;path&gt;
+rm -rf .git/modules/&lt;path&gt;
+
+# Update a specific submodule
+cd &lt;submodule-path&gt;
+git pull
+cd ..
+git add &lt;submodule-path&gt;
+git commit -m &quot;Update submodule &lt;name&gt;&quot;
+</code></pre>
+<p>Note: Some submodules may have their own nested submodules. The <code>--recursive</code> flag ensures that all nested submodules are properly initialized and updated.</p>
+<h2 id="usage">Usage</h2>
+<p>[Usage examples and documentation will be added here]</p>
 <h2 id="contributing">Contributing</h2>
-<p>We welcome contributions! Please see our <a href="https://github.com/yourusername/VulcanAI">GitHub repository</a> for more information on how to contribute.</p>
+<p>Contributions are welcome! Please feel free to submit a Pull Request.</p>
 <h2 id="license">License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 

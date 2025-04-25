@@ -154,9 +154,19 @@
     "title": "Namespace VulcanAI.Infrastructure.Discord | VulcanAI",
     "keywords": "Namespace VulcanAI.Infrastructure.Discord Classes DiscordInterface Implements the IMessageInterface for Discord, allowing the agent to send and receive messages through a Discord channel. Messages longer than Discord's 2000-character limit are automatically split into multiple messages."
   },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | VulcanAI",
+    "keywords": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | VulcanAI",
+    "keywords": "Introduction"
+  },
   "index.html": {
     "href": "index.html",
-    "title": "VulcanAI Documentation | VulcanAI",
-    "keywords": "VulcanAI Documentation Getting Started To get started with VulcanAI, check out our API Documentation. Contributing We welcome contributions! Please see our GitHub repository for more information on how to contribute. License This project is licensed under the MIT License - see the LICENSE file for details."
+    "title": "VulcanAI | VulcanAI",
+    "keywords": "VulcanAI VulcanAI is a powerful, modular toolkit designed for building AI-powered applications. Whether you're creating data analyzers, chatbots, or complex AI agents, VulcanAI provides the tools and framework you need to bring your AI applications to life. Features Modular Architecture: Build applications by combining different AI components Versatile Applications: Support for various AI use cases including: Data analysis and processing Chatbot development Complex AI agent systems Extensible Framework: Easy to extend and customize for specific needs Project Structure VulcanAI/: Core library containing the main framework components VulcanAI.Demo/: Example applications demonstrating various use cases Submodules This project uses Git submodules for external dependencies. After cloning the repository, you'll need to initialize and update the submodules: # Initialize and update all submodules (including nested ones) git submodule update --init --recursive # Update all submodules to their latest commits git submodule update --recursive --remote # Pull latest changes for all submodules git submodule foreach git pull Current submodules: ObsidianDB: A powerful C# library for programmatically managing Obsidian vaults HyperVectorDB: A local vector database built in C# that supports various distance/similarity measures Submodule Management When working with submodules, here are some common commands you might need: # Add a new submodule git submodule add <repository-url> <path> # Remove a submodule git submodule deinit <path> git rm <path> rm -rf .git/modules/<path> # Update a specific submodule cd <submodule-path> git pull cd .. git add <submodule-path> git commit -m \"Update submodule <name>\" Note: Some submodules may have their own nested submodules. The --recursive flag ensures that all nested submodules are properly initialized and updated. Usage [Usage examples and documentation will be added here] Contributing Contributions are welcome! Please feel free to submit a Pull Request. License This project is licensed under the MIT License - see the LICENSE file for details."
   }
 }
