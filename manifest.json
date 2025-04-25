@@ -3,12 +3,204 @@
   "xrefmap": "xrefmap.yml",
   "files": [
     {
-      "type": "Resource",
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI.OAIEmbeddingModel.yml",
       "output": {
-        "resource": {
-          "relative_path": "index.json"
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI.OAIEmbeddingModel.html"
         }
-      }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI_ADA_002.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.EmbedderOpenAI_ADA_002.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.IEmbedder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.IEmbedder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.LmStudio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.LmStudio.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.Embedder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.Embedder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.HVDBDocument.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.HVDBDocument.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.HVDBQueryResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.HVDBQueryResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.HyperVectorDB.DocumentPostprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.HyperVectorDB.DocumentPostprocessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.HyperVectorDB.DocumentPreprocessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.HyperVectorDB.DocumentPreprocessor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.HyperVectorDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.HyperVectorDB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/HyperVectorDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/HyperVectorDB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.CallbackManager.Callback.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.CallbackManager.Callback.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.CallbackManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.CallbackManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.Logging.LoggerService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.Logging.LoggerService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.Note.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.Note.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.ObsidianDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.ObsidianDB.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.SyncManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.SyncManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ObsidianDB.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ObsidianDB.html"
+        }
+      },
+      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -282,6 +474,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Demo.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Demo.Program.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Demo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Demo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Infrastructure.Configuration.DiscordConfig.yml",
       "output": {
         ".html": {
@@ -329,39 +541,6 @@
         },
         ".json": {
           "relative_path": "api/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/toc.json"
         }
       },
       "version": ""
