@@ -1,0 +1,45 @@
+apiRules:
+- exclude:
+    type: Namespace
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Type
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Method
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Property
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Event
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Field
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Interface
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Class
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Struct
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Enum
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute
+- exclude:
+    type: Delegate
+    hasAttribute:
+      name: System.Runtime.CompilerServices.CompilerGeneratedAttribute 

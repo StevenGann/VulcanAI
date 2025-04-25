@@ -3,23 +3,49 @@
     {
       "src": [
         {
-          "src": "../VulcanAI/",
+          "src": "../VulcanAI",
           "files": [
-            "*.csproj"
+            "VulcanAI.csproj"
+          ]
+        },
+        {
+          "src": "../VulcanAI.Demo",
+          "files": [
+            "VulcanAI.Demo.csproj"
+          ]
+        },
+        {
+          "src": "../submodules/ObsidianDB/ObsidianDB",
+          "files": [
+            "ObsidianDB.csproj"
+          ]
+        },
+        {
+          "src": "../submodules/HyperVectorDB/HyperVectorDB",
+          "files": [
+            "HyperVectorDB.csproj"
           ]
         }
       ],
-      "dest": "api"
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
     }
   ],
   "build": {
     "content": [
       {
         "files": [
-          "**/*.{md,yml}"
-        ],
-        "exclude": [
-          "_site/**"
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
         ]
       }
     ],
@@ -30,15 +56,28 @@
         ]
       }
     ],
-    "output": "_site",
-    "template": [
-      "default",
-      "modern"
+    "overwrite": [
+      {
+        "files": [
+          "apidoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "_site/**"
+        ]
+      }
     ],
-    "globalMetadata": {
-      "_appName": "VulcanAI",
-      "_appTitle": "VulcanAI",
-      "_enableSearch": true
-    }
+    "dest": "_site",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
   }
-}
+} 
