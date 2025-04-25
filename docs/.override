@@ -1,0 +1,6 @@
+index.md: VulcanAI Documentation
+getting-started.md: Getting Started with VulcanAI
+api: API Reference
+articles: Guides and Tutorials
+architecture.md: System Architecture
+contributing.md: Contributing to VulcanAI 

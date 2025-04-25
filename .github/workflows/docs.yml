@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: read
 
     steps:
     - uses: actions/checkout@v4
@@ -38,6 +41,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'  # Only run on main branch
+    permissions:
+      contents: write
+      packages: read
 
     steps:
     - uses: actions/checkout@v4
@@ -45,14 +51,29 @@ jobs:
         submodules: true
       name: Checkout code
 
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9.0.x
+
+    - name: Build DocFxTocGenerator
+      run: |
+        cd submodules/docfx-companion-tools/src/DocFxTocGenerator
+        dotnet build -c Release
+
+    - name: Generate Table of Contents
+      run: |
+        cd docs
+        dotnet ../submodules/docfx-companion-tools/src/DocFxTocGenerator/bin/Release/net9.0/DocFxTocGenerator.dll -d . -o . --verbose
+
     - name: Generate Documentation
       uses: nunit/docfx-action@v4.0.0
       with:
-        args: docs/docfx.json
+        args: docfx.json
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: docs/_site
+        publish_dir: _site
         publish_branch: documentation  # Use a different branch for documentation 
