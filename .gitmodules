@@ -1,6 +1,6 @@
-[submodule "submodules/ObsidianDB"]
-	path = submodules/ObsidianDB
-	url = https://github.com/StevenGann/ObsidianDB.git
 [submodule "submodules/HyperVectorDB"]
 	path = submodules/HyperVectorDB
 	url = https://github.com/StevenGann/HyperVectorDB.git
+[submodule "submodules/ObsidianDB"]
+	path = submodules/ObsidianDB
+	url = https://github.com/StevenGann/ObsidianDB.git
