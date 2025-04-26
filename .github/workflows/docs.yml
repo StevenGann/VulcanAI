@@ -56,15 +56,9 @@ jobs:
       with:
         dotnet-version: 9.0.x
 
-#    - name: Build DocFxTocGenerator
-#      run: |
-#        cd submodules/docfx-companion-tools/src/DocFxTocGenerator
-#        dotnet build -c Release
-
-#    - name: Generate Table of Contents
-#      run: |
-#        cd docs
-#        dotnet ../submodules/docfx-companion-tools/src/DocFxTocGenerator/bin/Release/net9.0/DocFxTocGenerator.dll -d . -o . --verbose
+    - name: Generate Table of Contents
+      run: |
+        dotnet DocFxTocGenerator -d .\docs --indexing NoDefault -m 100 -s -r -g -v
 
     - name: Generate Documentation
       uses: nunit/docfx-action@v4.0.0

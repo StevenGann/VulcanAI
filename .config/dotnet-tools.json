@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "docfxtocgenerator": {
+      "version": "1.32.0",
+      "commands": [
+        "DocFxTocGenerator"
+      ],
+      "rollForward": false
+    }
+  }
+}
