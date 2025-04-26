@@ -366,6 +366,7 @@ HyperVectorDB/Centivus.EnglishStemmer.dll
 /coverage_report
 /Core/TestDatabase
 
+
 VulcanAI.Demo/*.context.json
 VulcanAI.Demo/secrets.json
 VulcanAI.Demo/agent-config.json
