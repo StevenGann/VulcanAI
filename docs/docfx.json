@@ -7,24 +7,6 @@
           "files": [
             "VulcanAI.csproj"
           ]
-        },
-        {
-          "src": "../VulcanAI.Demo",
-          "files": [
-            "VulcanAI.Demo.csproj"
-          ]
-        },
-        {
-          "src": "../submodules/ObsidianDB/ObsidianDB",
-          "files": [
-            "ObsidianDB.csproj"
-          ]
-        },
-        {
-          "src": "../submodules/HyperVectorDB/HyperVectorDB",
-          "files": [
-            "HyperVectorDB.csproj"
-          ]
         }
       ],
       "dest": "api",
