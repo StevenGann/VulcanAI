@@ -56,6 +56,10 @@ jobs:
       with:
         dotnet-version: 9.0.x
 
+    - name: Restore Tools
+      run: |
+        dotnet tool restore
+
     - name: Generate Table of Contents
       run: |
         dotnet DocFxTocGenerator -d .\docs --indexing NoDefault -m 100 -s -r -g -v
