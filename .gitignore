@@ -364,13 +364,10 @@ FodyWeavers.xsd
 /TestDatabase
 HyperVectorDB/Centivus.EnglishStemmer.dll
 /coverage_report
-/_site
-/docs/_site
-docs/api/.manifest
-/docs/api
 /Core/TestDatabase
 
 VulcanAI.Demo/*.context.json
 VulcanAI.Demo/secrets.json
 VulcanAI.Demo/agent-config.json
 /docs/_site
+/docs/api/*.yml

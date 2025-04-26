@@ -1,0 +1,6 @@
+index.md: API Documentation
+VulcanAI: Core Library
+VulcanAI.LLM: Language Models
+VulcanAI.Infrastructure: Infrastructure Components
+VulcanAI.Demo: Demo Application
+submodules: Submodules 
