@@ -373,4 +373,4 @@ docs/api/.manifest
 VulcanAI.Demo/*.context.json
 VulcanAI.Demo/secrets.json
 VulcanAI.Demo/agent-config.json
-/docs/docs
+/docs/_site

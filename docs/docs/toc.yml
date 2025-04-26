@@ -1,4 +1,7 @@
-- name: Introduction
-  href: introduction.md
+# This is an automatically generated file
+- name: Docs
+  href: index.md
 - name: Getting Started
   href: getting-started.md
+- name: Introduction
+  href: introduction.md
