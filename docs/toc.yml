@@ -2,6 +2,6 @@
 - name: VulcanAI
   href: index.md
 - name: Docs
-  href: docs/toc.yml
+  href: docs/
 - name: API
-  href: api/index.md
+  href: api/

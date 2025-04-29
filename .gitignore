@@ -372,3 +372,4 @@ VulcanAI.Demo/secrets.json
 VulcanAI.Demo/agent-config.json
 /docs/_site
 /docs/api/*.yml
+docs/api/.manifest
