@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Namespace VulcanAI.Core.Configuration </title>
+      <title>Namespace VulcanAI.Agent </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Namespace VulcanAI.Core.Configuration ">
+      <meta name="title" content="Namespace VulcanAI.Agent ">
     
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -66,19 +66,24 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Configuration">
+            <article class="content wrap" id="_content" data-uid="VulcanAI.Agent">
 
-  <h1 id="VulcanAI_Core_Configuration" data-uid="VulcanAI.Core.Configuration" class="text-break">Namespace VulcanAI.Core.Configuration</h1>
+  <h1 id="VulcanAI_Agent" data-uid="VulcanAI.Agent" class="text-break">Namespace VulcanAI.Agent</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">
 Classes
 </h3>
-      <h4><a class="xref" href="VulcanAI.Core.Configuration.AgentConfig.html">AgentConfig</a></h4>
-      <section></section>
-      <h4><a class="xref" href="VulcanAI.Core.Configuration.DiscordConfig.html">DiscordConfig</a></h4>
-      <section></section>
+      <h4><a class="xref" href="VulcanAI.Agent.Agent.html">Agent</a></h4>
+      <section><p>Represents an AI agent that can process messages and generate responses using a language model.
+The agent maintains conversation history and context, which is persisted to disk periodically
+and loaded when the agent is restarted.</p>
+</section>
+      <h4><a class="xref" href="VulcanAI.Agent.AgentContext.html">AgentContext</a></h4>
+      <section><p>Represents the context of an agent, including its system prompt, conversation history, and context fields.
+The context manages token limits by removing older messages when needed to stay within the maximum token count.</p>
+</section>
 
 
 </article>

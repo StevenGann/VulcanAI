@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Namespace VulcanAI.Core.Knowledge </title>
+      <title>Namespace VulcanAI.LLM </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Namespace VulcanAI.Core.Knowledge ">
+      <meta name="title" content="Namespace VulcanAI.LLM ">
     
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -66,23 +66,34 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Knowledge">
+            <article class="content wrap" id="_content" data-uid="VulcanAI.LLM">
 
-  <h1 id="VulcanAI_Core_Knowledge" data-uid="VulcanAI.Core.Knowledge" class="text-break">Namespace VulcanAI.Core.Knowledge</h1>
+  <h1 id="VulcanAI_LLM" data-uid="VulcanAI.LLM" class="text-break">Namespace VulcanAI.LLM</h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">
 Classes
 </h3>
-      <h4><a class="xref" href="VulcanAI.Core.Knowledge.Knowledge.html">Knowledge</a></h4>
-      <section><p>Represents a piece of knowledge with its content and origin information.</p>
+      <h4><a class="xref" href="VulcanAI.LLM.GeminiClient.html">GeminiClient</a></h4>
+      <section></section>
+      <h4><a class="xref" href="VulcanAI.LLM.HttpClientWrapper.html">HttpClientWrapper</a></h4>
+      <section><p>Wrapper class that implements IHttpClient by delegating to a real HttpClient instance.</p>
 </section>
-      <h4><a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">KnowledgeCollection</a></h4>
-      <section><p>Represents a collection of knowledge items with associated relevance scores.</p>
+      <h4><a class="xref" href="VulcanAI.LLM.LLMClient.html">LLMClient</a></h4>
+      <section></section>
+      <h4><a class="xref" href="VulcanAI.LLM.LocalLLMClient.html">LocalLLMClient</a></h4>
+      <section><p>Implements the <a class="xref" href="VulcanAI.LLM.ILLMClient.html">ILLMClient</a> interface for local language model services,
+supporting both OpenAI-compatible and LM Studio formats. The client handles prompt
+validation, token limits, and response deserialization.</p>
 </section>
-      <h4><a class="xref" href="VulcanAI.Core.Knowledge.ObsidianKnowledge.html">ObsidianKnowledge</a></h4>
-      <section><p>Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.</p>
+      <h4><a class="xref" href="VulcanAI.LLM.OpenAIClient.html">OpenAIClient</a></h4>
+      <section></section>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="VulcanAI.LLM.ILLMClient.html">ILLMClient</a></h4>
+      <section><p>Interface for LLM clients</p>
 </section>
 
 
