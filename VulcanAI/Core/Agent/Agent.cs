@@ -14,6 +14,7 @@ using System.Text.Json;
 
 namespace VulcanAI.Core.Agent;
 
+
 /// <summary>
 /// Represents an AI agent that can process messages and generate responses using a language model.
 /// The agent maintains conversation history and context, which is persisted to disk periodically
@@ -579,7 +580,3 @@ public class Agent : IDisposable
         PersistContext();
     }
 } 
-
-
-
-
