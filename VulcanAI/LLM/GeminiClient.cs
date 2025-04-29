@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Google.Apis.Auth.OAuth2;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Core.LLM;
+namespace VulcanAI.LLM;
 
 public class GeminiClient : LLMClient
 {

@@ -1,16 +1,24 @@
 using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
-using VulcanAI.Core.Agent;
-using VulcanAI.Core.LLM;
+using VulcanAI.Agent;
+using VulcanAI.LLM;
+using VulcanAI.Configuration;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Diagnostics;
+using System.Threading;
 using VulcanAI.Infrastructure.Discord;
-using VulcanAI.Core.Configuration;
 using VulcanAI.Connectors;
+using VulcanAI.Agent;
 using Discord.WebSocket;
 using System.Net.Http;
-using System.Threading;
 using Discord;
 
 namespace VulcanAI.Demo
@@ -75,7 +83,7 @@ namespace VulcanAI.Demo
                 switch (choice)
                 {
                     case "1":
-                        var discordConfig = config.GetSection("Discord").Get<Core.Configuration.DiscordConfig>();
+                        var discordConfig = config.GetSection("Discord").Get<Configuration.DiscordConfig>();
                         if (discordConfig == null || string.IsNullOrEmpty(discordConfig.Token) || discordConfig.ChannelId == 0)
                         {
                             logger.LogError("Invalid Discord configuration. Please check secrets.json");
@@ -121,8 +129,8 @@ namespace VulcanAI.Demo
                 }
 
                 // Create agent
-                var agentLogger = loggerFactory.CreateLogger<Agent>();
-                var agent = new Agent(
+                var agentLogger = loggerFactory.CreateLogger<Agent.Agent>();
+                var agent = new Agent.Agent(
                     llmClient,
                     agentLogger,
                     agentConfig,

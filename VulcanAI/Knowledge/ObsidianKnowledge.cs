@@ -1,11 +1,20 @@
 using System;
-using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
+using VulcanAI.Knowledge;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Diagnostics;
+using System.Threading;
 using ObsidianDB;
 using VulcanAI.Connectors;
-using VulcanAI.Core.Knowledge;
+using VulcanAI.Knowledge;
 
-namespace VulcanAI.Core.Knowledge
+namespace VulcanAI.Knowledge
 {
     /// <summary>
     /// Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.

@@ -1,18 +1,22 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
-using VulcanAI.Core.LLM;
-using VulcanAI.Connectors;
-using VulcanAI.Core.Configuration;
-using VulcanAI.Infrastructure.Discord;
 using System.Text;
+using System.Threading.Tasks;
+using VulcanAI.LLM;
+using VulcanAI.Configuration;
+using VulcanAI.Knowledge;
 using System.Text.Json;
+using System.Text.Json.Serialization;
+using System.IO;
+using System.Text.RegularExpressions;
+using System.Diagnostics;
+using System.Threading;
+using Microsoft.Extensions.Logging;
+using VulcanAI.Connectors;
+using VulcanAI.Infrastructure.Discord;
 
-namespace VulcanAI.Core.Agent;
+namespace VulcanAI.Agent;
 
 
 /// <summary>

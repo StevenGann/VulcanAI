@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
-using VulcanAI.Core.Knowledge;
+using VulcanAI.Knowledge;
 
 namespace VulcanAI.Connectors
 {
@@ -37,7 +37,7 @@ namespace VulcanAI.Connectors
         /// <param name="knowledge">The knowledge item to add.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
         /// <exception cref="ArgumentNullException">Thrown when knowledge is null.</exception>
-        Task AddKnowledgeAsync(Knowledge knowledge);
+        Task AddKnowledgeAsync(Knowledge.Knowledge knowledge);
 
         /// <summary>
         /// Starts the knowledge store and performs any necessary initialization.

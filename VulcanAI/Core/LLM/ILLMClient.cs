@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.LLM;
+namespace VulcanAI.LLM;
 
 /// <summary>
 /// Interface for LLM clients

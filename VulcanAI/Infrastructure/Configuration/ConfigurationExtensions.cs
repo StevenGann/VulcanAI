@@ -2,8 +2,8 @@ using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using VulcanAI.Core.Agent;
-using VulcanAI.Core.LLM;
+using VulcanAI.Agent;
+using VulcanAI.LLM;
 using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Infrastructure.Google;
 

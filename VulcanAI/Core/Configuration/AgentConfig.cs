@@ -1,4 +1,4 @@
-namespace VulcanAI.Core.Configuration
+namespace VulcanAI.Configuration
 {
     public class AgentConfig
     {

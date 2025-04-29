@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using VulcanAI.Connectors;
 
-namespace VulcanAI.Core.LLM;
+namespace VulcanAI.LLM;
 
 public class OpenAIClient : ILLMClient
 {

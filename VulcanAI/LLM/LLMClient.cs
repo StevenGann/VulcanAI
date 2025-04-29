@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Core.LLM;
+namespace VulcanAI.LLM;
 
 public abstract class LLMClient : ILLMClient
 {

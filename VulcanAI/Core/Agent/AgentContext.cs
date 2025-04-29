@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.Agent;
+namespace VulcanAI.Agent;
 
 
 /// <summary>

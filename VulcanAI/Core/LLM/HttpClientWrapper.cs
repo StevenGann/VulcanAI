@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using VulcanAI.Connectors;
 
-namespace VulcanAI.Core.LLM;
+namespace VulcanAI.LLM;
 
 /// <summary>
 /// Wrapper class that implements IHttpClient by delegating to a real HttpClient instance.
