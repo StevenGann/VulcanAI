@@ -13,207 +13,6 @@ references:
   commentId: N:VulcanAI.Agent
   fullName: VulcanAI.Agent
   nameWithType: VulcanAI.Agent
-- uid: VulcanAI.Agent.Agent
-  name: Agent
-  href: api/VulcanAI.Agent.Agent.html
-  commentId: T:VulcanAI.Agent.Agent
-  fullName: VulcanAI.Agent.Agent
-  nameWithType: Agent
-- uid: VulcanAI.Agent.Agent.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
-  name: Agent(ILLMClient, ILogger<Agent>, string, IMessageConnector, string, Dictionary<string, string>?)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent__ctor_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Agent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:VulcanAI.Agent.Agent.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: New(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String, Dictionary(Of String, String))
-  fullName: VulcanAI.Agent.Agent.Agent(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Agent>, string, VulcanAI.Connectors.IMessageConnector, string, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: VulcanAI.Agent.Agent.New(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Agent), String, VulcanAI.Connectors.IMessageConnector, String, System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: Agent.Agent(ILLMClient, ILogger<Agent>, string, IMessageConnector, string, Dictionary<string, string>?)
-  nameWithType.vb: Agent.New(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String, Dictionary(Of String, String))
-- uid: VulcanAI.Agent.Agent.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},VulcanAI.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
-  name: Agent(ILLMClient, ILogger<Agent>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent__ctor_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Agent__VulcanAI_Configuration_AgentConfig_VulcanAI_Connectors_IMessageConnector_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:VulcanAI.Agent.Agent.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},VulcanAI.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: New(ILLMClient, ILogger(Of Agent), AgentConfig, IMessageConnector, Dictionary(Of String, String))
-  fullName: VulcanAI.Agent.Agent.Agent(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Agent>, VulcanAI.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: VulcanAI.Agent.Agent.New(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Agent), VulcanAI.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: Agent.Agent(ILLMClient, ILogger<Agent>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
-  nameWithType.vb: Agent.New(ILLMClient, ILogger(Of Agent), AgentConfig, IMessageConnector, Dictionary(Of String, String))
-- uid: VulcanAI.Agent.Agent.#ctor*
-  name: Agent
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent__ctor_
-  commentId: Overload:VulcanAI.Agent.Agent.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Agent.Agent.Agent
-  fullName.vb: VulcanAI.Agent.Agent.New
-  nameWithType: Agent.Agent
-  nameWithType.vb: Agent.New
-- uid: VulcanAI.Agent.Agent.Context
-  name: Context
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_Context
-  commentId: P:VulcanAI.Agent.Agent.Context
-  fullName: VulcanAI.Agent.Agent.Context
-  nameWithType: Agent.Context
-- uid: VulcanAI.Agent.Agent.Context*
-  name: Context
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_Context_
-  commentId: Overload:VulcanAI.Agent.Agent.Context
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.Context
-  nameWithType: Agent.Context
-- uid: VulcanAI.Agent.Agent.ConversationHistory
-  name: ConversationHistory
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_ConversationHistory
-  commentId: P:VulcanAI.Agent.Agent.ConversationHistory
-  fullName: VulcanAI.Agent.Agent.ConversationHistory
-  nameWithType: Agent.ConversationHistory
-- uid: VulcanAI.Agent.Agent.ConversationHistory*
-  name: ConversationHistory
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_ConversationHistory_
-  commentId: Overload:VulcanAI.Agent.Agent.ConversationHistory
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.ConversationHistory
-  nameWithType: Agent.ConversationHistory
-- uid: VulcanAI.Agent.Agent.Dispose
-  name: Dispose()
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_Dispose
-  commentId: M:VulcanAI.Agent.Agent.Dispose
-  fullName: VulcanAI.Agent.Agent.Dispose()
-  nameWithType: Agent.Dispose()
-- uid: VulcanAI.Agent.Agent.Dispose*
-  name: Dispose
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_Dispose_
-  commentId: Overload:VulcanAI.Agent.Agent.Dispose
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.Dispose
-  nameWithType: Agent.Dispose
-- uid: VulcanAI.Agent.Agent.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
-  name: FromJson(ILLMClient, ILogger<Agent>, string, IMessageConnector?, string)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_FromJson_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Agent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
-  commentId: M:VulcanAI.Agent.Agent.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
-  name.vb: FromJson(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String)
-  fullName: VulcanAI.Agent.Agent.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Agent>, string, VulcanAI.Connectors.IMessageConnector?, string)
-  fullName.vb: VulcanAI.Agent.Agent.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Agent), String, VulcanAI.Connectors.IMessageConnector, String)
-  nameWithType: Agent.FromJson(ILLMClient, ILogger<Agent>, string, IMessageConnector?, string)
-  nameWithType.vb: Agent.FromJson(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String)
-- uid: VulcanAI.Agent.Agent.FromJson*
-  name: FromJson
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_FromJson_
-  commentId: Overload:VulcanAI.Agent.Agent.FromJson
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.FromJson
-  nameWithType: Agent.FromJson
-- uid: VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes
-  name: MaxPeriodicMessageIntervalMinutes
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_MaxPeriodicMessageIntervalMinutes
-  commentId: P:VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes
-  fullName: VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes
-  nameWithType: Agent.MaxPeriodicMessageIntervalMinutes
-- uid: VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes*
-  name: MaxPeriodicMessageIntervalMinutes
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_MaxPeriodicMessageIntervalMinutes_
-  commentId: Overload:VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.MaxPeriodicMessageIntervalMinutes
-  nameWithType: Agent.MaxPeriodicMessageIntervalMinutes
-- uid: VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes
-  name: MinPeriodicMessageIntervalMinutes
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_MinPeriodicMessageIntervalMinutes
-  commentId: P:VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes
-  fullName: VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes
-  nameWithType: Agent.MinPeriodicMessageIntervalMinutes
-- uid: VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes*
-  name: MinPeriodicMessageIntervalMinutes
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_MinPeriodicMessageIntervalMinutes_
-  commentId: Overload:VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.MinPeriodicMessageIntervalMinutes
-  nameWithType: Agent.MinPeriodicMessageIntervalMinutes
-- uid: VulcanAI.Agent.Agent.RemoveContext(System.String)
-  name: RemoveContext(string)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_RemoveContext_System_String_
-  commentId: M:VulcanAI.Agent.Agent.RemoveContext(System.String)
-  name.vb: RemoveContext(String)
-  fullName: VulcanAI.Agent.Agent.RemoveContext(string)
-  fullName.vb: VulcanAI.Agent.Agent.RemoveContext(String)
-  nameWithType: Agent.RemoveContext(string)
-  nameWithType.vb: Agent.RemoveContext(String)
-- uid: VulcanAI.Agent.Agent.RemoveContext*
-  name: RemoveContext
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_RemoveContext_
-  commentId: Overload:VulcanAI.Agent.Agent.RemoveContext
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.RemoveContext
-  nameWithType: Agent.RemoveContext
-- uid: VulcanAI.Agent.Agent.SendMessageAsync(System.String)
-  name: SendMessageAsync(string)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SendMessageAsync_System_String_
-  commentId: M:VulcanAI.Agent.Agent.SendMessageAsync(System.String)
-  name.vb: SendMessageAsync(String)
-  fullName: VulcanAI.Agent.Agent.SendMessageAsync(string)
-  fullName.vb: VulcanAI.Agent.Agent.SendMessageAsync(String)
-  nameWithType: Agent.SendMessageAsync(string)
-  nameWithType.vb: Agent.SendMessageAsync(String)
-- uid: VulcanAI.Agent.Agent.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SendMessageAsync_
-  commentId: Overload:VulcanAI.Agent.Agent.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.SendMessageAsync
-  nameWithType: Agent.SendMessageAsync
-- uid: VulcanAI.Agent.Agent.SendPromptAsync(System.String)
-  name: SendPromptAsync(string)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SendPromptAsync_System_String_
-  commentId: M:VulcanAI.Agent.Agent.SendPromptAsync(System.String)
-  name.vb: SendPromptAsync(String)
-  fullName: VulcanAI.Agent.Agent.SendPromptAsync(string)
-  fullName.vb: VulcanAI.Agent.Agent.SendPromptAsync(String)
-  nameWithType: Agent.SendPromptAsync(string)
-  nameWithType.vb: Agent.SendPromptAsync(String)
-- uid: VulcanAI.Agent.Agent.SendPromptAsync*
-  name: SendPromptAsync
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SendPromptAsync_
-  commentId: Overload:VulcanAI.Agent.Agent.SendPromptAsync
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.SendPromptAsync
-  nameWithType: Agent.SendPromptAsync
-- uid: VulcanAI.Agent.Agent.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  name: SendPromptAsync<T>(string, Dictionary<string, object>?)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SendPromptAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
-  commentId: M:VulcanAI.Agent.Agent.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
-  name.vb: SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
-  fullName: VulcanAI.Agent.Agent.SendPromptAsync<T>(string, System.Collections.Generic.Dictionary<string, object>?)
-  fullName.vb: VulcanAI.Agent.Agent.SendPromptAsync(Of T)(String, System.Collections.Generic.Dictionary(Of String, Object))
-  nameWithType: Agent.SendPromptAsync<T>(string, Dictionary<string, object>?)
-  nameWithType.vb: Agent.SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
-- uid: VulcanAI.Agent.Agent.SetContext(System.String,System.Object)
-  name: SetContext(string, object)
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SetContext_System_String_System_Object_
-  commentId: M:VulcanAI.Agent.Agent.SetContext(System.String,System.Object)
-  name.vb: SetContext(String, Object)
-  fullName: VulcanAI.Agent.Agent.SetContext(string, object)
-  fullName.vb: VulcanAI.Agent.Agent.SetContext(String, Object)
-  nameWithType: Agent.SetContext(string, object)
-  nameWithType.vb: Agent.SetContext(String, Object)
-- uid: VulcanAI.Agent.Agent.SetContext*
-  name: SetContext
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_SetContext_
-  commentId: Overload:VulcanAI.Agent.Agent.SetContext
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.SetContext
-  nameWithType: Agent.SetContext
-- uid: VulcanAI.Agent.Agent.ToJson
-  name: ToJson()
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_ToJson
-  commentId: M:VulcanAI.Agent.Agent.ToJson
-  fullName: VulcanAI.Agent.Agent.ToJson()
-  nameWithType: Agent.ToJson()
-- uid: VulcanAI.Agent.Agent.ToJson*
-  name: ToJson
-  href: api/VulcanAI.Agent.Agent.html#VulcanAI_Agent_Agent_ToJson_
-  commentId: Overload:VulcanAI.Agent.Agent.ToJson
-  isSpec: "True"
-  fullName: VulcanAI.Agent.Agent.ToJson
-  nameWithType: Agent.ToJson
 - uid: VulcanAI.Agent.AgentContext
   name: AgentContext
   href: api/VulcanAI.Agent.AgentContext.html
@@ -403,6 +202,341 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Agent.AgentContext.ToJson
   nameWithType: AgentContext.ToJson
+- uid: VulcanAI.Agent.Chatbot
+  name: Chatbot
+  href: api/VulcanAI.Agent.Chatbot.html
+  commentId: T:VulcanAI.Agent.Chatbot
+  fullName: VulcanAI.Agent.Chatbot
+  nameWithType: Chatbot
+- uid: VulcanAI.Agent.Chatbot.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  name: Chatbot(ILLMClient, ILogger<Chatbot>, string, IMessageConnector, string, Dictionary<string, string>?)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot__ctor_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Chatbot__System_String_VulcanAI_Connectors_IMessageConnector_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:VulcanAI.Agent.Chatbot.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: New(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String, Dictionary(Of String, String))
+  fullName: VulcanAI.Agent.Chatbot.Chatbot(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Chatbot>, string, VulcanAI.Connectors.IMessageConnector, string, System.Collections.Generic.Dictionary<string, string>?)
+  fullName.vb: VulcanAI.Agent.Chatbot.New(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Chatbot), String, VulcanAI.Connectors.IMessageConnector, String, System.Collections.Generic.Dictionary(Of String, String))
+  nameWithType: Chatbot.Chatbot(ILLMClient, ILogger<Chatbot>, string, IMessageConnector, string, Dictionary<string, string>?)
+  nameWithType.vb: Chatbot.New(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String, Dictionary(Of String, String))
+- uid: VulcanAI.Agent.Chatbot.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},VulcanAI.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
+  name: Chatbot(ILLMClient, ILogger<Chatbot>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot__ctor_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Chatbot__VulcanAI_Configuration_AgentConfig_VulcanAI_Connectors_IMessageConnector_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:VulcanAI.Agent.Chatbot.#ctor(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},VulcanAI.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: New(ILLMClient, ILogger(Of Chatbot), AgentConfig, IMessageConnector, Dictionary(Of String, String))
+  fullName: VulcanAI.Agent.Chatbot.Chatbot(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Chatbot>, VulcanAI.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary<string, string>?)
+  fullName.vb: VulcanAI.Agent.Chatbot.New(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Chatbot), VulcanAI.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary(Of String, String))
+  nameWithType: Chatbot.Chatbot(ILLMClient, ILogger<Chatbot>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
+  nameWithType.vb: Chatbot.New(ILLMClient, ILogger(Of Chatbot), AgentConfig, IMessageConnector, Dictionary(Of String, String))
+- uid: VulcanAI.Agent.Chatbot.#ctor*
+  name: Chatbot
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot__ctor_
+  commentId: Overload:VulcanAI.Agent.Chatbot.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VulcanAI.Agent.Chatbot.Chatbot
+  fullName.vb: VulcanAI.Agent.Chatbot.New
+  nameWithType: Chatbot.Chatbot
+  nameWithType.vb: Chatbot.New
+- uid: VulcanAI.Agent.Chatbot.Context
+  name: Context
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_Context
+  commentId: P:VulcanAI.Agent.Chatbot.Context
+  fullName: VulcanAI.Agent.Chatbot.Context
+  nameWithType: Chatbot.Context
+- uid: VulcanAI.Agent.Chatbot.Context*
+  name: Context
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_Context_
+  commentId: Overload:VulcanAI.Agent.Chatbot.Context
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.Context
+  nameWithType: Chatbot.Context
+- uid: VulcanAI.Agent.Chatbot.ConversationHistory
+  name: ConversationHistory
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_ConversationHistory
+  commentId: P:VulcanAI.Agent.Chatbot.ConversationHistory
+  fullName: VulcanAI.Agent.Chatbot.ConversationHistory
+  nameWithType: Chatbot.ConversationHistory
+- uid: VulcanAI.Agent.Chatbot.ConversationHistory*
+  name: ConversationHistory
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_ConversationHistory_
+  commentId: Overload:VulcanAI.Agent.Chatbot.ConversationHistory
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.ConversationHistory
+  nameWithType: Chatbot.ConversationHistory
+- uid: VulcanAI.Agent.Chatbot.Dispose
+  name: Dispose()
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_Dispose
+  commentId: M:VulcanAI.Agent.Chatbot.Dispose
+  fullName: VulcanAI.Agent.Chatbot.Dispose()
+  nameWithType: Chatbot.Dispose()
+- uid: VulcanAI.Agent.Chatbot.Dispose*
+  name: Dispose
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_Dispose_
+  commentId: Overload:VulcanAI.Agent.Chatbot.Dispose
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.Dispose
+  nameWithType: Chatbot.Dispose
+- uid: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name: FromJson(ILLMClient, ILogger<Chatbot>, string, IMessageConnector?, string)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_FromJson_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Chatbot__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
+  commentId: M:VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name.vb: FromJson(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String)
+  fullName: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Chatbot>, string, VulcanAI.Connectors.IMessageConnector?, string)
+  fullName.vb: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Chatbot), String, VulcanAI.Connectors.IMessageConnector, String)
+  nameWithType: Chatbot.FromJson(ILLMClient, ILogger<Chatbot>, string, IMessageConnector?, string)
+  nameWithType.vb: Chatbot.FromJson(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String)
+- uid: VulcanAI.Agent.Chatbot.FromJson*
+  name: FromJson
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_FromJson_
+  commentId: Overload:VulcanAI.Agent.Chatbot.FromJson
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.FromJson
+  nameWithType: Chatbot.FromJson
+- uid: VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes
+  name: MaxPeriodicMessageIntervalMinutes
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_MaxPeriodicMessageIntervalMinutes
+  commentId: P:VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes
+  fullName: VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes
+  nameWithType: Chatbot.MaxPeriodicMessageIntervalMinutes
+- uid: VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes*
+  name: MaxPeriodicMessageIntervalMinutes
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_MaxPeriodicMessageIntervalMinutes_
+  commentId: Overload:VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.MaxPeriodicMessageIntervalMinutes
+  nameWithType: Chatbot.MaxPeriodicMessageIntervalMinutes
+- uid: VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes
+  name: MinPeriodicMessageIntervalMinutes
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_MinPeriodicMessageIntervalMinutes
+  commentId: P:VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes
+  fullName: VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes
+  nameWithType: Chatbot.MinPeriodicMessageIntervalMinutes
+- uid: VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes*
+  name: MinPeriodicMessageIntervalMinutes
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_MinPeriodicMessageIntervalMinutes_
+  commentId: Overload:VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.MinPeriodicMessageIntervalMinutes
+  nameWithType: Chatbot.MinPeriodicMessageIntervalMinutes
+- uid: VulcanAI.Agent.Chatbot.RemoveContext(System.String)
+  name: RemoveContext(string)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_RemoveContext_System_String_
+  commentId: M:VulcanAI.Agent.Chatbot.RemoveContext(System.String)
+  name.vb: RemoveContext(String)
+  fullName: VulcanAI.Agent.Chatbot.RemoveContext(string)
+  fullName.vb: VulcanAI.Agent.Chatbot.RemoveContext(String)
+  nameWithType: Chatbot.RemoveContext(string)
+  nameWithType.vb: Chatbot.RemoveContext(String)
+- uid: VulcanAI.Agent.Chatbot.RemoveContext*
+  name: RemoveContext
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_RemoveContext_
+  commentId: Overload:VulcanAI.Agent.Chatbot.RemoveContext
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.RemoveContext
+  nameWithType: Chatbot.RemoveContext
+- uid: VulcanAI.Agent.Chatbot.SendMessageAsync(System.String)
+  name: SendMessageAsync(string)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SendMessageAsync_System_String_
+  commentId: M:VulcanAI.Agent.Chatbot.SendMessageAsync(System.String)
+  name.vb: SendMessageAsync(String)
+  fullName: VulcanAI.Agent.Chatbot.SendMessageAsync(string)
+  fullName.vb: VulcanAI.Agent.Chatbot.SendMessageAsync(String)
+  nameWithType: Chatbot.SendMessageAsync(string)
+  nameWithType.vb: Chatbot.SendMessageAsync(String)
+- uid: VulcanAI.Agent.Chatbot.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SendMessageAsync_
+  commentId: Overload:VulcanAI.Agent.Chatbot.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.SendMessageAsync
+  nameWithType: Chatbot.SendMessageAsync
+- uid: VulcanAI.Agent.Chatbot.SendPromptAsync(System.String)
+  name: SendPromptAsync(string)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SendPromptAsync_System_String_
+  commentId: M:VulcanAI.Agent.Chatbot.SendPromptAsync(System.String)
+  name.vb: SendPromptAsync(String)
+  fullName: VulcanAI.Agent.Chatbot.SendPromptAsync(string)
+  fullName.vb: VulcanAI.Agent.Chatbot.SendPromptAsync(String)
+  nameWithType: Chatbot.SendPromptAsync(string)
+  nameWithType.vb: Chatbot.SendPromptAsync(String)
+- uid: VulcanAI.Agent.Chatbot.SendPromptAsync*
+  name: SendPromptAsync
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SendPromptAsync_
+  commentId: Overload:VulcanAI.Agent.Chatbot.SendPromptAsync
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.SendPromptAsync
+  nameWithType: Chatbot.SendPromptAsync
+- uid: VulcanAI.Agent.Chatbot.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: SendPromptAsync<T>(string, Dictionary<string, object>?)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SendPromptAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:VulcanAI.Agent.Chatbot.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
+  fullName: VulcanAI.Agent.Chatbot.SendPromptAsync<T>(string, System.Collections.Generic.Dictionary<string, object>?)
+  fullName.vb: VulcanAI.Agent.Chatbot.SendPromptAsync(Of T)(String, System.Collections.Generic.Dictionary(Of String, Object))
+  nameWithType: Chatbot.SendPromptAsync<T>(string, Dictionary<string, object>?)
+  nameWithType.vb: Chatbot.SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
+- uid: VulcanAI.Agent.Chatbot.SetContext(System.String,System.Object)
+  name: SetContext(string, object)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SetContext_System_String_System_Object_
+  commentId: M:VulcanAI.Agent.Chatbot.SetContext(System.String,System.Object)
+  name.vb: SetContext(String, Object)
+  fullName: VulcanAI.Agent.Chatbot.SetContext(string, object)
+  fullName.vb: VulcanAI.Agent.Chatbot.SetContext(String, Object)
+  nameWithType: Chatbot.SetContext(string, object)
+  nameWithType.vb: Chatbot.SetContext(String, Object)
+- uid: VulcanAI.Agent.Chatbot.SetContext*
+  name: SetContext
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_SetContext_
+  commentId: Overload:VulcanAI.Agent.Chatbot.SetContext
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.SetContext
+  nameWithType: Chatbot.SetContext
+- uid: VulcanAI.Agent.Chatbot.ToJson
+  name: ToJson()
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_ToJson
+  commentId: M:VulcanAI.Agent.Chatbot.ToJson
+  fullName: VulcanAI.Agent.Chatbot.ToJson()
+  nameWithType: Chatbot.ToJson()
+- uid: VulcanAI.Agent.Chatbot.ToJson*
+  name: ToJson
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_ToJson_
+  commentId: Overload:VulcanAI.Agent.Chatbot.ToJson
+  isSpec: "True"
+  fullName: VulcanAI.Agent.Chatbot.ToJson
+  nameWithType: Chatbot.ToJson
+- uid: VulcanAI.Agent.IAgent
+  name: IAgent
+  href: api/VulcanAI.Agent.IAgent.html
+  commentId: T:VulcanAI.Agent.IAgent
+  fullName: VulcanAI.Agent.IAgent
+  nameWithType: IAgent
+- uid: VulcanAI.Agent.IAgent.Context
+  name: Context
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_Context
+  commentId: P:VulcanAI.Agent.IAgent.Context
+  fullName: VulcanAI.Agent.IAgent.Context
+  nameWithType: IAgent.Context
+- uid: VulcanAI.Agent.IAgent.Context*
+  name: Context
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_Context_
+  commentId: Overload:VulcanAI.Agent.IAgent.Context
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.Context
+  nameWithType: IAgent.Context
+- uid: VulcanAI.Agent.IAgent.ConversationHistory
+  name: ConversationHistory
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_ConversationHistory
+  commentId: P:VulcanAI.Agent.IAgent.ConversationHistory
+  fullName: VulcanAI.Agent.IAgent.ConversationHistory
+  nameWithType: IAgent.ConversationHistory
+- uid: VulcanAI.Agent.IAgent.ConversationHistory*
+  name: ConversationHistory
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_ConversationHistory_
+  commentId: Overload:VulcanAI.Agent.IAgent.ConversationHistory
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.ConversationHistory
+  nameWithType: IAgent.ConversationHistory
+- uid: VulcanAI.Agent.IAgent.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.IAgent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name: FromJson(ILLMClient, ILogger<IAgent>, string, IMessageConnector?, string)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_FromJson_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_IAgent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
+  commentId: M:VulcanAI.Agent.IAgent.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.IAgent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name.vb: FromJson(ILLMClient, ILogger(Of IAgent), String, IMessageConnector, String)
+  fullName: VulcanAI.Agent.IAgent.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.IAgent>, string, VulcanAI.Connectors.IMessageConnector?, string)
+  fullName.vb: VulcanAI.Agent.IAgent.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.IAgent), String, VulcanAI.Connectors.IMessageConnector, String)
+  nameWithType: IAgent.FromJson(ILLMClient, ILogger<IAgent>, string, IMessageConnector?, string)
+  nameWithType.vb: IAgent.FromJson(ILLMClient, ILogger(Of IAgent), String, IMessageConnector, String)
+- uid: VulcanAI.Agent.IAgent.FromJson*
+  name: FromJson
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_FromJson_
+  commentId: Overload:VulcanAI.Agent.IAgent.FromJson
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.FromJson
+  nameWithType: IAgent.FromJson
+- uid: VulcanAI.Agent.IAgent.RemoveContext(System.String)
+  name: RemoveContext(string)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_RemoveContext_System_String_
+  commentId: M:VulcanAI.Agent.IAgent.RemoveContext(System.String)
+  name.vb: RemoveContext(String)
+  fullName: VulcanAI.Agent.IAgent.RemoveContext(string)
+  fullName.vb: VulcanAI.Agent.IAgent.RemoveContext(String)
+  nameWithType: IAgent.RemoveContext(string)
+  nameWithType.vb: IAgent.RemoveContext(String)
+- uid: VulcanAI.Agent.IAgent.RemoveContext*
+  name: RemoveContext
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_RemoveContext_
+  commentId: Overload:VulcanAI.Agent.IAgent.RemoveContext
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.RemoveContext
+  nameWithType: IAgent.RemoveContext
+- uid: VulcanAI.Agent.IAgent.SendMessageAsync(System.String)
+  name: SendMessageAsync(string)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SendMessageAsync_System_String_
+  commentId: M:VulcanAI.Agent.IAgent.SendMessageAsync(System.String)
+  name.vb: SendMessageAsync(String)
+  fullName: VulcanAI.Agent.IAgent.SendMessageAsync(string)
+  fullName.vb: VulcanAI.Agent.IAgent.SendMessageAsync(String)
+  nameWithType: IAgent.SendMessageAsync(string)
+  nameWithType.vb: IAgent.SendMessageAsync(String)
+- uid: VulcanAI.Agent.IAgent.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SendMessageAsync_
+  commentId: Overload:VulcanAI.Agent.IAgent.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.SendMessageAsync
+  nameWithType: IAgent.SendMessageAsync
+- uid: VulcanAI.Agent.IAgent.SendPromptAsync(System.String)
+  name: SendPromptAsync(string)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SendPromptAsync_System_String_
+  commentId: M:VulcanAI.Agent.IAgent.SendPromptAsync(System.String)
+  name.vb: SendPromptAsync(String)
+  fullName: VulcanAI.Agent.IAgent.SendPromptAsync(string)
+  fullName.vb: VulcanAI.Agent.IAgent.SendPromptAsync(String)
+  nameWithType: IAgent.SendPromptAsync(string)
+  nameWithType.vb: IAgent.SendPromptAsync(String)
+- uid: VulcanAI.Agent.IAgent.SendPromptAsync*
+  name: SendPromptAsync
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SendPromptAsync_
+  commentId: Overload:VulcanAI.Agent.IAgent.SendPromptAsync
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.SendPromptAsync
+  nameWithType: IAgent.SendPromptAsync
+- uid: VulcanAI.Agent.IAgent.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name: SendPromptAsync<T>(string, Dictionary<string, object>?)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SendPromptAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__
+  commentId: M:VulcanAI.Agent.IAgent.SendPromptAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})
+  name.vb: SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
+  fullName: VulcanAI.Agent.IAgent.SendPromptAsync<T>(string, System.Collections.Generic.Dictionary<string, object>?)
+  fullName.vb: VulcanAI.Agent.IAgent.SendPromptAsync(Of T)(String, System.Collections.Generic.Dictionary(Of String, Object))
+  nameWithType: IAgent.SendPromptAsync<T>(string, Dictionary<string, object>?)
+  nameWithType.vb: IAgent.SendPromptAsync(Of T)(String, Dictionary(Of String, Object))
+- uid: VulcanAI.Agent.IAgent.SetContext(System.String,System.Object)
+  name: SetContext(string, object)
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SetContext_System_String_System_Object_
+  commentId: M:VulcanAI.Agent.IAgent.SetContext(System.String,System.Object)
+  name.vb: SetContext(String, Object)
+  fullName: VulcanAI.Agent.IAgent.SetContext(string, object)
+  fullName.vb: VulcanAI.Agent.IAgent.SetContext(String, Object)
+  nameWithType: IAgent.SetContext(string, object)
+  nameWithType.vb: IAgent.SetContext(String, Object)
+- uid: VulcanAI.Agent.IAgent.SetContext*
+  name: SetContext
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_SetContext_
+  commentId: Overload:VulcanAI.Agent.IAgent.SetContext
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.SetContext
+  nameWithType: IAgent.SetContext
+- uid: VulcanAI.Agent.IAgent.ToJson
+  name: ToJson()
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_ToJson
+  commentId: M:VulcanAI.Agent.IAgent.ToJson
+  fullName: VulcanAI.Agent.IAgent.ToJson()
+  nameWithType: IAgent.ToJson()
+- uid: VulcanAI.Agent.IAgent.ToJson*
+  name: ToJson
+  href: api/VulcanAI.Agent.IAgent.html#VulcanAI_Agent_IAgent_ToJson_
+  commentId: Overload:VulcanAI.Agent.IAgent.ToJson
+  isSpec: "True"
+  fullName: VulcanAI.Agent.IAgent.ToJson
+  nameWithType: IAgent.ToJson
 - uid: VulcanAI.AgentContextData
   name: AgentContextData
   href: api/VulcanAI.AgentContextData.html

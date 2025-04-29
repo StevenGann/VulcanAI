@@ -4,20 +4,30 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Agent.Agent.yml",
+      "source_relative_path": "api/VulcanAI.Agent.AgentContext.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Agent.Agent.html"
+          "relative_path": "api/VulcanAI.Agent.AgentContext.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Agent.AgentContext.yml",
+      "source_relative_path": "api/VulcanAI.Agent.Chatbot.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Agent.AgentContext.html"
+          "relative_path": "api/VulcanAI.Agent.Chatbot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Agent.IAgent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Agent.IAgent.html"
         }
       },
       "version": ""

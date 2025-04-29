@@ -75,14 +75,20 @@
     <h3 id="classes">
 Classes
 </h3>
-      <h4><a class="xref" href="VulcanAI.Agent.Agent.html">Agent</a></h4>
+      <h4><a class="xref" href="VulcanAI.Agent.AgentContext.html">AgentContext</a></h4>
+      <section><p>Represents the context of an agent, including its system prompt, conversation history, and context fields.
+The context manages token limits by removing older messages when needed to stay within the maximum token count.</p>
+</section>
+      <h4><a class="xref" href="VulcanAI.Agent.Chatbot.html">Chatbot</a></h4>
       <section><p>Represents an AI agent that can process messages and generate responses using a language model.
 The agent maintains conversation history and context, which is persisted to disk periodically
 and loaded when the agent is restarted.</p>
 </section>
-      <h4><a class="xref" href="VulcanAI.Agent.AgentContext.html">AgentContext</a></h4>
-      <section><p>Represents the context of an agent, including its system prompt, conversation history, and context fields.
-The context manages token limits by removing older messages when needed to stay within the maximum token count.</p>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+      <h4><a class="xref" href="VulcanAI.Agent.IAgent.html">IAgent</a></h4>
+      <section><p>Defines the interface for an AI agent that can process messages and generate responses.</p>
 </section>
 
 
