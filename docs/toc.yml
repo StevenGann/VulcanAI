@@ -3,3 +3,5 @@
   href: index.md
 - name: Docs
   href: docs/toc.yml
+- name: API
+  href: api/
