@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.Interfaces;
+namespace VulcanAI.Core.Connectors;
 
 public interface IHttpClient
 {

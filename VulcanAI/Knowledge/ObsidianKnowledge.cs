@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using ObsidianDB;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using VulcanAI.Core.Knowledge;
 
 namespace VulcanAI.Core.Knowledge
@@ -14,7 +14,7 @@ namespace VulcanAI.Core.Knowledge
     /// This class provides a bridge between the VulcanAI knowledge system and Obsidian vaults.
     /// It allows querying and managing knowledge stored in Obsidian markdown files.
     /// </remarks>
-    public class ObsidianKnowledge : IKnowledgeStore
+    public class ObsidianKnowledge : IKnowledgeConnector
     {
         private readonly ObsidianDB.ObsidianDB _db;
         private bool _isStarted;

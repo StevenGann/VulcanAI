@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Logging;
@@ -8,11 +8,11 @@ using Microsoft.Extensions.Logging;
 namespace VulcanAI.Infrastructure.Discord
 {
     /// <summary>
-    /// Implements the <see cref="IMessageInterface"/> for Discord, allowing the agent to send and receive messages
+    /// Implements the <see cref="IMessageConnector"/> for Discord, allowing the agent to send and receive messages
     /// through a Discord channel. Messages longer than Discord's 2000-character limit are automatically split
     /// into multiple messages.
     /// </summary>
-    public class DiscordInterface : IMessageInterface
+    public class DiscordInterface : IMessageConnector
     {
         private readonly DiscordSocketClient _client;
         private readonly ILogger<DiscordInterface> _logger;

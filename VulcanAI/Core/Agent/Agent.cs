@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using VulcanAI.Core.LLM;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using VulcanAI.Core.Configuration;
 using VulcanAI.Infrastructure.Discord;
 using System.Text;
@@ -23,7 +23,7 @@ public class Agent : IDisposable
 {
     private readonly ILLMClient _llmClient;
     private readonly ILogger<Agent> _logger;
-    private readonly IMessageInterface? _messageInterface;
+    private readonly IMessageConnector? _messageInterface;
     private readonly string _agentName;
     private readonly AgentContext _context;
     private readonly Timer _contextPersistenceTimer;
@@ -124,13 +124,13 @@ public class Agent : IDisposable
     /// 4. Sets up periodic context persistence (every 5 minutes)
     /// 5. Subscribes to message events from the message interface
     /// </remarks>
-    public Agent(ILLMClient llmClient, ILogger<Agent> logger, string systemPrompt, IMessageInterface messageInterface,
+    public Agent(ILLMClient llmClient, ILogger<Agent> logger, string systemPrompt, IMessageConnector messageInterface,
         string agentName = "Agent", Dictionary<string, string>? contextFields = null)
         : this(llmClient, logger, new AgentConfig { SystemPrompt = systemPrompt, Name = agentName }, messageInterface, contextFields)
     {
     }
 
-    public Agent(ILLMClient llmClient, ILogger<Agent> logger, AgentConfig config, IMessageInterface messageInterface,
+    public Agent(ILLMClient llmClient, ILogger<Agent> logger, AgentConfig config, IMessageConnector messageInterface,
         Dictionary<string, string>? contextFields = null)
     {
         _llmClient = llmClient;
@@ -280,7 +280,7 @@ public class Agent : IDisposable
     /// It adds the message to the conversation history, generates a response using the LLM,
     /// and sends the response back through the message interface.
     /// </remarks>
-    private async void HandleMessageReceived(object? sender, Core.Interfaces.Message e)
+    private async void HandleMessageReceived(object? sender, Core.Connectors.Message e)
     {
         try
         {
@@ -549,7 +549,7 @@ public class Agent : IDisposable
         ILLMClient llmClient,
         ILogger<Agent> logger,
         string json,
-        IMessageInterface? messageInterface = null,
+        IMessageConnector? messageInterface = null,
         string agentName = "Agent")
     {
         var contextLogger = new LoggerFactory().CreateLogger<AgentContext>();

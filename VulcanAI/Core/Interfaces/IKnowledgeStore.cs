@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using VulcanAI.Core.Knowledge;
 
-namespace VulcanAI.Core.Interfaces
+namespace VulcanAI.Core.Connectors
 {
     /// <summary>
     /// Defines the interface for a knowledge store that can store and retrieve knowledge items.
@@ -16,7 +16,7 @@ namespace VulcanAI.Core.Interfaces
     /// including querying, adding, and lifecycle management of the knowledge store.
     /// Implementations should be thread-safe and handle concurrent access appropriately.
     /// </remarks>
-    public interface IKnowledgeStore
+    public interface IKnowledgeConnector
     {
         /// <summary>
         /// Queries the knowledge store for relevant knowledge items based on the provided query.

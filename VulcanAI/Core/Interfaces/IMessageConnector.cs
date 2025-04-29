@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.Interfaces
+namespace VulcanAI.Core.Connectors
 {
     /// <summary>
     /// Represents a message in the chat system with metadata about the sender and timing.
@@ -46,7 +46,7 @@ namespace VulcanAI.Core.Interfaces
     /// <summary>
     /// Defines the interface for message-based communication systems.
     /// </summary>
-    public interface IMessageInterface
+    public interface IMessageConnector
     {
         /// <summary>
         /// Occurs when a message is received from the interface.

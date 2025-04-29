@@ -1,23 +1,23 @@
 using System;
 using System.Threading.Tasks;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Core.Interfaces;
+namespace VulcanAI.Core.Connectors;
 
-public class DiscordInterface : IMessageInterface
+public class DiscordConnector : IMessageConnector
 {
     private readonly DiscordSocketClient _client;
-    private readonly ILogger<DiscordInterface> _logger;
+    private readonly ILogger<DiscordConnector> _logger;
     private readonly string _token;
     private readonly ulong _channelId;
     private bool _isRunning;
 
-    public DiscordInterface(
+    public DiscordConnector(
         DiscordSocketClient client,
-        ILogger<DiscordInterface> logger,
+        ILogger<DiscordConnector> logger,
         string token,
         ulong channelId)
     {

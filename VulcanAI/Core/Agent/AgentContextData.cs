@@ -1,4 +1,4 @@
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 

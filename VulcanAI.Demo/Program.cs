@@ -7,7 +7,7 @@ using VulcanAI.Core.Agent;
 using VulcanAI.Core.LLM;
 using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Core.Configuration;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using Discord.WebSocket;
 using System.Net.Http;
 using System.Threading;
@@ -65,7 +65,7 @@ namespace VulcanAI.Demo
                 llmClient.MaxPromptLength = 6000;
 
                 // Choose interface type
-                IMessageInterface messageInterface;
+                IMessageConnector messageInterface;
                 Console.WriteLine("Choose interface type:");
                 Console.WriteLine("1. Discord");
                 Console.WriteLine("2. Console");
@@ -111,8 +111,8 @@ namespace VulcanAI.Demo
                                 .AddConsole();                    // Add console logging
                         });
                         logger = loggerFactory.CreateLogger<Program>();
-                        var consoleLogger = loggerFactory.CreateLogger<ConsoleInterface>();
-                        messageInterface = new ConsoleInterface(consoleLogger);
+                        var consoleLogger = loggerFactory.CreateLogger<ConsoleConnector>();
+                        messageInterface = new ConsoleConnector(consoleLogger);
                         break;
 
                     default:

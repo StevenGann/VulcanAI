@@ -1,12 +1,12 @@
 using System;
 using System.Threading.Tasks;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Core.Interfaces;
+namespace VulcanAI.Core.Connectors;
 
 /// <summary>
-/// Implements the <see cref="IMessageInterface"/> for console-based communication.
+/// Implements the <see cref="IMessageConnector"/> for console-based communication.
 /// This interface allows the agent to send and receive messages through the system console.
 /// Messages are displayed in the format [Sender] Content, and user input is captured when Enter is pressed.
 /// </summary>
@@ -15,18 +15,18 @@ namespace VulcanAI.Core.Interfaces;
 /// It runs a background task to continuously read user input and raises events when messages are received.
 /// All operations are asynchronous and include proper logging for debugging and monitoring.
 /// </remarks>
-public class ConsoleInterface : IMessageInterface
+public class ConsoleConnector : IMessageConnector
 {
-    private readonly ILogger<ConsoleInterface> _logger;
+    private readonly ILogger<ConsoleConnector> _logger;
     private bool _isRunning;
     private Task? _inputTask;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="ConsoleInterface"/> class.
+    /// Initializes a new instance of the <see cref="ConsoleConnector"/> class.
     /// </summary>
     /// <param name="logger">The logger instance for recording diagnostic information.</param>
     /// <exception cref="ArgumentNullException">Thrown when the logger parameter is null.</exception>
-    public ConsoleInterface(ILogger<ConsoleInterface> logger)
+    public ConsoleConnector(ILogger<ConsoleConnector> logger)
     {
         _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     }

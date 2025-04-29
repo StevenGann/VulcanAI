@@ -5,7 +5,7 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
-using VulcanAI.Core.Interfaces;
+using VulcanAI.Core.Connectors;
 
 namespace VulcanAI.Core.LLM;
 
