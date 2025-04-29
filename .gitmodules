@@ -1,0 +1,3 @@
+[submodule "submodules/ObsidianDB"]
+	path = submodules/ObsidianDB
+	url = https://github.com/StevenGann/ObsidianDB.git
