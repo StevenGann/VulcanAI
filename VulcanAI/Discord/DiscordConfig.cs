@@ -1,4 +1,4 @@
-namespace VulcanAI.Infrastructure.Configuration
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// Represents the configuration settings for the Discord interface.

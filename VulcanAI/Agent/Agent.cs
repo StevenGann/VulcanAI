@@ -182,7 +182,7 @@ public class Agent : IDisposable
             try
             {
                 // If using Discord, wait for it to be ready
-                if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordInterface discordInterface)
+                if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordConnector discordInterface)
                 {
                     _logger.LogInformation("Waiting for Discord interface to be ready before sending online announcement...");
                     await discordInterface.ReadyTask;
@@ -472,7 +472,7 @@ public class Agent : IDisposable
             }
 
             // If the message interface is Discord, wait for it to be ready
-            if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordInterface discordInterface)
+            if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordConnector discordInterface)
             {
                 if (!discordInterface.IsReady)
                 {

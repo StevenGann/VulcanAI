@@ -83,7 +83,7 @@ namespace VulcanAI.Demo
                 switch (choice)
                 {
                     case "1":
-                        var discordConfig = config.GetSection("Discord").Get<Configuration.DiscordConfig>();
+                        var discordConfig = config.GetSection("Discord").Get<Connectors.DiscordConfig>();
                         if (discordConfig == null || string.IsNullOrEmpty(discordConfig.Token) || discordConfig.ChannelId == 0)
                         {
                             logger.LogError("Invalid Discord configuration. Please check secrets.json");
@@ -97,13 +97,13 @@ namespace VulcanAI.Demo
                             return;
                         }
 
-                        var discordLogger = loggerFactory.CreateLogger<VulcanAI.Infrastructure.Discord.DiscordInterface>();
+                        var discordLogger = loggerFactory.CreateLogger<VulcanAI.Infrastructure.Discord.DiscordConnector>();
                         var socketConfig = new DiscordSocketConfig
                         {
                             GatewayIntents = GatewayIntents.All
                         };
                         var discordClient = new DiscordSocketClient(socketConfig);
-                        messageInterface = new VulcanAI.Infrastructure.Discord.DiscordInterface(
+                        messageInterface = new VulcanAI.Infrastructure.Discord.DiscordConnector(
                             discordClient,
                             discordLogger,
                             discordConfig.Token,

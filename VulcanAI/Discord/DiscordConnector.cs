@@ -12,10 +12,10 @@ namespace VulcanAI.Infrastructure.Discord
     /// through a Discord channel. Messages longer than Discord's 2000-character limit are automatically split
     /// into multiple messages.
     /// </summary>
-    public class DiscordInterface : IMessageConnector
+    public class DiscordConnector : IMessageConnector
     {
         private readonly DiscordSocketClient _client;
-        private readonly ILogger<DiscordInterface> _logger;
+        private readonly ILogger<DiscordConnector> _logger;
         private readonly string _token;
         private readonly ulong _channelId;
         private bool _isRunning;
@@ -32,15 +32,15 @@ namespace VulcanAI.Infrastructure.Discord
         public bool IsReady => _client.ConnectionState == ConnectionState.Connected;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DiscordInterface"/> class.
+        /// Initializes a new instance of the <see cref="DiscordConnector"/> class.
         /// </summary>
         /// <param name="client">The Discord socket client.</param>
         /// <param name="logger">The logger instance.</param>
         /// <param name="token">The Discord bot token.</param>
         /// <param name="channelId">The ID of the channel to monitor and send messages to.</param>
-        public DiscordInterface(
+        public DiscordConnector(
             DiscordSocketClient client,
-            ILogger<DiscordInterface> logger,
+            ILogger<DiscordConnector> logger,
             string token,
             ulong channelId)
         {
