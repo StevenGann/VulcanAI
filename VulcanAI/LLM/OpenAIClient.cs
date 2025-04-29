@@ -64,7 +64,7 @@ public class OpenAIClient : ILLMClient
             request.Headers.Add("Authorization", $"Bearer {_apiKey}");
             request.Content = content;
 
-            var response = await _httpClient.PostAsync(request.RequestUri.ToString(), content);
+            var response = await _httpClient.PostAsync(request.RequestUri!.ToString(), content);
             response.EnsureSuccessStatusCode();
 
             var responseContent = await response.Content.ReadAsStringAsync();

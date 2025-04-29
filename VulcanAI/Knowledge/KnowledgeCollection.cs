@@ -131,6 +131,13 @@ public class KnowledgeCollection : IEnumerable<(double Score, Knowledge Knowledg
             Converters = { new JsonStringEnumConverter() }
         };
         var items = JsonSerializer.Deserialize<List<(double Score, Knowledge Knowledge)>>(json, options);
+
+        if (items == null)
+        {
+            throw new JsonException("Failed to deserialize knowledge collection");
+        }
+
+
         var collection = new KnowledgeCollection();
         foreach (var item in items)
         {
@@ -197,4 +204,4 @@ public class KnowledgeCollection : IEnumerable<(double Score, Knowledge Knowledg
         }
         _knowledgeItems.Add((0.0, knowledge));
     }
-} 
+}

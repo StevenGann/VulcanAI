@@ -58,6 +58,7 @@ public class ConsoleConnector : IMessageConnector
         _isRunning = true;
         _inputTask = Task.Run(ReadConsoleInput);
         _logger.LogInformation("Console interface started");
+        await Task.CompletedTask;
     }
 
     /// <summary>
@@ -94,14 +95,16 @@ public class ConsoleConnector : IMessageConnector
     /// </remarks>
     public async Task SendMessageAsync(Message message)
     {
-        await Task.Run(() => Console.WriteLine($"{message.Sender}: {message.Content}"));
+        Console.WriteLine($"{message.Sender}: {message.Content}");
         _logger.LogDebug("Sent message: {Content}", message.Content);
+        await Task.CompletedTask;
     }
 
     public async Task SendMessageAsync(string content)
     {
-        await Task.Run(() => Console.WriteLine(content));
+        Console.WriteLine(content);
         _logger.LogDebug("Sent message: {Content}", content);
+        await Task.CompletedTask;
     }
 
     /// <summary>
