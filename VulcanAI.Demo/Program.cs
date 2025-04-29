@@ -129,8 +129,8 @@ namespace VulcanAI.Demo
                 }
 
                 // Create agent
-                var agentLogger = loggerFactory.CreateLogger<Agent.Agent>();
-                var agent = new Agent.Agent(
+                var agentLogger = loggerFactory.CreateLogger<Agent.Chatbot>();
+                var agent = new Agent.Chatbot(
                     llmClient,
                     agentLogger,
                     agentConfig,

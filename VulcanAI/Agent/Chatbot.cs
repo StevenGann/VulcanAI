@@ -24,10 +24,10 @@ namespace VulcanAI.Agent;
 /// The agent maintains conversation history and context, which is persisted to disk periodically
 /// and loaded when the agent is restarted.
 /// </summary>
-public class Agent : IDisposable
+public class Chatbot : IDisposable
 {
     private readonly ILLMClient _llmClient;
-    private readonly ILogger<Agent> _logger;
+    private readonly ILogger<Chatbot> _logger;
     private readonly IMessageConnector? _messageInterface;
     private readonly string _agentName;
     private readonly AgentContext _context;
@@ -113,7 +113,7 @@ public class Agent : IDisposable
     }
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="Agent"/> class with the specified parameters.
+    /// Initializes a new instance of the <see cref="Chatbot"/> class with the specified parameters.
     /// </summary>
     /// <param name="llmClient">The language model client to use for generating responses.</param>
     /// <param name="logger">The logger instance for this agent.</param>
@@ -129,13 +129,13 @@ public class Agent : IDisposable
     /// 4. Sets up periodic context persistence (every 5 minutes)
     /// 5. Subscribes to message events from the message interface
     /// </remarks>
-    public Agent(ILLMClient llmClient, ILogger<Agent> logger, string systemPrompt, IMessageConnector messageInterface,
+    public Chatbot(ILLMClient llmClient, ILogger<Chatbot> logger, string systemPrompt, IMessageConnector messageInterface,
         string agentName = "Agent", Dictionary<string, string>? contextFields = null)
         : this(llmClient, logger, new AgentConfig { SystemPrompt = systemPrompt, Name = agentName }, messageInterface, contextFields)
     {
     }
 
-    public Agent(ILLMClient llmClient, ILogger<Agent> logger, AgentConfig config, IMessageConnector messageInterface,
+    public Chatbot(ILLMClient llmClient, ILogger<Chatbot> logger, AgentConfig config, IMessageConnector messageInterface,
         Dictionary<string, string>? contextFields = null)
     {
         _llmClient = llmClient;
@@ -544,15 +544,15 @@ public class Agent : IDisposable
     /// <param name="json">The JSON string containing the serialized context.</param>
     /// <param name="messageInterface">Optional message interface to use.</param>
     /// <param name="agentName">Optional name for the agent.</param>
-    /// <returns>A new instance of <see cref="Agent"/> with the deserialized context.</returns>
+    /// <returns>A new instance of <see cref="Chatbot"/> with the deserialized context.</returns>
     /// <exception cref="InvalidOperationException">Thrown when the JSON cannot be deserialized into an AgentContext.</exception>
     /// <remarks>
     /// This method is used to create a new agent instance from a previously serialized context.
     /// The agent name can be different from the one used when the context was serialized.
     /// </remarks>
-    public static Agent FromJson(
+    public static Chatbot FromJson(
         ILLMClient llmClient,
-        ILogger<Agent> logger,
+        ILogger<Chatbot> logger,
         string json,
         IMessageConnector? messageInterface = null,
         string agentName = "Agent")
@@ -564,7 +564,7 @@ public class Agent : IDisposable
         // Create a null message interface if none provided
         var interfaceToUse = messageInterface ?? new NullMessageInterface();
         
-        var agent = new Agent(llmClient, logger, context.SystemPrompt, interfaceToUse, agentName, contextFields);
+        var agent = new Chatbot(llmClient, logger, context.SystemPrompt, interfaceToUse, agentName, contextFields);
         return agent;
     }
 
