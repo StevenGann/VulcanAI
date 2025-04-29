@@ -32,7 +32,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\submodules\ObsidianDB\ObsidianDB\ObsidianDB.csproj" />
-    <ProjectReference Include="..\submodules\HyperVectorDB\HyperVectorDB\HyperVectorDB.csproj" />
   </ItemGroup>
 
 </Project>
