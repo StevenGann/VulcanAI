@@ -54,16 +54,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Configuration.DiscordConfig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Configuration.DiscordConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Configuration.yml",
       "output": {
         ".html": {
@@ -84,10 +74,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Connectors.DiscordConnector.yml",
+      "source_relative_path": "api/VulcanAI.Connectors.DiscordConfig.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Connectors.DiscordConnector.html"
+          "relative_path": "api/VulcanAI.Connectors.DiscordConfig.html"
         }
       },
       "version": ""
@@ -154,30 +144,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Infrastructure.Configuration.DiscordConfig.yml",
+      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Infrastructure.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Infrastructure.Configuration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordInterface.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordInterface.html"
+          "relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordConnector.html"
         }
       },
       "version": ""

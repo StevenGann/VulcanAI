@@ -486,38 +486,6 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Configuration.AgentConfig.SystemPrompt
   nameWithType: AgentConfig.SystemPrompt
-- uid: VulcanAI.Configuration.DiscordConfig
-  name: DiscordConfig
-  href: api/VulcanAI.Configuration.DiscordConfig.html
-  commentId: T:VulcanAI.Configuration.DiscordConfig
-  fullName: VulcanAI.Configuration.DiscordConfig
-  nameWithType: DiscordConfig
-- uid: VulcanAI.Configuration.DiscordConfig.ChannelId
-  name: ChannelId
-  href: api/VulcanAI.Configuration.DiscordConfig.html#VulcanAI_Configuration_DiscordConfig_ChannelId
-  commentId: P:VulcanAI.Configuration.DiscordConfig.ChannelId
-  fullName: VulcanAI.Configuration.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Configuration.DiscordConfig.ChannelId*
-  name: ChannelId
-  href: api/VulcanAI.Configuration.DiscordConfig.html#VulcanAI_Configuration_DiscordConfig_ChannelId_
-  commentId: Overload:VulcanAI.Configuration.DiscordConfig.ChannelId
-  isSpec: "True"
-  fullName: VulcanAI.Configuration.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Configuration.DiscordConfig.Token
-  name: Token
-  href: api/VulcanAI.Configuration.DiscordConfig.html#VulcanAI_Configuration_DiscordConfig_Token
-  commentId: P:VulcanAI.Configuration.DiscordConfig.Token
-  fullName: VulcanAI.Configuration.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
-- uid: VulcanAI.Configuration.DiscordConfig.Token*
-  name: Token
-  href: api/VulcanAI.Configuration.DiscordConfig.html#VulcanAI_Configuration_DiscordConfig_Token_
-  commentId: Overload:VulcanAI.Configuration.DiscordConfig.Token
-  isSpec: "True"
-  fullName: VulcanAI.Configuration.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
 - uid: VulcanAI.Connectors
   name: VulcanAI.Connectors
   href: api/VulcanAI.Connectors.html
@@ -594,76 +562,38 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Connectors.ConsoleConnector.StopAsync
   nameWithType: ConsoleConnector.StopAsync
-- uid: VulcanAI.Connectors.DiscordConnector
-  name: DiscordConnector
-  href: api/VulcanAI.Connectors.DiscordConnector.html
-  commentId: T:VulcanAI.Connectors.DiscordConnector
-  fullName: VulcanAI.Connectors.DiscordConnector
-  nameWithType: DiscordConnector
-- uid: VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
-  name: DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Connectors_DiscordConnector__System_String_System_UInt64_
-  commentId: M:VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
-  name.vb: New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Connectors.DiscordConnector>, string, ulong)
-  fullName.vb: VulcanAI.Connectors.DiscordConnector.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Connectors.DiscordConnector), String, ULong)
-  nameWithType: DiscordConnector.DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  nameWithType.vb: DiscordConnector.New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-- uid: VulcanAI.Connectors.DiscordConnector.#ctor*
-  name: DiscordConnector
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.#ctor
+- uid: VulcanAI.Connectors.DiscordConfig
+  name: DiscordConfig
+  href: api/VulcanAI.Connectors.DiscordConfig.html
+  commentId: T:VulcanAI.Connectors.DiscordConfig
+  fullName: VulcanAI.Connectors.DiscordConfig
+  nameWithType: DiscordConfig
+- uid: VulcanAI.Connectors.DiscordConfig.ChannelId
+  name: ChannelId
+  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_ChannelId
+  commentId: P:VulcanAI.Connectors.DiscordConfig.ChannelId
+  fullName: VulcanAI.Connectors.DiscordConfig.ChannelId
+  nameWithType: DiscordConfig.ChannelId
+- uid: VulcanAI.Connectors.DiscordConfig.ChannelId*
+  name: ChannelId
+  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_ChannelId_
+  commentId: Overload:VulcanAI.Connectors.DiscordConfig.ChannelId
   isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector
-  fullName.vb: VulcanAI.Connectors.DiscordConnector.New
-  nameWithType: DiscordConnector.DiscordConnector
-  nameWithType.vb: DiscordConnector.New
-- uid: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_OnMessageReceived
-  commentId: E:VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  fullName: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  nameWithType: DiscordConnector.OnMessageReceived
-- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_VulcanAI_Connectors_Message_
-  commentId: M:VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  nameWithType: DiscordConnector.SendMessageAsync(Message)
-- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.SendMessageAsync
+  fullName: VulcanAI.Connectors.DiscordConfig.ChannelId
+  nameWithType: DiscordConfig.ChannelId
+- uid: VulcanAI.Connectors.DiscordConfig.Token
+  name: Token
+  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_Token
+  commentId: P:VulcanAI.Connectors.DiscordConfig.Token
+  fullName: VulcanAI.Connectors.DiscordConfig.Token
+  nameWithType: DiscordConfig.Token
+- uid: VulcanAI.Connectors.DiscordConfig.Token*
+  name: Token
+  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_Token_
+  commentId: Overload:VulcanAI.Connectors.DiscordConfig.Token
   isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync
-  nameWithType: DiscordConnector.SendMessageAsync
-- uid: VulcanAI.Connectors.DiscordConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync
-  commentId: M:VulcanAI.Connectors.DiscordConnector.StartAsync
-  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync()
-  nameWithType: DiscordConnector.StartAsync()
-- uid: VulcanAI.Connectors.DiscordConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync
-  nameWithType: DiscordConnector.StartAsync
-- uid: VulcanAI.Connectors.DiscordConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync
-  commentId: M:VulcanAI.Connectors.DiscordConnector.StopAsync
-  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync()
-  nameWithType: DiscordConnector.StopAsync()
-- uid: VulcanAI.Connectors.DiscordConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync
-  nameWithType: DiscordConnector.StopAsync
+  fullName: VulcanAI.Connectors.DiscordConfig.Token
+  nameWithType: DiscordConfig.Token
 - uid: VulcanAI.Connectors.IHttpClient
   name: IHttpClient
   href: api/VulcanAI.Connectors.IHttpClient.html
@@ -926,146 +856,108 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Connectors.NullMessageInterface.StopAsync
   nameWithType: NullMessageInterface.StopAsync
-- uid: VulcanAI.Infrastructure.Configuration
-  name: VulcanAI.Infrastructure.Configuration
-  href: api/VulcanAI.Infrastructure.Configuration.html
-  commentId: N:VulcanAI.Infrastructure.Configuration
-  fullName: VulcanAI.Infrastructure.Configuration
-  nameWithType: VulcanAI.Infrastructure.Configuration
-- uid: VulcanAI.Infrastructure.Configuration.DiscordConfig
-  name: DiscordConfig
-  href: api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html
-  commentId: T:VulcanAI.Infrastructure.Configuration.DiscordConfig
-  fullName: VulcanAI.Infrastructure.Configuration.DiscordConfig
-  nameWithType: DiscordConfig
-- uid: VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId
-  name: ChannelId
-  href: api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html#VulcanAI_Infrastructure_Configuration_DiscordConfig_ChannelId
-  commentId: P:VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId
-  fullName: VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId*
-  name: ChannelId
-  href: api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html#VulcanAI_Infrastructure_Configuration_DiscordConfig_ChannelId_
-  commentId: Overload:VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId
-  isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Configuration.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Infrastructure.Configuration.DiscordConfig.Token
-  name: Token
-  href: api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html#VulcanAI_Infrastructure_Configuration_DiscordConfig_Token
-  commentId: P:VulcanAI.Infrastructure.Configuration.DiscordConfig.Token
-  fullName: VulcanAI.Infrastructure.Configuration.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
-- uid: VulcanAI.Infrastructure.Configuration.DiscordConfig.Token*
-  name: Token
-  href: api/VulcanAI.Infrastructure.Configuration.DiscordConfig.html#VulcanAI_Infrastructure_Configuration_DiscordConfig_Token_
-  commentId: Overload:VulcanAI.Infrastructure.Configuration.DiscordConfig.Token
-  isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Configuration.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
 - uid: VulcanAI.Infrastructure.Discord
   name: VulcanAI.Infrastructure.Discord
   href: api/VulcanAI.Infrastructure.Discord.html
   commentId: N:VulcanAI.Infrastructure.Discord
   fullName: VulcanAI.Infrastructure.Discord
   nameWithType: VulcanAI.Infrastructure.Discord
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface
-  name: DiscordInterface
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html
-  commentId: T:VulcanAI.Infrastructure.Discord.DiscordInterface
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface
-  nameWithType: DiscordInterface
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Infrastructure.Discord.DiscordInterface},System.String,System.UInt64)
-  name: DiscordInterface(DiscordSocketClient, ILogger<DiscordInterface>, string, ulong)
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Infrastructure_Discord_DiscordInterface__System_String_System_UInt64_
-  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Infrastructure.Discord.DiscordInterface},System.String,System.UInt64)
-  name.vb: New(DiscordSocketClient, ILogger(Of DiscordInterface), String, ULong)
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.DiscordInterface(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Infrastructure.Discord.DiscordInterface>, string, ulong)
-  fullName.vb: VulcanAI.Infrastructure.Discord.DiscordInterface.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Infrastructure.Discord.DiscordInterface), String, ULong)
-  nameWithType: DiscordInterface.DiscordInterface(DiscordSocketClient, ILogger<DiscordInterface>, string, ulong)
-  nameWithType.vb: DiscordInterface.New(DiscordSocketClient, ILogger(Of DiscordInterface), String, ULong)
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.#ctor*
-  name: DiscordInterface
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface__ctor_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.#ctor
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector
+  name: DiscordConnector
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html
+  commentId: T:VulcanAI.Infrastructure.Discord.DiscordConnector
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector
+  nameWithType: DiscordConnector
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Infrastructure.Discord.DiscordConnector},System.String,System.UInt64)
+  name: DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Infrastructure_Discord_DiscordConnector__System_String_System_UInt64_
+  commentId: M:VulcanAI.Infrastructure.Discord.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Infrastructure.Discord.DiscordConnector},System.String,System.UInt64)
+  name.vb: New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.DiscordConnector(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Infrastructure.Discord.DiscordConnector>, string, ulong)
+  fullName.vb: VulcanAI.Infrastructure.Discord.DiscordConnector.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Infrastructure.Discord.DiscordConnector), String, ULong)
+  nameWithType: DiscordConnector.DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
+  nameWithType.vb: DiscordConnector.New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.#ctor*
+  name: DiscordConnector
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector__ctor_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.DiscordInterface
-  fullName.vb: VulcanAI.Infrastructure.Discord.DiscordInterface.New
-  nameWithType: DiscordInterface.DiscordInterface
-  nameWithType.vb: DiscordInterface.New
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.DiscordConnector
+  fullName.vb: VulcanAI.Infrastructure.Discord.DiscordConnector.New
+  nameWithType: DiscordConnector.DiscordConnector
+  nameWithType.vb: DiscordConnector.New
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady
   name: IsReady
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_IsReady
-  commentId: P:VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady
-  nameWithType: DiscordInterface.IsReady
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady*
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_IsReady
+  commentId: P:VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady
+  nameWithType: DiscordConnector.IsReady
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady*
   name: IsReady
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_IsReady_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_IsReady_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady
   isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.IsReady
-  nameWithType: DiscordInterface.IsReady
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.OnMessageReceived
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.IsReady
+  nameWithType: DiscordConnector.IsReady
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.OnMessageReceived
   name: OnMessageReceived
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_OnMessageReceived
-  commentId: E:VulcanAI.Infrastructure.Discord.DiscordInterface.OnMessageReceived
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.OnMessageReceived
-  nameWithType: DiscordInterface.OnMessageReceived
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_OnMessageReceived
+  commentId: E:VulcanAI.Infrastructure.Discord.DiscordConnector.OnMessageReceived
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.OnMessageReceived
+  nameWithType: DiscordConnector.OnMessageReceived
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask
   name: ReadyTask
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_ReadyTask
-  commentId: P:VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
-  nameWithType: DiscordInterface.ReadyTask
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask*
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_ReadyTask
+  commentId: P:VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask
+  nameWithType: DiscordConnector.ReadyTask
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask*
   name: ReadyTask
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_ReadyTask_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_ReadyTask_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask
   isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
-  nameWithType: DiscordInterface.ReadyTask
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.ReadyTask
+  nameWithType: DiscordConnector.ReadyTask
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
   name: SendMessageAsync(Message)
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_SendMessageAsync_VulcanAI_Connectors_Message_
-  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
-  nameWithType: DiscordInterface.SendMessageAsync(Message)
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync*
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  nameWithType: DiscordConnector.SendMessageAsync(Message)
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync*
   name: SendMessageAsync
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_SendMessageAsync_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_SendMessageAsync_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync
   isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync
-  nameWithType: DiscordInterface.SendMessageAsync
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.SendMessageAsync
+  nameWithType: DiscordConnector.SendMessageAsync
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync
   name: StartAsync()
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_StartAsync
-  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync()
-  nameWithType: DiscordInterface.StartAsync()
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync*
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_StartAsync
+  commentId: M:VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync()
+  nameWithType: DiscordConnector.StartAsync()
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync*
   name: StartAsync
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_StartAsync_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_StartAsync_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync
   isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.StartAsync
-  nameWithType: DiscordInterface.StartAsync
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.StartAsync
+  nameWithType: DiscordConnector.StartAsync
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync
   name: StopAsync()
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_StopAsync
-  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync()
-  nameWithType: DiscordInterface.StopAsync()
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync*
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_StopAsync
+  commentId: M:VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync()
+  nameWithType: DiscordConnector.StopAsync()
+- uid: VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync*
   name: StopAsync
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_StopAsync_
-  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync
+  href: api/VulcanAI.Infrastructure.Discord.DiscordConnector.html#VulcanAI_Infrastructure_Discord_DiscordConnector_StopAsync_
+  commentId: Overload:VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync
   isSpec: "True"
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.StopAsync
-  nameWithType: DiscordInterface.StopAsync
+  fullName: VulcanAI.Infrastructure.Discord.DiscordConnector.StopAsync
+  nameWithType: DiscordConnector.StopAsync
 - uid: VulcanAI.Knowledge
   name: VulcanAI.Knowledge
   href: api/VulcanAI.Knowledge.html
