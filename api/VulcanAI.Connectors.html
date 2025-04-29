@@ -83,6 +83,11 @@ Messages are displayed in the format [Sender] Content, and user input is capture
       <h4><a class="xref" href="VulcanAI.Connectors.DiscordConfig.html">DiscordConfig</a></h4>
       <section><p>Represents the configuration settings for the Discord interface.</p>
 </section>
+      <h4><a class="xref" href="VulcanAI.Connectors.DiscordConnector.html">DiscordConnector</a></h4>
+      <section><p>Implements the <a class="xref" href="VulcanAI.Connectors.IMessageConnector.html">IMessageConnector</a> for Discord, allowing the agent to send and receive messages
+through a Discord channel. Messages longer than Discord's 2000-character limit are automatically split
+into multiple messages.</p>
+</section>
       <h4><a class="xref" href="VulcanAI.Connectors.Message.html">Message</a></h4>
       <section><p>Represents a message in the chat system with metadata about the sender and timing.</p>
 </section>
@@ -90,11 +95,12 @@ Messages are displayed in the format [Sender] Content, and user input is capture
       <section><p>A null implementation of IMessageInterface that does nothing.
 This is used when no message interface is provided, to avoid null references.</p>
 </section>
+      <h4><a class="xref" href="VulcanAI.Connectors.ObsidianKnowledge.html">ObsidianKnowledge</a></h4>
+      <section><p>Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.</p>
+</section>
     <h3 id="interfaces">
 Interfaces
 </h3>
-      <h4><a class="xref" href="VulcanAI.Connectors.IHttpClient.html">IHttpClient</a></h4>
-      <section></section>
       <h4><a class="xref" href="VulcanAI.Connectors.IKnowledgeConnector.html">IKnowledgeConnector</a></h4>
       <section><p>Defines the interface for a knowledge store that can store and retrieve knowledge items.</p>
 </section>

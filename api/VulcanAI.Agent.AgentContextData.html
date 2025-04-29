@@ -5,11 +5,11 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class AgentConfig </title>
+      <title>Class AgentContextData </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class AgentConfig ">
+      <meta name="title" content="Class AgentContextData ">
     
-    
+    <meta name="description" content="Represents the data structure used for serializing and deserializing the agent context.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -66,17 +66,18 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VulcanAI.Configuration.AgentConfig">
+            <article class="content wrap" id="_content" data-uid="VulcanAI.Agent.AgentContextData">
 
 
 
-  <h1 id="VulcanAI_Configuration_AgentConfig" data-uid="VulcanAI.Configuration.AgentConfig" class="text-break">Class AgentConfig</h1>
-  <div class="markdown level0 summary"></div>
+  <h1 id="VulcanAI_Agent_AgentContextData" data-uid="VulcanAI.Agent.AgentContextData" class="text-break">Class AgentContextData</h1>
+  <div class="markdown level0 summary"><p>Represents the data structure used for serializing and deserializing the agent context.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">AgentConfig</span></div>
+    <div class="level1"><span class="xref">AgentContextData</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -102,28 +103,30 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Configuration.html">Configuration</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Agent.html">Agent</a></h6>
   <h6><strong>Assembly</strong>: VulcanAI.dll</h6>
-  <h5 id="VulcanAI_Configuration_AgentConfig_syntax">Syntax</h5>
+  <h5 id="VulcanAI_Agent_AgentContextData_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AgentConfig</code></pre>
+    <pre><code class="lang-csharp hljs">public class AgentContextData</code></pre>
   </div>
   <h3 id="properties">Properties
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Configuration_AgentConfig_Name.md&amp;value=---%0Auid%3A%20VulcanAI.Configuration.AgentConfig.Name%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Agent_AgentContextData_ContextFields.md&amp;value=---%0Auid%3A%20VulcanAI.Agent.AgentContextData.ContextFields%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentConfig.cs/#L6">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentContextData.cs/#L21">View Source</a>
   </span>
-  <a id="VulcanAI_Configuration_AgentConfig_Name_" data-uid="VulcanAI.Configuration.AgentConfig.Name*"></a>
-  <h4 id="VulcanAI_Configuration_AgentConfig_Name" data-uid="VulcanAI.Configuration.AgentConfig.Name">Name</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="VulcanAI_Agent_AgentContextData_ContextFields_" data-uid="VulcanAI.Agent.AgentContextData.ContextFields*"></a>
+  <h4 id="VulcanAI_Agent_AgentContextData_ContextFields" data-uid="VulcanAI.Agent.AgentContextData.ContextFields">ContextFields</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the context fields.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonRequired]
+public Dictionary&lt;string, string&gt; ContextFields { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -135,25 +138,59 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Configuration_AgentConfig_SystemPrompt.md&amp;value=---%0Auid%3A%20VulcanAI.Configuration.AgentConfig.SystemPrompt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Agent_AgentContextData_ConversationHistory.md&amp;value=---%0Auid%3A%20VulcanAI.Agent.AgentContextData.ConversationHistory%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentConfig.cs/#L5">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentContextData.cs/#L27">View Source</a>
   </span>
-  <a id="VulcanAI_Configuration_AgentConfig_SystemPrompt_" data-uid="VulcanAI.Configuration.AgentConfig.SystemPrompt*"></a>
-  <h4 id="VulcanAI_Configuration_AgentConfig_SystemPrompt" data-uid="VulcanAI.Configuration.AgentConfig.SystemPrompt">SystemPrompt</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="VulcanAI_Agent_AgentContextData_ConversationHistory_" data-uid="VulcanAI.Agent.AgentContextData.ConversationHistory*"></a>
+  <h4 id="VulcanAI_Agent_AgentContextData_ConversationHistory" data-uid="VulcanAI.Agent.AgentContextData.ConversationHistory">ConversationHistory</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the conversation history.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string SystemPrompt { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonRequired]
+public List&lt;Message&gt; ConversationHistory { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="VulcanAI.Connectors.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Agent_AgentContextData_SystemPrompt.md&amp;value=---%0Auid%3A%20VulcanAI.Agent.AgentContextData.SystemPrompt%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentContextData.cs/#L15">View Source</a>
+  </span>
+  <a id="VulcanAI_Agent_AgentContextData_SystemPrompt_" data-uid="VulcanAI.Agent.AgentContextData.SystemPrompt*"></a>
+  <h4 id="VulcanAI_Agent_AgentContextData_SystemPrompt" data-uid="VulcanAI.Agent.AgentContextData.SystemPrompt">SystemPrompt</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the system prompt.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonRequired]
+public string SystemPrompt { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
@@ -179,10 +216,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Configuration_AgentConfig.md&amp;value=---%0Auid%3A%20VulcanAI.Configuration.AgentConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Agent_AgentContextData.md&amp;value=---%0Auid%3A%20VulcanAI.Agent.AgentContextData%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentConfig.cs/#L3" class="contribution-link">View Source</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Agent/AgentContextData.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

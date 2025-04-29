@@ -4,10 +4,30 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Agent.AgentConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Agent.AgentConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Agent.AgentContext.yml",
       "output": {
         ".html": {
           "relative_path": "api/VulcanAI.Agent.AgentContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Agent.AgentContextData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Agent.AgentContextData.html"
         }
       },
       "version": ""
@@ -44,36 +64,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.AgentContextData.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.AgentContextData.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Configuration.AgentConfig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Configuration.AgentConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Configuration.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Configuration.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Connectors.ConsoleConnector.yml",
       "output": {
         ".html": {
@@ -94,10 +84,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Connectors.IHttpClient.yml",
+      "source_relative_path": "api/VulcanAI.Connectors.DiscordConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Connectors.IHttpClient.html"
+          "relative_path": "api/VulcanAI.Connectors.DiscordConnector.html"
         }
       },
       "version": ""
@@ -144,30 +134,20 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.Connectors.ObsidianKnowledge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.Connectors.ObsidianKnowledge.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Connectors.yml",
       "output": {
         ".html": {
           "relative_path": "api/VulcanAI.Connectors.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordConnector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Infrastructure.Discord.DiscordConnector.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Infrastructure.Discord.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Infrastructure.Discord.html"
         }
       },
       "version": ""
@@ -188,16 +168,6 @@
       "output": {
         ".html": {
           "relative_path": "api/VulcanAI.Knowledge.KnowledgeCollection.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Knowledge.ObsidianKnowledge.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Knowledge.ObsidianKnowledge.html"
         }
       },
       "version": ""
@@ -228,6 +198,16 @@
       "output": {
         ".html": {
           "relative_path": "api/VulcanAI.LLM.HttpClientWrapper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/VulcanAI.LLM.IHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/VulcanAI.LLM.IHttpClient.html"
         }
       },
       "version": ""
@@ -278,16 +258,6 @@
       "output": {
         ".html": {
           "relative_path": "api/VulcanAI.LLM.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.html"
         }
       },
       "version": ""
