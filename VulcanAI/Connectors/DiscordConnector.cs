@@ -7,7 +7,6 @@ using Microsoft.Extensions.Logging;
 
 namespace VulcanAI.Core.Connectors;
 
-
 public class DiscordConnector : IMessageConnector
 {
     private readonly DiscordSocketClient _client;
