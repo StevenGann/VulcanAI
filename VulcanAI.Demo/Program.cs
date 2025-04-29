@@ -7,14 +7,12 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using VulcanAI.Agent;
 using VulcanAI.LLM;
-using VulcanAI.Configuration;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Diagnostics;
 using System.Threading;
-using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Connectors;
 using Discord.WebSocket;
 using System.Net.Http;
@@ -96,13 +94,13 @@ namespace VulcanAI.Demo
                             return;
                         }
 
-                        var discordLogger = loggerFactory.CreateLogger<VulcanAI.Infrastructure.Discord.DiscordConnector>();
+                        var discordLogger = loggerFactory.CreateLogger<VulcanAI.Connectors.DiscordConnector>();
                         var socketConfig = new DiscordSocketConfig
                         {
                             GatewayIntents = GatewayIntents.All
                         };
                         var discordClient = new DiscordSocketClient(socketConfig);
-                        messageInterface = new VulcanAI.Infrastructure.Discord.DiscordConnector(
+                        messageInterface = new VulcanAI.Connectors.DiscordConnector(
                             discordClient,
                             discordLogger,
                             discordConfig.Token,

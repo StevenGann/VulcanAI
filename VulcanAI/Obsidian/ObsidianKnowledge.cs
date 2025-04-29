@@ -13,7 +13,7 @@ using System.Threading;
 using ObsidianDB;
 using VulcanAI.Connectors;
 
-namespace VulcanAI.Knowledge
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// Implementation of IKnowledgeStore that uses ObsidianDB as the underlying storage.
@@ -74,7 +74,7 @@ namespace VulcanAI.Knowledge
                 double score = CalculateRelevanceScore(note, query);
                 if (score > 0)
                 {
-                    var knowledge = new Knowledge(note.Body, note.Path);
+                    var knowledge = new Knowledge.Knowledge(note.Body, note.Path);
                     collection.Add(knowledge, score);
                 }
             }
@@ -96,7 +96,7 @@ namespace VulcanAI.Knowledge
         /// <exception cref="ArgumentNullException">Thrown when knowledge is null.</exception>
         /// <exception cref="InvalidOperationException">Thrown when the store is not started.</exception>
         /// <exception cref="NotImplementedException">Thrown as this feature is not yet implemented in ObsidianDB.</exception>
-        public Task AddKnowledgeAsync(Knowledge knowledge)
+        public Task AddKnowledgeAsync(Knowledge.Knowledge knowledge)
         {
             if (!_isStarted)
                 throw new InvalidOperationException("Knowledge store must be started before adding knowledge.");

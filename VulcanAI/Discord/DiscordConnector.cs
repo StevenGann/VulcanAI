@@ -5,7 +5,7 @@ using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Infrastructure.Discord
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// Implements the <see cref="IMessageConnector"/> for Discord, allowing the agent to send and receive messages

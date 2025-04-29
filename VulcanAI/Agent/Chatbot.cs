@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using VulcanAI.LLM;
-using VulcanAI.Configuration;
 using VulcanAI.Knowledge;
 using System.Text.Json;
 using System.Text.Json.Serialization;
@@ -14,7 +13,6 @@ using System.Diagnostics;
 using System.Threading;
 using Microsoft.Extensions.Logging;
 using VulcanAI.Connectors;
-using VulcanAI.Infrastructure.Discord;
 
 namespace VulcanAI.Agent;
 
@@ -182,7 +180,7 @@ public class Chatbot : IAgent, IDisposable
             try
             {
                 // If using Discord, wait for it to be ready
-                if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordConnector discordInterface)
+                if (_messageInterface is VulcanAI.Connectors.DiscordConnector discordInterface)
                 {
                     _logger.LogInformation("Waiting for Discord interface to be ready before sending online announcement...");
                     await discordInterface.ReadyTask;
@@ -472,7 +470,7 @@ public class Chatbot : IAgent, IDisposable
             }
 
             // If the message interface is Discord, wait for it to be ready
-            if (_messageInterface is VulcanAI.Infrastructure.Discord.DiscordConnector discordInterface)
+            if (_messageInterface is VulcanAI.Connectors.DiscordConnector discordInterface)
             {
                 if (!discordInterface.IsReady)
                 {

@@ -2,7 +2,7 @@ using VulcanAI.Connectors;
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace VulcanAI;
+namespace VulcanAI.Agent;
 
 /// <summary>
 /// Represents the data structure used for serializing and deserializing the agent context.
