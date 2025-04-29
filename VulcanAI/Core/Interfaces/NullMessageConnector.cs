@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.Connectors
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// A null implementation of IMessageInterface that does nothing.

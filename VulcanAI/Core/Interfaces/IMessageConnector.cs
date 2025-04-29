@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace VulcanAI.Core.Connectors
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// Represents a message in the chat system with metadata about the sender and timing.

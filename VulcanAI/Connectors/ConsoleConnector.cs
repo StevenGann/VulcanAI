@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 using Microsoft.Extensions.Logging;
 
-namespace VulcanAI.Core.Connectors;
+namespace VulcanAI.Connectors;
 
 /// <summary>
 /// Implements the <see cref="IMessageConnector"/> for console-based communication.

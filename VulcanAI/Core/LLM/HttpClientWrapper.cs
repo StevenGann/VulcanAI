@@ -1,7 +1,7 @@
 using System;
 using System.Net.Http;
 using System.Threading.Tasks;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 
 namespace VulcanAI.Core.LLM;
 

@@ -6,7 +6,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using VulcanAI.Core.Knowledge;
 
-namespace VulcanAI.Core.Connectors
+namespace VulcanAI.Connectors
 {
     /// <summary>
     /// Defines the interface for a knowledge store that can store and retrieve knowledge items.
@@ -37,7 +37,7 @@ namespace VulcanAI.Core.Connectors
         /// <param name="knowledge">The knowledge item to add.</param>
         /// <returns>A task that represents the asynchronous operation.</returns>
         /// <exception cref="ArgumentNullException">Thrown when knowledge is null.</exception>
-        Task AddKnowledgeAsync(Knowledge.Knowledge knowledge);
+        Task AddKnowledgeAsync(Knowledge knowledge);
 
         /// <summary>
         /// Starts the knowledge store and performs any necessary initialization.

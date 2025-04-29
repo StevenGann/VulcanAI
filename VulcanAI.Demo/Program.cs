@@ -7,7 +7,7 @@ using VulcanAI.Core.Agent;
 using VulcanAI.Core.LLM;
 using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Core.Configuration;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 using Discord.WebSocket;
 using System.Net.Http;
 using System.Threading;

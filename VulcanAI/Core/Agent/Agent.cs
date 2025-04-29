@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using VulcanAI.Core.LLM;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 using VulcanAI.Core.Configuration;
 using VulcanAI.Infrastructure.Discord;
 using System.Text;
@@ -281,7 +281,7 @@ public class Agent : IDisposable
     /// It adds the message to the conversation history, generates a response using the LLM,
     /// and sends the response back through the message interface.
     /// </remarks>
-    private async void HandleMessageReceived(object? sender, Core.Connectors.Message e)
+    private async void HandleMessageReceived(object? sender, VulcanAI.Connectors.Message e)
     {
         try
         {

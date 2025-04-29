@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Threading.Tasks;
 using ObsidianDB;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 using VulcanAI.Core.Knowledge;
 
 namespace VulcanAI.Core.Knowledge

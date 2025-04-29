@@ -1,6 +1,6 @@
 using System;
 using System.Threading.Tasks;
-using VulcanAI.Core.Connectors;
+using VulcanAI.Connectors;
 using Discord;
 using Discord.WebSocket;
 using Microsoft.Extensions.Logging;
