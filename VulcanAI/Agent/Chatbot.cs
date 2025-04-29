@@ -18,7 +18,7 @@ namespace VulcanAI.Agent;
 
 
 /// <summary>
-/// Represents an AI agent that can process messages and generate responses using a language model.
+/// A reference implementation of `IAgent` that represents an AI agent that can process messages and generate responses using a language model.
 /// The agent maintains conversation history and context, which is persisted to disk periodically
 /// and loaded when the agent is restarted.
 /// </summary>
@@ -98,7 +98,7 @@ public class Chatbot : IAgent, IDisposable
 
             var response = await _llmClient.GetCompletionAsync(prompt);
             await SendMessageAsync(response);
-            
+
             // Reset the timer for the next message
             ResetPeriodicMessageTimer();
         }
@@ -300,7 +300,7 @@ public class Chatbot : IAgent, IDisposable
 
             _logger.LogInformation("Processing message with LLM");
             var response = await SendPromptAsync(e.Content);
-            
+
             if (!string.IsNullOrWhiteSpace(response))
             {
                 _logger.LogInformation("Sending response to message interface: {Response}", response);
@@ -371,10 +371,10 @@ public class Chatbot : IAgent, IDisposable
 
             var response = await _llmClient.GetCompletionAsync(fullPrompt);
             _context.AddMessage(new Message(response, _agentName));
-            
+
             // Persist context after each message
             await PersistContextAsync();
-            
+
             return response;
         }
         catch (Exception ex)
@@ -412,10 +412,10 @@ public class Chatbot : IAgent, IDisposable
 
             var response = await _llmClient.GetCompletionAsync<T>(fullPrompt, options);
             _context.AddMessage(new Message(JsonSerializer.Serialize(response), _agentName));
-            
+
             // Persist context after each message
             await PersistContextAsync();
-            
+
             return response;
         }
         catch (Exception ex)
@@ -553,14 +553,14 @@ public class Chatbot : IAgent, IDisposable
         var contextLogger = new LoggerFactory().CreateLogger<AgentContext>();
         var context = AgentContext.FromJson(json, contextLogger);
         var contextFields = context.ContextFields.ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
-        
+
         // Create a null message interface if none provided
         var interfaceToUse = messageInterface ?? new NullMessageInterface();
-        
+
         // Cast the logger to the correct type
-        var chatbotLogger = logger as ILogger<Chatbot> ?? 
+        var chatbotLogger = logger as ILogger<Chatbot> ??
             throw new InvalidOperationException("Logger must be convertible to ILogger<Chatbot>");
-        
+
         return new Chatbot(llmClient, chatbotLogger, context.SystemPrompt, interfaceToUse, agentName, contextFields);
     }
 
@@ -579,4 +579,4 @@ public class Chatbot : IAgent, IDisposable
         _periodicMessageTimer?.Dispose();
         PersistContext();
     }
-} 
+}
