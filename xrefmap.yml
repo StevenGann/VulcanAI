@@ -275,15 +275,15 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Agent.Chatbot.Dispose
   nameWithType: Chatbot.Dispose
-- uid: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
-  name: FromJson(ILLMClient, ILogger<Chatbot>, string, IMessageConnector?, string)
-  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_FromJson_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_Chatbot__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
-  commentId: M:VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.Chatbot},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
-  name.vb: FromJson(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String)
-  fullName: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.Chatbot>, string, VulcanAI.Connectors.IMessageConnector?, string)
-  fullName.vb: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.Chatbot), String, VulcanAI.Connectors.IMessageConnector, String)
-  nameWithType: Chatbot.FromJson(ILLMClient, ILogger<Chatbot>, string, IMessageConnector?, string)
-  nameWithType.vb: Chatbot.FromJson(ILLMClient, ILogger(Of Chatbot), String, IMessageConnector, String)
+- uid: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.IAgent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name: FromJson(ILLMClient, ILogger<IAgent>, string, IMessageConnector?, string)
+  href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_FromJson_VulcanAI_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Agent_IAgent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
+  commentId: M:VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Agent.IAgent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
+  name.vb: FromJson(ILLMClient, ILogger(Of IAgent), String, IMessageConnector, String)
+  fullName: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Agent.IAgent>, string, VulcanAI.Connectors.IMessageConnector?, string)
+  fullName.vb: VulcanAI.Agent.Chatbot.FromJson(VulcanAI.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Agent.IAgent), String, VulcanAI.Connectors.IMessageConnector, String)
+  nameWithType: Chatbot.FromJson(ILLMClient, ILogger<IAgent>, string, IMessageConnector?, string)
+  nameWithType.vb: Chatbot.FromJson(ILLMClient, ILogger(Of IAgent), String, IMessageConnector, String)
 - uid: VulcanAI.Agent.Chatbot.FromJson*
   name: FromJson
   href: api/VulcanAI.Agent.Chatbot.html#VulcanAI_Agent_Chatbot_FromJson_
@@ -657,6 +657,15 @@ references:
   commentId: E:VulcanAI.Connectors.ConsoleConnector.OnMessageReceived
   fullName: VulcanAI.Connectors.ConsoleConnector.OnMessageReceived
   nameWithType: ConsoleConnector.OnMessageReceived
+- uid: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(System.String)
+  name: SendMessageAsync(string)
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_SendMessageAsync_System_String_
+  commentId: M:VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(System.String)
+  name.vb: SendMessageAsync(String)
+  fullName: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(string)
+  fullName.vb: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(String)
+  nameWithType: ConsoleConnector.SendMessageAsync(string)
+  nameWithType.vb: ConsoleConnector.SendMessageAsync(String)
 - uid: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Connectors.Message)
   name: SendMessageAsync(Message)
   href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Connectors_Message_
@@ -1184,6 +1193,22 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Knowledge.KnowledgeCollection.Add
   nameWithType: KnowledgeCollection.Add
+- uid: VulcanAI.Knowledge.KnowledgeCollection.AddDocument(System.String,System.String)
+  name: AddDocument(string, string)
+  href: api/VulcanAI.Knowledge.KnowledgeCollection.html#VulcanAI_Knowledge_KnowledgeCollection_AddDocument_System_String_System_String_
+  commentId: M:VulcanAI.Knowledge.KnowledgeCollection.AddDocument(System.String,System.String)
+  name.vb: AddDocument(String, String)
+  fullName: VulcanAI.Knowledge.KnowledgeCollection.AddDocument(string, string)
+  fullName.vb: VulcanAI.Knowledge.KnowledgeCollection.AddDocument(String, String)
+  nameWithType: KnowledgeCollection.AddDocument(string, string)
+  nameWithType.vb: KnowledgeCollection.AddDocument(String, String)
+- uid: VulcanAI.Knowledge.KnowledgeCollection.AddDocument*
+  name: AddDocument
+  href: api/VulcanAI.Knowledge.KnowledgeCollection.html#VulcanAI_Knowledge_KnowledgeCollection_AddDocument_
+  commentId: Overload:VulcanAI.Knowledge.KnowledgeCollection.AddDocument
+  isSpec: "True"
+  fullName: VulcanAI.Knowledge.KnowledgeCollection.AddDocument
+  nameWithType: KnowledgeCollection.AddDocument
 - uid: VulcanAI.Knowledge.KnowledgeCollection.Clear
   name: Clear()
   href: api/VulcanAI.Knowledge.KnowledgeCollection.html#VulcanAI_Knowledge_KnowledgeCollection_Clear
