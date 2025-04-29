@@ -1,6 +1,414 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: VulcanAI.Connectors
+  name: VulcanAI.Connectors
+  href: api/VulcanAI.Connectors.html
+  commentId: N:VulcanAI.Connectors
+  fullName: VulcanAI.Connectors
+  nameWithType: VulcanAI.Connectors
+- uid: VulcanAI.Connectors.ConsoleConnector
+  name: ConsoleConnector
+  href: api/VulcanAI.Connectors.ConsoleConnector.html
+  commentId: T:VulcanAI.Connectors.ConsoleConnector
+  fullName: VulcanAI.Connectors.ConsoleConnector
+  nameWithType: ConsoleConnector
+- uid: VulcanAI.Connectors.ConsoleConnector.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.ConsoleConnector})
+  name: ConsoleConnector(ILogger<ConsoleConnector>)
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Connectors_ConsoleConnector__
+  commentId: M:VulcanAI.Connectors.ConsoleConnector.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.ConsoleConnector})
+  name.vb: New(ILogger(Of ConsoleConnector))
+  fullName: VulcanAI.Connectors.ConsoleConnector.ConsoleConnector(Microsoft.Extensions.Logging.ILogger<VulcanAI.Connectors.ConsoleConnector>)
+  fullName.vb: VulcanAI.Connectors.ConsoleConnector.New(Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Connectors.ConsoleConnector))
+  nameWithType: ConsoleConnector.ConsoleConnector(ILogger<ConsoleConnector>)
+  nameWithType.vb: ConsoleConnector.New(ILogger(Of ConsoleConnector))
+- uid: VulcanAI.Connectors.ConsoleConnector.#ctor*
+  name: ConsoleConnector
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector__ctor_
+  commentId: Overload:VulcanAI.Connectors.ConsoleConnector.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VulcanAI.Connectors.ConsoleConnector.ConsoleConnector
+  fullName.vb: VulcanAI.Connectors.ConsoleConnector.New
+  nameWithType: ConsoleConnector.ConsoleConnector
+  nameWithType.vb: ConsoleConnector.New
+- uid: VulcanAI.Connectors.ConsoleConnector.OnMessageReceived
+  name: OnMessageReceived
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_OnMessageReceived
+  commentId: E:VulcanAI.Connectors.ConsoleConnector.OnMessageReceived
+  fullName: VulcanAI.Connectors.ConsoleConnector.OnMessageReceived
+  nameWithType: ConsoleConnector.OnMessageReceived
+- uid: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  name: SendMessageAsync(Message)
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  nameWithType: ConsoleConnector.SendMessageAsync(Message)
+- uid: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_SendMessageAsync_
+  commentId: Overload:VulcanAI.Connectors.ConsoleConnector.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.ConsoleConnector.SendMessageAsync
+  nameWithType: ConsoleConnector.SendMessageAsync
+- uid: VulcanAI.Connectors.ConsoleConnector.StartAsync
+  name: StartAsync()
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_StartAsync
+  commentId: M:VulcanAI.Connectors.ConsoleConnector.StartAsync
+  fullName: VulcanAI.Connectors.ConsoleConnector.StartAsync()
+  nameWithType: ConsoleConnector.StartAsync()
+- uid: VulcanAI.Connectors.ConsoleConnector.StartAsync*
+  name: StartAsync
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.ConsoleConnector.StartAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.ConsoleConnector.StartAsync
+  nameWithType: ConsoleConnector.StartAsync
+- uid: VulcanAI.Connectors.ConsoleConnector.StopAsync
+  name: StopAsync()
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_StopAsync
+  commentId: M:VulcanAI.Connectors.ConsoleConnector.StopAsync
+  fullName: VulcanAI.Connectors.ConsoleConnector.StopAsync()
+  nameWithType: ConsoleConnector.StopAsync()
+- uid: VulcanAI.Connectors.ConsoleConnector.StopAsync*
+  name: StopAsync
+  href: api/VulcanAI.Connectors.ConsoleConnector.html#VulcanAI_Connectors_ConsoleConnector_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.ConsoleConnector.StopAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.ConsoleConnector.StopAsync
+  nameWithType: ConsoleConnector.StopAsync
+- uid: VulcanAI.Connectors.DiscordConnector
+  name: DiscordConnector
+  href: api/VulcanAI.Connectors.DiscordConnector.html
+  commentId: T:VulcanAI.Connectors.DiscordConnector
+  fullName: VulcanAI.Connectors.DiscordConnector
+  nameWithType: DiscordConnector
+- uid: VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
+  name: DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Connectors_DiscordConnector__System_String_System_UInt64_
+  commentId: M:VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
+  name.vb: New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
+  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Connectors.DiscordConnector>, string, ulong)
+  fullName.vb: VulcanAI.Connectors.DiscordConnector.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Connectors.DiscordConnector), String, ULong)
+  nameWithType: DiscordConnector.DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
+  nameWithType.vb: DiscordConnector.New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
+- uid: VulcanAI.Connectors.DiscordConnector.#ctor*
+  name: DiscordConnector
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_
+  commentId: Overload:VulcanAI.Connectors.DiscordConnector.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector
+  fullName.vb: VulcanAI.Connectors.DiscordConnector.New
+  nameWithType: DiscordConnector.DiscordConnector
+  nameWithType.vb: DiscordConnector.New
+- uid: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
+  name: OnMessageReceived
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_OnMessageReceived
+  commentId: E:VulcanAI.Connectors.DiscordConnector.OnMessageReceived
+  fullName: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
+  nameWithType: DiscordConnector.OnMessageReceived
+- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  name: SendMessageAsync(Message)
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  nameWithType: DiscordConnector.SendMessageAsync(Message)
+- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_
+  commentId: Overload:VulcanAI.Connectors.DiscordConnector.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync
+  nameWithType: DiscordConnector.SendMessageAsync
+- uid: VulcanAI.Connectors.DiscordConnector.StartAsync
+  name: StartAsync()
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync
+  commentId: M:VulcanAI.Connectors.DiscordConnector.StartAsync
+  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync()
+  nameWithType: DiscordConnector.StartAsync()
+- uid: VulcanAI.Connectors.DiscordConnector.StartAsync*
+  name: StartAsync
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StartAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync
+  nameWithType: DiscordConnector.StartAsync
+- uid: VulcanAI.Connectors.DiscordConnector.StopAsync
+  name: StopAsync()
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync
+  commentId: M:VulcanAI.Connectors.DiscordConnector.StopAsync
+  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync()
+  nameWithType: DiscordConnector.StopAsync()
+- uid: VulcanAI.Connectors.DiscordConnector.StopAsync*
+  name: StopAsync
+  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StopAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync
+  nameWithType: DiscordConnector.StopAsync
+- uid: VulcanAI.Connectors.IHttpClient
+  name: IHttpClient
+  href: api/VulcanAI.Connectors.IHttpClient.html
+  commentId: T:VulcanAI.Connectors.IHttpClient
+  fullName: VulcanAI.Connectors.IHttpClient
+  nameWithType: IHttpClient
+- uid: VulcanAI.Connectors.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  name: PostAsync(string, HttpContent)
+  href: api/VulcanAI.Connectors.IHttpClient.html#VulcanAI_Connectors_IHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_
+  commentId: M:VulcanAI.Connectors.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
+  name.vb: PostAsync(String, HttpContent)
+  fullName: VulcanAI.Connectors.IHttpClient.PostAsync(string, System.Net.Http.HttpContent)
+  fullName.vb: VulcanAI.Connectors.IHttpClient.PostAsync(String, System.Net.Http.HttpContent)
+  nameWithType: IHttpClient.PostAsync(string, HttpContent)
+  nameWithType.vb: IHttpClient.PostAsync(String, HttpContent)
+- uid: VulcanAI.Connectors.IHttpClient.PostAsync*
+  name: PostAsync
+  href: api/VulcanAI.Connectors.IHttpClient.html#VulcanAI_Connectors_IHttpClient_PostAsync_
+  commentId: Overload:VulcanAI.Connectors.IHttpClient.PostAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IHttpClient.PostAsync
+  nameWithType: IHttpClient.PostAsync
+- uid: VulcanAI.Connectors.IKnowledgeConnector
+  name: IKnowledgeConnector
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html
+  commentId: T:VulcanAI.Connectors.IKnowledgeConnector
+  fullName: VulcanAI.Connectors.IKnowledgeConnector
+  nameWithType: IKnowledgeConnector
+- uid: VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
+  name: AddKnowledgeAsync(Knowledge)
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_
+  commentId: M:VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
+  nameWithType: IKnowledgeConnector.AddKnowledgeAsync(Knowledge)
+- uid: VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync*
+  name: AddKnowledgeAsync
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_AddKnowledgeAsync_
+  commentId: Overload:VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.AddKnowledgeAsync
+  nameWithType: IKnowledgeConnector.AddKnowledgeAsync
+- uid: VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
+  name: QueryKnowledgeAsync(string, int?)
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__
+  commentId: M:VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
+  name.vb: QueryKnowledgeAsync(String, Integer?)
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(string, int?)
+  fullName.vb: VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(String, Integer?)
+  nameWithType: IKnowledgeConnector.QueryKnowledgeAsync(string, int?)
+  nameWithType.vb: IKnowledgeConnector.QueryKnowledgeAsync(String, Integer?)
+- uid: VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync*
+  name: QueryKnowledgeAsync
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_
+  commentId: Overload:VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.QueryKnowledgeAsync
+  nameWithType: IKnowledgeConnector.QueryKnowledgeAsync
+- uid: VulcanAI.Connectors.IKnowledgeConnector.StartAsync
+  name: StartAsync()
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_StartAsync
+  commentId: M:VulcanAI.Connectors.IKnowledgeConnector.StartAsync
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.StartAsync()
+  nameWithType: IKnowledgeConnector.StartAsync()
+- uid: VulcanAI.Connectors.IKnowledgeConnector.StartAsync*
+  name: StartAsync
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.IKnowledgeConnector.StartAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.StartAsync
+  nameWithType: IKnowledgeConnector.StartAsync
+- uid: VulcanAI.Connectors.IKnowledgeConnector.StopAsync
+  name: StopAsync()
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_StopAsync
+  commentId: M:VulcanAI.Connectors.IKnowledgeConnector.StopAsync
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.StopAsync()
+  nameWithType: IKnowledgeConnector.StopAsync()
+- uid: VulcanAI.Connectors.IKnowledgeConnector.StopAsync*
+  name: StopAsync
+  href: api/VulcanAI.Connectors.IKnowledgeConnector.html#VulcanAI_Connectors_IKnowledgeConnector_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.IKnowledgeConnector.StopAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IKnowledgeConnector.StopAsync
+  nameWithType: IKnowledgeConnector.StopAsync
+- uid: VulcanAI.Connectors.IMessageConnector
+  name: IMessageConnector
+  href: api/VulcanAI.Connectors.IMessageConnector.html
+  commentId: T:VulcanAI.Connectors.IMessageConnector
+  fullName: VulcanAI.Connectors.IMessageConnector
+  nameWithType: IMessageConnector
+- uid: VulcanAI.Connectors.IMessageConnector.OnMessageReceived
+  name: OnMessageReceived
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_OnMessageReceived
+  commentId: E:VulcanAI.Connectors.IMessageConnector.OnMessageReceived
+  fullName: VulcanAI.Connectors.IMessageConnector.OnMessageReceived
+  nameWithType: IMessageConnector.OnMessageReceived
+- uid: VulcanAI.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  name: SendMessageAsync(Message)
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Connectors.Message)
+  nameWithType: IMessageConnector.SendMessageAsync(Message)
+- uid: VulcanAI.Connectors.IMessageConnector.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_SendMessageAsync_
+  commentId: Overload:VulcanAI.Connectors.IMessageConnector.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IMessageConnector.SendMessageAsync
+  nameWithType: IMessageConnector.SendMessageAsync
+- uid: VulcanAI.Connectors.IMessageConnector.StartAsync
+  name: StartAsync()
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_StartAsync
+  commentId: M:VulcanAI.Connectors.IMessageConnector.StartAsync
+  fullName: VulcanAI.Connectors.IMessageConnector.StartAsync()
+  nameWithType: IMessageConnector.StartAsync()
+- uid: VulcanAI.Connectors.IMessageConnector.StartAsync*
+  name: StartAsync
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.IMessageConnector.StartAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IMessageConnector.StartAsync
+  nameWithType: IMessageConnector.StartAsync
+- uid: VulcanAI.Connectors.IMessageConnector.StopAsync
+  name: StopAsync()
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_StopAsync
+  commentId: M:VulcanAI.Connectors.IMessageConnector.StopAsync
+  fullName: VulcanAI.Connectors.IMessageConnector.StopAsync()
+  nameWithType: IMessageConnector.StopAsync()
+- uid: VulcanAI.Connectors.IMessageConnector.StopAsync*
+  name: StopAsync
+  href: api/VulcanAI.Connectors.IMessageConnector.html#VulcanAI_Connectors_IMessageConnector_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.IMessageConnector.StopAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.IMessageConnector.StopAsync
+  nameWithType: IMessageConnector.StopAsync
+- uid: VulcanAI.Connectors.Message
+  name: Message
+  href: api/VulcanAI.Connectors.Message.html
+  commentId: T:VulcanAI.Connectors.Message
+  fullName: VulcanAI.Connectors.Message
+  nameWithType: Message
+- uid: VulcanAI.Connectors.Message.#ctor(System.String,System.String,System.String)
+  name: Message(string, string, string?)
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message__ctor_System_String_System_String_System_String_
+  commentId: M:VulcanAI.Connectors.Message.#ctor(System.String,System.String,System.String)
+  name.vb: New(String, String, String)
+  fullName: VulcanAI.Connectors.Message.Message(string, string, string?)
+  fullName.vb: VulcanAI.Connectors.Message.New(String, String, String)
+  nameWithType: Message.Message(string, string, string?)
+  nameWithType.vb: Message.New(String, String, String)
+- uid: VulcanAI.Connectors.Message.#ctor*
+  name: Message
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message__ctor_
+  commentId: Overload:VulcanAI.Connectors.Message.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: VulcanAI.Connectors.Message.Message
+  fullName.vb: VulcanAI.Connectors.Message.New
+  nameWithType: Message.Message
+  nameWithType.vb: Message.New
+- uid: VulcanAI.Connectors.Message.Channel
+  name: Channel
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Channel
+  commentId: P:VulcanAI.Connectors.Message.Channel
+  fullName: VulcanAI.Connectors.Message.Channel
+  nameWithType: Message.Channel
+- uid: VulcanAI.Connectors.Message.Channel*
+  name: Channel
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Channel_
+  commentId: Overload:VulcanAI.Connectors.Message.Channel
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.Message.Channel
+  nameWithType: Message.Channel
+- uid: VulcanAI.Connectors.Message.Content
+  name: Content
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Content
+  commentId: P:VulcanAI.Connectors.Message.Content
+  fullName: VulcanAI.Connectors.Message.Content
+  nameWithType: Message.Content
+- uid: VulcanAI.Connectors.Message.Content*
+  name: Content
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Content_
+  commentId: Overload:VulcanAI.Connectors.Message.Content
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.Message.Content
+  nameWithType: Message.Content
+- uid: VulcanAI.Connectors.Message.Sender
+  name: Sender
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Sender
+  commentId: P:VulcanAI.Connectors.Message.Sender
+  fullName: VulcanAI.Connectors.Message.Sender
+  nameWithType: Message.Sender
+- uid: VulcanAI.Connectors.Message.Sender*
+  name: Sender
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Sender_
+  commentId: Overload:VulcanAI.Connectors.Message.Sender
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.Message.Sender
+  nameWithType: Message.Sender
+- uid: VulcanAI.Connectors.Message.Timestamp
+  name: Timestamp
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Timestamp
+  commentId: P:VulcanAI.Connectors.Message.Timestamp
+  fullName: VulcanAI.Connectors.Message.Timestamp
+  nameWithType: Message.Timestamp
+- uid: VulcanAI.Connectors.Message.Timestamp*
+  name: Timestamp
+  href: api/VulcanAI.Connectors.Message.html#VulcanAI_Connectors_Message_Timestamp_
+  commentId: Overload:VulcanAI.Connectors.Message.Timestamp
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.Message.Timestamp
+  nameWithType: Message.Timestamp
+- uid: VulcanAI.Connectors.NullMessageInterface
+  name: NullMessageInterface
+  href: api/VulcanAI.Connectors.NullMessageInterface.html
+  commentId: T:VulcanAI.Connectors.NullMessageInterface
+  fullName: VulcanAI.Connectors.NullMessageInterface
+  nameWithType: NullMessageInterface
+- uid: VulcanAI.Connectors.NullMessageInterface.OnMessageReceived
+  name: OnMessageReceived
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_OnMessageReceived
+  commentId: E:VulcanAI.Connectors.NullMessageInterface.OnMessageReceived
+  fullName: VulcanAI.Connectors.NullMessageInterface.OnMessageReceived
+  nameWithType: NullMessageInterface.OnMessageReceived
+- uid: VulcanAI.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Connectors.Message)
+  name: SendMessageAsync(Message)
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Connectors.Message)
+  nameWithType: NullMessageInterface.SendMessageAsync(Message)
+- uid: VulcanAI.Connectors.NullMessageInterface.SendMessageAsync*
+  name: SendMessageAsync
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_SendMessageAsync_
+  commentId: Overload:VulcanAI.Connectors.NullMessageInterface.SendMessageAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.NullMessageInterface.SendMessageAsync
+  nameWithType: NullMessageInterface.SendMessageAsync
+- uid: VulcanAI.Connectors.NullMessageInterface.StartAsync
+  name: StartAsync()
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_StartAsync
+  commentId: M:VulcanAI.Connectors.NullMessageInterface.StartAsync
+  fullName: VulcanAI.Connectors.NullMessageInterface.StartAsync()
+  nameWithType: NullMessageInterface.StartAsync()
+- uid: VulcanAI.Connectors.NullMessageInterface.StartAsync*
+  name: StartAsync
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.NullMessageInterface.StartAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.NullMessageInterface.StartAsync
+  nameWithType: NullMessageInterface.StartAsync
+- uid: VulcanAI.Connectors.NullMessageInterface.StopAsync
+  name: StopAsync()
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_StopAsync
+  commentId: M:VulcanAI.Connectors.NullMessageInterface.StopAsync
+  fullName: VulcanAI.Connectors.NullMessageInterface.StopAsync()
+  nameWithType: NullMessageInterface.StopAsync()
+- uid: VulcanAI.Connectors.NullMessageInterface.StopAsync*
+  name: StopAsync
+  href: api/VulcanAI.Connectors.NullMessageInterface.html#VulcanAI_Connectors_NullMessageInterface_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.NullMessageInterface.StopAsync
+  isSpec: "True"
+  fullName: VulcanAI.Connectors.NullMessageInterface.StopAsync
+  nameWithType: NullMessageInterface.StopAsync
 - uid: VulcanAI.Core
   name: VulcanAI.Core
   href: api/VulcanAI.Core.html
@@ -19,22 +427,22 @@ references:
   commentId: T:VulcanAI.Core.Agent.Agent
   fullName: VulcanAI.Core.Agent.Agent
   nameWithType: Agent
-- uid: VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Core.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name: Agent(ILLMClient, ILogger<Agent>, string, IMessageConnector, string, Dictionary<string, string>?)
-  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent__ctor_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__System_String_VulcanAI_Core_Connectors_IMessageConnector_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Core.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent__ctor_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: New(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String, Dictionary(Of String, String))
-  fullName: VulcanAI.Core.Agent.Agent.Agent(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, string, VulcanAI.Core.Connectors.IMessageConnector, string, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: VulcanAI.Core.Agent.Agent.New(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), String, VulcanAI.Core.Connectors.IMessageConnector, String, System.Collections.Generic.Dictionary(Of String, String))
+  fullName: VulcanAI.Core.Agent.Agent.Agent(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, string, VulcanAI.Connectors.IMessageConnector, string, System.Collections.Generic.Dictionary<string, string>?)
+  fullName.vb: VulcanAI.Core.Agent.Agent.New(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), String, VulcanAI.Connectors.IMessageConnector, String, System.Collections.Generic.Dictionary(Of String, String))
   nameWithType: Agent.Agent(ILLMClient, ILogger<Agent>, string, IMessageConnector, string, Dictionary<string, string>?)
   nameWithType.vb: Agent.New(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String, Dictionary(Of String, String))
-- uid: VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},VulcanAI.Core.Configuration.AgentConfig,VulcanAI.Core.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
+- uid: VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},VulcanAI.Core.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
   name: Agent(ILLMClient, ILogger<Agent>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
-  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent__ctor_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__VulcanAI_Core_Configuration_AgentConfig_VulcanAI_Core_Connectors_IMessageConnector_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},VulcanAI.Core.Configuration.AgentConfig,VulcanAI.Core.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
+  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent__ctor_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__VulcanAI_Core_Configuration_AgentConfig_VulcanAI_Connectors_IMessageConnector_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:VulcanAI.Core.Agent.Agent.#ctor(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},VulcanAI.Core.Configuration.AgentConfig,VulcanAI.Connectors.IMessageConnector,System.Collections.Generic.Dictionary{System.String,System.String})
   name.vb: New(ILLMClient, ILogger(Of Agent), AgentConfig, IMessageConnector, Dictionary(Of String, String))
-  fullName: VulcanAI.Core.Agent.Agent.Agent(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, VulcanAI.Core.Configuration.AgentConfig, VulcanAI.Core.Connectors.IMessageConnector, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: VulcanAI.Core.Agent.Agent.New(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), VulcanAI.Core.Configuration.AgentConfig, VulcanAI.Core.Connectors.IMessageConnector, System.Collections.Generic.Dictionary(Of String, String))
+  fullName: VulcanAI.Core.Agent.Agent.Agent(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, VulcanAI.Core.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary<string, string>?)
+  fullName.vb: VulcanAI.Core.Agent.Agent.New(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), VulcanAI.Core.Configuration.AgentConfig, VulcanAI.Connectors.IMessageConnector, System.Collections.Generic.Dictionary(Of String, String))
   nameWithType: Agent.Agent(ILLMClient, ILogger<Agent>, AgentConfig, IMessageConnector, Dictionary<string, string>?)
   nameWithType.vb: Agent.New(ILLMClient, ILogger(Of Agent), AgentConfig, IMessageConnector, Dictionary(Of String, String))
 - uid: VulcanAI.Core.Agent.Agent.#ctor*
@@ -86,13 +494,13 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Core.Agent.Agent.Dispose
   nameWithType: Agent.Dispose
-- uid: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Core.Connectors.IMessageConnector,System.String)
+- uid: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
   name: FromJson(ILLMClient, ILogger<Agent>, string, IMessageConnector?, string)
-  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent_FromJson_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__System_String_VulcanAI_Core_Connectors_IMessageConnector_System_String_
-  commentId: M:VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Core.Connectors.IMessageConnector,System.String)
+  href: api/VulcanAI.Core.Agent.Agent.html#VulcanAI_Core_Agent_Agent_FromJson_VulcanAI_Core_LLM_ILLMClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Agent_Agent__System_String_VulcanAI_Connectors_IMessageConnector_System_String_
+  commentId: M:VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Agent.Agent},System.String,VulcanAI.Connectors.IMessageConnector,System.String)
   name.vb: FromJson(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String)
-  fullName: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, string, VulcanAI.Core.Connectors.IMessageConnector?, string)
-  fullName.vb: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), String, VulcanAI.Core.Connectors.IMessageConnector, String)
+  fullName: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Agent.Agent>, string, VulcanAI.Connectors.IMessageConnector?, string)
+  fullName.vb: VulcanAI.Core.Agent.Agent.FromJson(VulcanAI.Core.LLM.ILLMClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Agent.Agent), String, VulcanAI.Connectors.IMessageConnector, String)
   nameWithType: Agent.FromJson(ILLMClient, ILogger<Agent>, string, IMessageConnector?, string)
   nameWithType.vb: Agent.FromJson(ILLMClient, ILogger(Of Agent), String, IMessageConnector, String)
 - uid: VulcanAI.Core.Agent.Agent.FromJson*
@@ -239,11 +647,11 @@ references:
   fullName.vb: VulcanAI.Core.Agent.AgentContext.New
   nameWithType: AgentContext.AgentContext
   nameWithType.vb: AgentContext.New
-- uid: VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Core.Connectors.Message)
+- uid: VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Connectors.Message)
   name: AddMessage(Message)
-  href: api/VulcanAI.Core.Agent.AgentContext.html#VulcanAI_Core_Agent_AgentContext_AddMessage_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Core.Connectors.Message)
+  href: api/VulcanAI.Core.Agent.AgentContext.html#VulcanAI_Core_Agent_AgentContext_AddMessage_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Core.Agent.AgentContext.AddMessage(VulcanAI.Connectors.Message)
   nameWithType: AgentContext.AddMessage(Message)
 - uid: VulcanAI.Core.Agent.AgentContext.AddMessage*
   name: AddMessage
@@ -518,414 +926,6 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Core.Configuration.DiscordConfig.Token
   nameWithType: DiscordConfig.Token
-- uid: VulcanAI.Core.Connectors
-  name: VulcanAI.Core.Connectors
-  href: api/VulcanAI.Core.Connectors.html
-  commentId: N:VulcanAI.Core.Connectors
-  fullName: VulcanAI.Core.Connectors
-  nameWithType: VulcanAI.Core.Connectors
-- uid: VulcanAI.Core.Connectors.ConsoleConnector
-  name: ConsoleConnector
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html
-  commentId: T:VulcanAI.Core.Connectors.ConsoleConnector
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector
-  nameWithType: ConsoleConnector
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Connectors.ConsoleConnector})
-  name: ConsoleConnector(ILogger<ConsoleConnector>)
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Connectors_ConsoleConnector__
-  commentId: M:VulcanAI.Core.Connectors.ConsoleConnector.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Connectors.ConsoleConnector})
-  name.vb: New(ILogger(Of ConsoleConnector))
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.ConsoleConnector(Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Connectors.ConsoleConnector>)
-  fullName.vb: VulcanAI.Core.Connectors.ConsoleConnector.New(Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Connectors.ConsoleConnector))
-  nameWithType: ConsoleConnector.ConsoleConnector(ILogger<ConsoleConnector>)
-  nameWithType.vb: ConsoleConnector.New(ILogger(Of ConsoleConnector))
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.#ctor*
-  name: ConsoleConnector
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector__ctor_
-  commentId: Overload:VulcanAI.Core.Connectors.ConsoleConnector.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.ConsoleConnector
-  fullName.vb: VulcanAI.Core.Connectors.ConsoleConnector.New
-  nameWithType: ConsoleConnector.ConsoleConnector
-  nameWithType.vb: ConsoleConnector.New
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_OnMessageReceived
-  commentId: E:VulcanAI.Core.Connectors.ConsoleConnector.OnMessageReceived
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.OnMessageReceived
-  nameWithType: ConsoleConnector.OnMessageReceived
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  nameWithType: ConsoleConnector.SendMessageAsync(Message)
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync
-  nameWithType: ConsoleConnector.SendMessageAsync
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_StartAsync
-  commentId: M:VulcanAI.Core.Connectors.ConsoleConnector.StartAsync
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.StartAsync()
-  nameWithType: ConsoleConnector.StartAsync()
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_StartAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.ConsoleConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.StartAsync
-  nameWithType: ConsoleConnector.StartAsync
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_StopAsync
-  commentId: M:VulcanAI.Core.Connectors.ConsoleConnector.StopAsync
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.StopAsync()
-  nameWithType: ConsoleConnector.StopAsync()
-- uid: VulcanAI.Core.Connectors.ConsoleConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Core.Connectors.ConsoleConnector.html#VulcanAI_Core_Connectors_ConsoleConnector_StopAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.ConsoleConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.ConsoleConnector.StopAsync
-  nameWithType: ConsoleConnector.StopAsync
-- uid: VulcanAI.Core.Connectors.DiscordConnector
-  name: DiscordConnector
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html
-  commentId: T:VulcanAI.Core.Connectors.DiscordConnector
-  fullName: VulcanAI.Core.Connectors.DiscordConnector
-  nameWithType: DiscordConnector
-- uid: VulcanAI.Core.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Connectors.DiscordConnector},System.String,System.UInt64)
-  name: DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Connectors_DiscordConnector__System_String_System_UInt64_
-  commentId: M:VulcanAI.Core.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Connectors.DiscordConnector},System.String,System.UInt64)
-  name.vb: New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.DiscordConnector(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.Connectors.DiscordConnector>, string, ulong)
-  fullName.vb: VulcanAI.Core.Connectors.DiscordConnector.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.Connectors.DiscordConnector), String, ULong)
-  nameWithType: DiscordConnector.DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  nameWithType.vb: DiscordConnector.New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-- uid: VulcanAI.Core.Connectors.DiscordConnector.#ctor*
-  name: DiscordConnector
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector__ctor_
-  commentId: Overload:VulcanAI.Core.Connectors.DiscordConnector.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.DiscordConnector
-  fullName.vb: VulcanAI.Core.Connectors.DiscordConnector.New
-  nameWithType: DiscordConnector.DiscordConnector
-  nameWithType.vb: DiscordConnector.New
-- uid: VulcanAI.Core.Connectors.DiscordConnector.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_OnMessageReceived
-  commentId: E:VulcanAI.Core.Connectors.DiscordConnector.OnMessageReceived
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.OnMessageReceived
-  nameWithType: DiscordConnector.OnMessageReceived
-- uid: VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  nameWithType: DiscordConnector.SendMessageAsync(Message)
-- uid: VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_SendMessageAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.SendMessageAsync
-  nameWithType: DiscordConnector.SendMessageAsync
-- uid: VulcanAI.Core.Connectors.DiscordConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_StartAsync
-  commentId: M:VulcanAI.Core.Connectors.DiscordConnector.StartAsync
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.StartAsync()
-  nameWithType: DiscordConnector.StartAsync()
-- uid: VulcanAI.Core.Connectors.DiscordConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_StartAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.DiscordConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.StartAsync
-  nameWithType: DiscordConnector.StartAsync
-- uid: VulcanAI.Core.Connectors.DiscordConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_StopAsync
-  commentId: M:VulcanAI.Core.Connectors.DiscordConnector.StopAsync
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.StopAsync()
-  nameWithType: DiscordConnector.StopAsync()
-- uid: VulcanAI.Core.Connectors.DiscordConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Core.Connectors.DiscordConnector.html#VulcanAI_Core_Connectors_DiscordConnector_StopAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.DiscordConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.DiscordConnector.StopAsync
-  nameWithType: DiscordConnector.StopAsync
-- uid: VulcanAI.Core.Connectors.IHttpClient
-  name: IHttpClient
-  href: api/VulcanAI.Core.Connectors.IHttpClient.html
-  commentId: T:VulcanAI.Core.Connectors.IHttpClient
-  fullName: VulcanAI.Core.Connectors.IHttpClient
-  nameWithType: IHttpClient
-- uid: VulcanAI.Core.Connectors.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
-  name: PostAsync(string, HttpContent)
-  href: api/VulcanAI.Core.Connectors.IHttpClient.html#VulcanAI_Core_Connectors_IHttpClient_PostAsync_System_String_System_Net_Http_HttpContent_
-  commentId: M:VulcanAI.Core.Connectors.IHttpClient.PostAsync(System.String,System.Net.Http.HttpContent)
-  name.vb: PostAsync(String, HttpContent)
-  fullName: VulcanAI.Core.Connectors.IHttpClient.PostAsync(string, System.Net.Http.HttpContent)
-  fullName.vb: VulcanAI.Core.Connectors.IHttpClient.PostAsync(String, System.Net.Http.HttpContent)
-  nameWithType: IHttpClient.PostAsync(string, HttpContent)
-  nameWithType.vb: IHttpClient.PostAsync(String, HttpContent)
-- uid: VulcanAI.Core.Connectors.IHttpClient.PostAsync*
-  name: PostAsync
-  href: api/VulcanAI.Core.Connectors.IHttpClient.html#VulcanAI_Core_Connectors_IHttpClient_PostAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IHttpClient.PostAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IHttpClient.PostAsync
-  nameWithType: IHttpClient.PostAsync
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector
-  name: IKnowledgeConnector
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html
-  commentId: T:VulcanAI.Core.Connectors.IKnowledgeConnector
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector
-  nameWithType: IKnowledgeConnector
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
-  name: AddKnowledgeAsync(Knowledge)
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_
-  commentId: M:VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)
-  nameWithType: IKnowledgeConnector.AddKnowledgeAsync(Knowledge)
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync*
-  name: AddKnowledgeAsync
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_AddKnowledgeAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync
-  nameWithType: IKnowledgeConnector.AddKnowledgeAsync
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
-  name: QueryKnowledgeAsync(string, int?)
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__
-  commentId: M:VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
-  name.vb: QueryKnowledgeAsync(String, Integer?)
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(string, int?)
-  fullName.vb: VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(String, Integer?)
-  nameWithType: IKnowledgeConnector.QueryKnowledgeAsync(string, int?)
-  nameWithType.vb: IKnowledgeConnector.QueryKnowledgeAsync(String, Integer?)
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync*
-  name: QueryKnowledgeAsync
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync
-  nameWithType: IKnowledgeConnector.QueryKnowledgeAsync
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_StartAsync
-  commentId: M:VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync()
-  nameWithType: IKnowledgeConnector.StartAsync()
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_StartAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync
-  nameWithType: IKnowledgeConnector.StartAsync
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_StopAsync
-  commentId: M:VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync()
-  nameWithType: IKnowledgeConnector.StopAsync()
-- uid: VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Core.Connectors.IKnowledgeConnector.html#VulcanAI_Core_Connectors_IKnowledgeConnector_StopAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync
-  nameWithType: IKnowledgeConnector.StopAsync
-- uid: VulcanAI.Core.Connectors.IMessageConnector
-  name: IMessageConnector
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html
-  commentId: T:VulcanAI.Core.Connectors.IMessageConnector
-  fullName: VulcanAI.Core.Connectors.IMessageConnector
-  nameWithType: IMessageConnector
-- uid: VulcanAI.Core.Connectors.IMessageConnector.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_OnMessageReceived
-  commentId: E:VulcanAI.Core.Connectors.IMessageConnector.OnMessageReceived
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.OnMessageReceived
-  nameWithType: IMessageConnector.OnMessageReceived
-- uid: VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  nameWithType: IMessageConnector.SendMessageAsync(Message)
-- uid: VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_SendMessageAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.SendMessageAsync
-  nameWithType: IMessageConnector.SendMessageAsync
-- uid: VulcanAI.Core.Connectors.IMessageConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_StartAsync
-  commentId: M:VulcanAI.Core.Connectors.IMessageConnector.StartAsync
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.StartAsync()
-  nameWithType: IMessageConnector.StartAsync()
-- uid: VulcanAI.Core.Connectors.IMessageConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_StartAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IMessageConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.StartAsync
-  nameWithType: IMessageConnector.StartAsync
-- uid: VulcanAI.Core.Connectors.IMessageConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_StopAsync
-  commentId: M:VulcanAI.Core.Connectors.IMessageConnector.StopAsync
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.StopAsync()
-  nameWithType: IMessageConnector.StopAsync()
-- uid: VulcanAI.Core.Connectors.IMessageConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Core.Connectors.IMessageConnector.html#VulcanAI_Core_Connectors_IMessageConnector_StopAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.IMessageConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.IMessageConnector.StopAsync
-  nameWithType: IMessageConnector.StopAsync
-- uid: VulcanAI.Core.Connectors.Message
-  name: Message
-  href: api/VulcanAI.Core.Connectors.Message.html
-  commentId: T:VulcanAI.Core.Connectors.Message
-  fullName: VulcanAI.Core.Connectors.Message
-  nameWithType: Message
-- uid: VulcanAI.Core.Connectors.Message.#ctor(System.String,System.String,System.String)
-  name: Message(string, string, string?)
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message__ctor_System_String_System_String_System_String_
-  commentId: M:VulcanAI.Core.Connectors.Message.#ctor(System.String,System.String,System.String)
-  name.vb: New(String, String, String)
-  fullName: VulcanAI.Core.Connectors.Message.Message(string, string, string?)
-  fullName.vb: VulcanAI.Core.Connectors.Message.New(String, String, String)
-  nameWithType: Message.Message(string, string, string?)
-  nameWithType.vb: Message.New(String, String, String)
-- uid: VulcanAI.Core.Connectors.Message.#ctor*
-  name: Message
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message__ctor_
-  commentId: Overload:VulcanAI.Core.Connectors.Message.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Core.Connectors.Message.Message
-  fullName.vb: VulcanAI.Core.Connectors.Message.New
-  nameWithType: Message.Message
-  nameWithType.vb: Message.New
-- uid: VulcanAI.Core.Connectors.Message.Channel
-  name: Channel
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Channel
-  commentId: P:VulcanAI.Core.Connectors.Message.Channel
-  fullName: VulcanAI.Core.Connectors.Message.Channel
-  nameWithType: Message.Channel
-- uid: VulcanAI.Core.Connectors.Message.Channel*
-  name: Channel
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Channel_
-  commentId: Overload:VulcanAI.Core.Connectors.Message.Channel
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.Message.Channel
-  nameWithType: Message.Channel
-- uid: VulcanAI.Core.Connectors.Message.Content
-  name: Content
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Content
-  commentId: P:VulcanAI.Core.Connectors.Message.Content
-  fullName: VulcanAI.Core.Connectors.Message.Content
-  nameWithType: Message.Content
-- uid: VulcanAI.Core.Connectors.Message.Content*
-  name: Content
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Content_
-  commentId: Overload:VulcanAI.Core.Connectors.Message.Content
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.Message.Content
-  nameWithType: Message.Content
-- uid: VulcanAI.Core.Connectors.Message.Sender
-  name: Sender
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Sender
-  commentId: P:VulcanAI.Core.Connectors.Message.Sender
-  fullName: VulcanAI.Core.Connectors.Message.Sender
-  nameWithType: Message.Sender
-- uid: VulcanAI.Core.Connectors.Message.Sender*
-  name: Sender
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Sender_
-  commentId: Overload:VulcanAI.Core.Connectors.Message.Sender
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.Message.Sender
-  nameWithType: Message.Sender
-- uid: VulcanAI.Core.Connectors.Message.Timestamp
-  name: Timestamp
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Timestamp
-  commentId: P:VulcanAI.Core.Connectors.Message.Timestamp
-  fullName: VulcanAI.Core.Connectors.Message.Timestamp
-  nameWithType: Message.Timestamp
-- uid: VulcanAI.Core.Connectors.Message.Timestamp*
-  name: Timestamp
-  href: api/VulcanAI.Core.Connectors.Message.html#VulcanAI_Core_Connectors_Message_Timestamp_
-  commentId: Overload:VulcanAI.Core.Connectors.Message.Timestamp
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.Message.Timestamp
-  nameWithType: Message.Timestamp
-- uid: VulcanAI.Core.Connectors.NullMessageInterface
-  name: NullMessageInterface
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html
-  commentId: T:VulcanAI.Core.Connectors.NullMessageInterface
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface
-  nameWithType: NullMessageInterface
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_OnMessageReceived
-  commentId: E:VulcanAI.Core.Connectors.NullMessageInterface.OnMessageReceived
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.OnMessageReceived
-  nameWithType: NullMessageInterface.OnMessageReceived
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_SendMessageAsync_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  nameWithType: NullMessageInterface.SendMessageAsync(Message)
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_SendMessageAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.SendMessageAsync
-  nameWithType: NullMessageInterface.SendMessageAsync
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_StartAsync
-  commentId: M:VulcanAI.Core.Connectors.NullMessageInterface.StartAsync
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.StartAsync()
-  nameWithType: NullMessageInterface.StartAsync()
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_StartAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.NullMessageInterface.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.StartAsync
-  nameWithType: NullMessageInterface.StartAsync
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_StopAsync
-  commentId: M:VulcanAI.Core.Connectors.NullMessageInterface.StopAsync
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.StopAsync()
-  nameWithType: NullMessageInterface.StopAsync()
-- uid: VulcanAI.Core.Connectors.NullMessageInterface.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Core.Connectors.NullMessageInterface.html#VulcanAI_Core_Connectors_NullMessageInterface_StopAsync_
-  commentId: Overload:VulcanAI.Core.Connectors.NullMessageInterface.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Core.Connectors.NullMessageInterface.StopAsync
-  nameWithType: NullMessageInterface.StopAsync
 - uid: VulcanAI.Core.Knowledge
   name: VulcanAI.Core.Knowledge
   href: api/VulcanAI.Core.Knowledge.html
@@ -1436,13 +1436,13 @@ references:
   commentId: T:VulcanAI.Core.LLM.LocalLLMClient
   fullName: VulcanAI.Core.LLM.LocalLLMClient
   nameWithType: LocalLLMClient
-- uid: VulcanAI.Core.LLM.LocalLLMClient.#ctor(VulcanAI.Core.Connectors.IHttpClient,System.String,System.String,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.LocalLLMClient},System.Boolean)
+- uid: VulcanAI.Core.LLM.LocalLLMClient.#ctor(VulcanAI.Connectors.IHttpClient,System.String,System.String,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.LocalLLMClient},System.Boolean)
   name: LocalLLMClient(IHttpClient, string, string, ILogger<LocalLLMClient>, bool)
-  href: api/VulcanAI.Core.LLM.LocalLLMClient.html#VulcanAI_Core_LLM_LocalLLMClient__ctor_VulcanAI_Core_Connectors_IHttpClient_System_String_System_String_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_LocalLLMClient__System_Boolean_
-  commentId: M:VulcanAI.Core.LLM.LocalLLMClient.#ctor(VulcanAI.Core.Connectors.IHttpClient,System.String,System.String,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.LocalLLMClient},System.Boolean)
+  href: api/VulcanAI.Core.LLM.LocalLLMClient.html#VulcanAI_Core_LLM_LocalLLMClient__ctor_VulcanAI_Connectors_IHttpClient_System_String_System_String_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_LocalLLMClient__System_Boolean_
+  commentId: M:VulcanAI.Core.LLM.LocalLLMClient.#ctor(VulcanAI.Connectors.IHttpClient,System.String,System.String,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.LocalLLMClient},System.Boolean)
   name.vb: New(IHttpClient, String, String, ILogger(Of LocalLLMClient), Boolean)
-  fullName: VulcanAI.Core.LLM.LocalLLMClient.LocalLLMClient(VulcanAI.Core.Connectors.IHttpClient, string, string, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.LLM.LocalLLMClient>, bool)
-  fullName.vb: VulcanAI.Core.LLM.LocalLLMClient.New(VulcanAI.Core.Connectors.IHttpClient, String, String, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.LLM.LocalLLMClient), Boolean)
+  fullName: VulcanAI.Core.LLM.LocalLLMClient.LocalLLMClient(VulcanAI.Connectors.IHttpClient, string, string, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.LLM.LocalLLMClient>, bool)
+  fullName.vb: VulcanAI.Core.LLM.LocalLLMClient.New(VulcanAI.Connectors.IHttpClient, String, String, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.LLM.LocalLLMClient), Boolean)
   nameWithType: LocalLLMClient.LocalLLMClient(IHttpClient, string, string, ILogger<LocalLLMClient>, bool)
   nameWithType.vb: LocalLLMClient.New(IHttpClient, String, String, ILogger(Of LocalLLMClient), Boolean)
 - uid: VulcanAI.Core.LLM.LocalLLMClient.#ctor*
@@ -1499,13 +1499,13 @@ references:
   commentId: T:VulcanAI.Core.LLM.OpenAIClient
   fullName: VulcanAI.Core.LLM.OpenAIClient
   nameWithType: OpenAIClient
-- uid: VulcanAI.Core.LLM.OpenAIClient.#ctor(System.String,System.String,VulcanAI.Core.Connectors.IHttpClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.OpenAIClient})
+- uid: VulcanAI.Core.LLM.OpenAIClient.#ctor(System.String,System.String,VulcanAI.Connectors.IHttpClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.OpenAIClient})
   name: OpenAIClient(string, string, IHttpClient, ILogger<OpenAIClient>)
-  href: api/VulcanAI.Core.LLM.OpenAIClient.html#VulcanAI_Core_LLM_OpenAIClient__ctor_System_String_System_String_VulcanAI_Core_Connectors_IHttpClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_OpenAIClient__
-  commentId: M:VulcanAI.Core.LLM.OpenAIClient.#ctor(System.String,System.String,VulcanAI.Core.Connectors.IHttpClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.OpenAIClient})
+  href: api/VulcanAI.Core.LLM.OpenAIClient.html#VulcanAI_Core_LLM_OpenAIClient__ctor_System_String_System_String_VulcanAI_Connectors_IHttpClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_LLM_OpenAIClient__
+  commentId: M:VulcanAI.Core.LLM.OpenAIClient.#ctor(System.String,System.String,VulcanAI.Connectors.IHttpClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.LLM.OpenAIClient})
   name.vb: New(String, String, IHttpClient, ILogger(Of OpenAIClient))
-  fullName: VulcanAI.Core.LLM.OpenAIClient.OpenAIClient(string, string, VulcanAI.Core.Connectors.IHttpClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.LLM.OpenAIClient>)
-  fullName.vb: VulcanAI.Core.LLM.OpenAIClient.New(String, String, VulcanAI.Core.Connectors.IHttpClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.LLM.OpenAIClient))
+  fullName: VulcanAI.Core.LLM.OpenAIClient.OpenAIClient(string, string, VulcanAI.Connectors.IHttpClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Core.LLM.OpenAIClient>)
+  fullName.vb: VulcanAI.Core.LLM.OpenAIClient.New(String, String, VulcanAI.Connectors.IHttpClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Core.LLM.OpenAIClient))
   nameWithType: OpenAIClient.OpenAIClient(string, string, IHttpClient, ILogger<OpenAIClient>)
   nameWithType.vb: OpenAIClient.New(String, String, IHttpClient, ILogger(Of OpenAIClient))
 - uid: VulcanAI.Core.LLM.OpenAIClient.#ctor*
@@ -1657,11 +1657,11 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.ReadyTask
   nameWithType: DiscordInterface.ReadyTask
-- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
+- uid: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
   name: SendMessageAsync(Message)
-  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_SendMessageAsync_VulcanAI_Core_Connectors_Message_
-  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
-  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Core.Connectors.Message)
+  href: api/VulcanAI.Infrastructure.Discord.DiscordInterface.html#VulcanAI_Infrastructure_Discord_DiscordInterface_SendMessageAsync_VulcanAI_Connectors_Message_
+  commentId: M:VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
+  fullName: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync(VulcanAI.Connectors.Message)
   nameWithType: DiscordInterface.SendMessageAsync(Message)
 - uid: VulcanAI.Infrastructure.Discord.DiscordInterface.SendMessageAsync*
   name: SendMessageAsync
