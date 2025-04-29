@@ -94,8 +94,14 @@ public class ConsoleConnector : IMessageConnector
     /// </remarks>
     public async Task SendMessageAsync(Message message)
     {
-        Console.WriteLine($"[{message.Sender}] {message.Content}");
+        await Task.Run(() => Console.WriteLine($"{message.Sender}: {message.Content}"));
         _logger.LogDebug("Sent message: {Content}", message.Content);
+    }
+
+    public async Task SendMessageAsync(string content)
+    {
+        await Task.Run(() => Console.WriteLine(content));
+        _logger.LogDebug("Sent message: {Content}", content);
     }
 
     /// <summary>

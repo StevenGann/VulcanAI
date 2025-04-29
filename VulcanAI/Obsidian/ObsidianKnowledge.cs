@@ -12,7 +12,6 @@ using System.Diagnostics;
 using System.Threading;
 using ObsidianDB;
 using VulcanAI.Connectors;
-using VulcanAI.Knowledge;
 
 namespace VulcanAI.Knowledge
 {

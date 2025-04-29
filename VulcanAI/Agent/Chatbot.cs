@@ -24,7 +24,7 @@ namespace VulcanAI.Agent;
 /// The agent maintains conversation history and context, which is persisted to disk periodically
 /// and loaded when the agent is restarted.
 /// </summary>
-public class Chatbot : IDisposable
+public class Chatbot : IAgent, IDisposable
 {
     private readonly ILLMClient _llmClient;
     private readonly ILogger<Chatbot> _logger;
@@ -544,15 +544,10 @@ public class Chatbot : IDisposable
     /// <param name="json">The JSON string containing the serialized context.</param>
     /// <param name="messageInterface">Optional message interface to use.</param>
     /// <param name="agentName">Optional name for the agent.</param>
-    /// <returns>A new instance of <see cref="Chatbot"/> with the deserialized context.</returns>
-    /// <exception cref="InvalidOperationException">Thrown when the JSON cannot be deserialized into an AgentContext.</exception>
-    /// <remarks>
-    /// This method is used to create a new agent instance from a previously serialized context.
-    /// The agent name can be different from the one used when the context was serialized.
-    /// </remarks>
-    public static Chatbot FromJson(
+    /// <returns>A new instance of the agent with the deserialized context.</returns>
+    public IAgent FromJson(
         ILLMClient llmClient,
-        ILogger<Chatbot> logger,
+        ILogger<IAgent> logger,
         string json,
         IMessageConnector? messageInterface = null,
         string agentName = "Agent")
@@ -564,8 +559,11 @@ public class Chatbot : IDisposable
         // Create a null message interface if none provided
         var interfaceToUse = messageInterface ?? new NullMessageInterface();
         
-        var agent = new Chatbot(llmClient, logger, context.SystemPrompt, interfaceToUse, agentName, contextFields);
-        return agent;
+        // Cast the logger to the correct type
+        var chatbotLogger = logger as ILogger<Chatbot> ?? 
+            throw new InvalidOperationException("Logger must be convertible to ILogger<Chatbot>");
+        
+        return new Chatbot(llmClient, chatbotLogger, context.SystemPrompt, interfaceToUse, agentName, contextFields);
     }
 
     /// <summary>

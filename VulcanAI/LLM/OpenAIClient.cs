@@ -76,12 +76,12 @@ public class OpenAIClient : ILLMClient
             }
 
             var message = responseObject.Choices[0].Message;
-            if (message == null)
+            if (message?.Content == null)
             {
-                throw new InvalidOperationException("Message is null in OpenAI API response");
+                throw new InvalidOperationException("Message content is null in OpenAI API response");
             }
 
-            return message.Content ?? string.Empty;
+            return message.Content;
         }
         catch (Exception ex)
         {

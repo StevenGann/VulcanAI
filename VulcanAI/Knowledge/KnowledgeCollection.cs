@@ -179,4 +179,22 @@ public class KnowledgeCollection : IEnumerable<(double Score, Knowledge Knowledg
             return y.Score.CompareTo(x.Score); // Sort in descending order
         }
     }
+
+    public void AddDocument(string id, string content)
+    {
+        if (string.IsNullOrEmpty(id))
+        {
+            throw new ArgumentNullException(nameof(id));
+        }
+        if (string.IsNullOrEmpty(content))
+        {
+            throw new ArgumentNullException(nameof(content));
+        }
+        var knowledge = new Knowledge(id, content);
+        if (knowledge == null)
+        {
+            throw new InvalidOperationException("Failed to create knowledge item");
+        }
+        _knowledgeItems.Add((0.0, knowledge));
+    }
 } 

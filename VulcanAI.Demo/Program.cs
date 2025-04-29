@@ -16,7 +16,6 @@ using System.Diagnostics;
 using System.Threading;
 using VulcanAI.Infrastructure.Discord;
 using VulcanAI.Connectors;
-using VulcanAI.Agent;
 using Discord.WebSocket;
 using System.Net.Http;
 using Discord;
