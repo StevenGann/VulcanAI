@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class ConsoleInterface </title>
+      <title>Class ConsoleConnector </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ConsoleInterface ">
+      <meta name="title" content="Class ConsoleConnector ">
     
     <meta name="description" content="Implements the  for console-based communication. This interface allows the agent to send and receive messages through the system console. Messages are displayed in the format [Sender] Content, and user input is captured when Enter is pressed.">
       <link rel="shortcut icon" href="../favicon.ico">
@@ -66,12 +66,12 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface">
+            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Connectors.ConsoleConnector">
 
 
 
-  <h1 id="VulcanAI_Core_Interfaces_ConsoleInterface" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface" class="text-break">Class ConsoleInterface</h1>
-  <div class="markdown level0 summary"><p>Implements the <a class="xref" href="VulcanAI.Core.Interfaces.IMessageInterface.html">IMessageInterface</a> for console-based communication.
+  <h1 id="VulcanAI_Core_Connectors_ConsoleConnector" data-uid="VulcanAI.Core.Connectors.ConsoleConnector" class="text-break">Class ConsoleConnector</h1>
+  <div class="markdown level0 summary"><p>Implements the <a class="xref" href="VulcanAI.Core.Connectors.IMessageConnector.html">IMessageConnector</a> for console-based communication.
 This interface allows the agent to send and receive messages through the system console.
 Messages are displayed in the format [Sender] Content, and user input is captured when Enter is pressed.</p>
 </div>
@@ -79,11 +79,11 @@ Messages are displayed in the format [Sender] Content, and user input is capture
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">ConsoleInterface</span></div>
+    <div class="level1"><span class="xref">ConsoleConnector</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="VulcanAI.Core.Interfaces.IMessageInterface.html">IMessageInterface</a></div>
+    <div><a class="xref" href="VulcanAI.Core.Connectors.IMessageConnector.html">IMessageConnector</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,13 +109,13 @@ Messages are displayed in the format [Sender] Content, and user input is capture
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.Interfaces.html">Interfaces</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.Connectors.html">Connectors</a></h6>
   <h6><strong>Assembly</strong>: VulcanAI.dll</h6>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_syntax">Syntax</h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ConsoleInterface : IMessageInterface</code></pre>
+    <pre><code class="lang-csharp hljs">public class ConsoleConnector : IMessageConnector</code></pre>
   </div>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_remarks"><strong>Remarks</strong></h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>The ConsoleInterface provides a simple way to interact with the agent through the command line.
 It runs a background task to continuously read user input and raises events when messages are received.
 All operations are asynchronous and include proper logging for debugging and monitoring.</p>
@@ -124,19 +124,19 @@ All operations are asynchronous and include proper logging for debugging and mon
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Interfaces_ConsoleInterface__.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface.%23ctor(Microsoft.Extensions.Logging.ILogger%7BVulcanAI.Core.Interfaces.ConsoleInterface%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Connectors_ConsoleConnector__.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector.%23ctor(Microsoft.Extensions.Logging.ILogger%7BVulcanAI.Core.Connectors.ConsoleConnector%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L29">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L29">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_ConsoleInterface__ctor_" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.#ctor*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_ConsoleInterface__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Interfaces_ConsoleInterface__" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Interfaces.ConsoleInterface})">ConsoleInterface(ILogger&lt;ConsoleInterface&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VulcanAI.Core.Interfaces.ConsoleInterface.html">ConsoleInterface</a> class.</p>
+  <a id="VulcanAI_Core_Connectors_ConsoleConnector__ctor_" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.#ctor*"></a>
+  <h4 id="VulcanAI_Core_Connectors_ConsoleConnector__ctor_Microsoft_Extensions_Logging_ILogger_VulcanAI_Core_Connectors_ConsoleConnector__" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.#ctor(Microsoft.Extensions.Logging.ILogger{VulcanAI.Core.Connectors.ConsoleConnector})">ConsoleConnector(ILogger&lt;ConsoleConnector&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VulcanAI.Core.Connectors.ConsoleConnector.html">ConsoleConnector</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ConsoleInterface(ILogger&lt;ConsoleInterface&gt; logger)</code></pre>
+    <pre><code class="lang-csharp hljs">public ConsoleConnector(ILogger&lt;ConsoleConnector&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -149,7 +149,7 @@ All operations are asynchronous and include proper logging for debugging and mon
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="VulcanAI.Core.Interfaces.ConsoleInterface.html">ConsoleInterface</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="VulcanAI.Core.Connectors.ConsoleConnector.html">ConsoleConnector</a>&gt;</td>
         <td><span class="parametername">logger</span></td>
         <td><p>The logger instance for recording diagnostic information.</p>
 </td>
@@ -176,13 +176,13 @@ All operations are asynchronous and include proper logging for debugging and mon
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface_SendMessageAsync_VulcanAI_Core_Interfaces_Message_.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface.SendMessageAsync(VulcanAI.Core.Interfaces.Message)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message_.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L95">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L95">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_ConsoleInterface_SendMessageAsync_" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.SendMessageAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_ConsoleInterface_SendMessageAsync_VulcanAI_Core_Interfaces_Message_" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.SendMessageAsync(VulcanAI.Core.Interfaces.Message)">SendMessageAsync(Message)</h4>
+  <a id="VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message_" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.SendMessageAsync(VulcanAI.Core.Connectors.Message)">SendMessageAsync(Message)</h4>
   <div class="markdown level1 summary"><p>Sends a message to the console output.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -201,7 +201,7 @@ All operations are asynchronous and include proper logging for debugging and mon
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="VulcanAI.Core.Interfaces.Message.html">Message</a></td>
+        <td><a class="xref" href="VulcanAI.Core.Connectors.Message.html">Message</a></td>
         <td><span class="parametername">message</span></td>
         <td><p>The message to send.</p>
 </td>
@@ -224,19 +224,19 @@ All operations are asynchronous and include proper logging for debugging and mon
       </tr>
     </tbody>
   </table>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_SendMessageAsync_VulcanAI_Core_Interfaces_Message__remarks">Remarks</h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_SendMessageAsync_VulcanAI_Core_Connectors_Message__remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>Messages are displayed in the format [Sender] Content.
 This method is thread-safe and can be called from any thread.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface_StartAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface.StartAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector_StartAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector.StartAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L51">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L51">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_ConsoleInterface_StartAsync_" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.StartAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_ConsoleInterface_StartAsync" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.StartAsync">StartAsync()</h4>
+  <a id="VulcanAI_Core_Connectors_ConsoleConnector_StartAsync_" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.StartAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_ConsoleConnector_StartAsync" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.StartAsync">StartAsync()</h4>
   <div class="markdown level1 summary"><p>Starts the console interface and begins listening for user input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -260,19 +260,19 @@ This method is thread-safe and can be called from any thread.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_StartAsync_remarks">Remarks</h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_StartAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method starts a background task that continuously reads input from the console.
 If the interface is already running, this method returns immediately.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface_StopAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector_StopAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L71">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L71">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_ConsoleInterface_StopAsync_" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.StopAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_ConsoleInterface_StopAsync" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.StopAsync">StopAsync()</h4>
+  <a id="VulcanAI_Core_Connectors_ConsoleConnector_StopAsync_" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.StopAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_ConsoleConnector_StopAsync" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.StopAsync">StopAsync()</h4>
   <div class="markdown level1 summary"><p>Stops the console interface and stops listening for user input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -296,7 +296,7 @@ If the interface is already running, this method returns immediately.</p>
       </tr>
     </tbody>
   </table>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_StopAsync_remarks">Remarks</h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_StopAsync_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This method stops the background input reading task and waits for it to complete.
 If the interface is not running, this method returns immediately.</p>
 </div>
@@ -304,12 +304,12 @@ If the interface is not running, this method returns immediately.</p>
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface_OnMessageReceived.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface.OnMessageReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector_OnMessageReceived.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector.OnMessageReceived%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L41">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L41">View Source</a>
   </span>
-  <h4 id="VulcanAI_Core_Interfaces_ConsoleInterface_OnMessageReceived" data-uid="VulcanAI.Core.Interfaces.ConsoleInterface.OnMessageReceived">OnMessageReceived</h4>
+  <h4 id="VulcanAI_Core_Connectors_ConsoleConnector_OnMessageReceived" data-uid="VulcanAI.Core.Connectors.ConsoleConnector.OnMessageReceived">OnMessageReceived</h4>
   <div class="markdown level1 summary"><p>Occurs when a message is received from the console input.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -327,18 +327,18 @@ If the interface is not running, this method returns immediately.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="VulcanAI.Core.Interfaces.Message.html">Message</a>&gt;</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1">EventHandler</a>&lt;<a class="xref" href="VulcanAI.Core.Connectors.Message.html">Message</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="VulcanAI_Core_Interfaces_ConsoleInterface_OnMessageReceived_remarks">Remarks</h5>
+  <h5 id="VulcanAI_Core_Connectors_ConsoleConnector_OnMessageReceived_remarks">Remarks</h5>
   <div class="markdown level1 remarks"><p>This event is raised whenever the user types a message and presses Enter.
 The message sender is set to &quot;User&quot; and the channel is set to &quot;Console&quot;.</p>
 </div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="VulcanAI.Core.Interfaces.IMessageInterface.html">IMessageInterface</a>
+      <a class="xref" href="VulcanAI.Core.Connectors.IMessageConnector.html">IMessageConnector</a>
   </div>
 
 </article>
@@ -349,10 +349,10 @@ The message sender is set to &quot;User&quot; and the channel is set to &quot;Co
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_ConsoleInterface.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.ConsoleInterface%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_ConsoleConnector.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.ConsoleConnector%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Interfaces/ConsoleInterface.cs/#L18" class="contribution-link">View Source</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Connectors/ConsoleConnector.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

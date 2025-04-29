@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Interface IKnowledgeStore </title>
+      <title>Interface IKnowledgeConnector </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Interface IKnowledgeStore ">
+      <meta name="title" content="Interface IKnowledgeConnector ">
     
     <meta name="description" content="Defines the interface for a knowledge store that can store and retrieve knowledge items.">
       <link rel="shortcut icon" href="../favicon.ico">
@@ -66,21 +66,21 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore">
+            <article class="content wrap" id="_content" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector">
 
 
 
-  <h1 id="VulcanAI_Core_Interfaces_IKnowledgeStore" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore" class="text-break">Interface IKnowledgeStore</h1>
+  <h1 id="VulcanAI_Core_Connectors_IKnowledgeConnector" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector" class="text-break">Interface IKnowledgeConnector</h1>
   <div class="markdown level0 summary"><p>Defines the interface for a knowledge store that can store and retrieve knowledge items.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.Interfaces.html">Interfaces</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="VulcanAI.html">VulcanAI</a>.<a class="xref" href="VulcanAI.Core.html">Core</a>.<a class="xref" href="VulcanAI.Core.Connectors.html">Connectors</a></h6>
   <h6><strong>Assembly</strong>: VulcanAI.dll</h6>
-  <h5 id="VulcanAI_Core_Interfaces_IKnowledgeStore_syntax">Syntax</h5>
+  <h5 id="VulcanAI_Core_Connectors_IKnowledgeConnector_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IKnowledgeStore</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IKnowledgeConnector</code></pre>
   </div>
-  <h5 id="VulcanAI_Core_Interfaces_IKnowledgeStore_remarks"><strong>Remarks</strong></h5>
+  <h5 id="VulcanAI_Core_Connectors_IKnowledgeConnector_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>This interface provides the core functionality for managing knowledge in the system,
 including querying, adding, and lifecycle management of the knowledge store.
 Implementations should be thread-safe and handle concurrent access appropriately.</p>
@@ -89,13 +89,13 @@ Implementations should be thread-safe and handle concurrent access appropriately
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_IKnowledgeStore_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.IKnowledgeStore.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_IKnowledgeConnector_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/Interfaces/IKnowledgeStore.cs/#L40">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_IKnowledgeStore_AddKnowledgeAsync_" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.AddKnowledgeAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_IKnowledgeStore_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)">AddKnowledgeAsync(Knowledge)</h4>
+  <a id="VulcanAI_Core_Connectors_IKnowledgeConnector_AddKnowledgeAsync_" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_IKnowledgeConnector_AddKnowledgeAsync_VulcanAI_Core_Knowledge_Knowledge_" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.AddKnowledgeAsync(VulcanAI.Core.Knowledge.Knowledge)">AddKnowledgeAsync(Knowledge)</h4>
   <div class="markdown level1 summary"><p>Adds a new knowledge item to the store.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -155,13 +155,13 @@ Implementations should be thread-safe and handle concurrent access appropriately
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_IKnowledgeStore_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.IKnowledgeStore.QueryKnowledgeAsync(System.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String%2CSystem.Nullable%7BSystem.Int32%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/Interfaces/IKnowledgeStore.cs/#L32">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_IKnowledgeStore_QueryKnowledgeAsync_" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.QueryKnowledgeAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_IKnowledgeStore_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})">QueryKnowledgeAsync(string, int?)</h4>
+  <a id="VulcanAI_Core_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_IKnowledgeConnector_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})">QueryKnowledgeAsync(string, int?)</h4>
   <div class="markdown level1 summary"><p>Queries the knowledge store for relevant knowledge items based on the provided query.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -233,13 +233,13 @@ a <a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">Knowle
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_IKnowledgeStore_StartAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.IKnowledgeStore.StartAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_IKnowledgeConnector_StartAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/Interfaces/IKnowledgeStore.cs/#L47">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_IKnowledgeStore_StartAsync_" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.StartAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_IKnowledgeStore_StartAsync" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.StartAsync">StartAsync()</h4>
+  <a id="VulcanAI_Core_Connectors_IKnowledgeConnector_StartAsync_" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_IKnowledgeConnector_StartAsync" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.StartAsync">StartAsync()</h4>
   <div class="markdown level1 summary"><p>Starts the knowledge store and performs any necessary initialization.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -281,13 +281,13 @@ a <a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">Knowle
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_IKnowledgeStore_StopAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.IKnowledgeStore.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_IKnowledgeConnector_StopAsync.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/Interfaces/IKnowledgeStore.cs/#L54">View Source</a>
   </span>
-  <a id="VulcanAI_Core_Interfaces_IKnowledgeStore_StopAsync_" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.StopAsync*"></a>
-  <h4 id="VulcanAI_Core_Interfaces_IKnowledgeStore_StopAsync" data-uid="VulcanAI.Core.Interfaces.IKnowledgeStore.StopAsync">StopAsync()</h4>
+  <a id="VulcanAI_Core_Connectors_IKnowledgeConnector_StopAsync_" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync*"></a>
+  <h4 id="VulcanAI_Core_Connectors_IKnowledgeConnector_StopAsync" data-uid="VulcanAI.Core.Connectors.IKnowledgeConnector.StopAsync">StopAsync()</h4>
   <div class="markdown level1 summary"><p>Stops the knowledge store and performs any necessary cleanup.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -336,7 +336,7 @@ a <a class="xref" href="VulcanAI.Core.Knowledge.KnowledgeCollection.html">Knowle
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Interfaces_IKnowledgeStore.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Interfaces.IKnowledgeStore%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_Core_Connectors_IKnowledgeConnector.md&amp;value=---%0Auid%3A%20VulcanAI.Core.Connectors.IKnowledgeConnector%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
                     <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/Core/Interfaces/IKnowledgeStore.cs/#L19" class="contribution-link">View Source</a>

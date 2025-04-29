@@ -74,80 +74,80 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.ConsoleInterface.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.ConsoleConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.ConsoleInterface.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.ConsoleConnector.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.DiscordInterface.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.DiscordConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.DiscordInterface.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.DiscordConnector.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.IHttpClient.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.IHttpClient.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.IHttpClient.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.IHttpClient.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.IKnowledgeStore.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.IKnowledgeConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.IKnowledgeStore.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.IKnowledgeConnector.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.IMessageInterface.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.IMessageConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.IMessageInterface.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.IMessageConnector.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.Message.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.Message.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.Message.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.Message.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.NullMessageInterface.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.NullMessageInterface.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.NullMessageInterface.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.NullMessageInterface.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Core.Interfaces.yml",
+      "source_relative_path": "api/VulcanAI.Core.Connectors.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Core.Interfaces.html"
+          "relative_path": "api/VulcanAI.Core.Connectors.html"
         }
       },
       "version": ""
