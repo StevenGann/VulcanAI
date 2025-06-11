@@ -21,7 +21,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Discord.Net" Version="3.15.0" />
+    <ProjectReference Include="..\VulcanAI.Discord\VulcanAI.Discord.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VulcanAI.Obsidian\VulcanAI.Obsidian.csproj" />
   </ItemGroup>
 
 </Project> 

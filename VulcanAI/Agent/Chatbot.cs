@@ -179,13 +179,7 @@ public class Chatbot : IAgent, IDisposable
         {
             try
             {
-                // If using Discord, wait for it to be ready
-                if (_messageInterface is VulcanAI.Connectors.DiscordConnector discordInterface)
-                {
-                    _logger.LogInformation("Waiting for Discord interface to be ready before sending online announcement...");
-                    await discordInterface.ReadyTask;
-                    _logger.LogInformation("Discord interface is ready, proceeding with online announcement");
-                }
+                Thread.Sleep(1000);
 
                 var prompt = BuildFullPrompt("Generate a brief, friendly online announcement message to let users know you are available to help. Keep it concise and welcoming.");
                 var response = await _llmClient.GetCompletionAsync(prompt);
@@ -469,16 +463,7 @@ public class Chatbot : IAgent, IDisposable
                 return;
             }
 
-            // If the message interface is Discord, wait for it to be ready
-            if (_messageInterface is VulcanAI.Connectors.DiscordConnector discordInterface)
-            {
-                if (!discordInterface.IsReady)
-                {
-                    _logger.LogInformation("Waiting for Discord interface to be ready...");
-                    await discordInterface.ReadyTask;
-                    _logger.LogInformation("Discord interface is now ready");
-                }
-            }
+            Thread.Sleep(1000);
 
             _logger.LogInformation("Agent sending message: {Content}", content);
             var message = new Message(content, _agentName, "Agent");
