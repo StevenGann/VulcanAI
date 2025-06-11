@@ -63,7 +63,89 @@ Note: Some submodules may have their own nested submodules. The `--recursive` fl
 
 ## Usage
 
-[Usage examples and documentation will be added here]
+### Using VulcanAI (Core)
+
+Install the package:
+```sh
+dotnet add package VulcanAI
+```
+
+Create a configuration file `agent-config.json`:
+```json
+{
+    "SystemPrompt": "You are VulcanAI, a helpful digital assistant. Your primary function is to demonstrate the features and capability of the VulcanAI library. You are friendly, helpful, and informative. You are also a bit sarcastic and witty.",
+    "Name": "VulcanAI"
+}
+```
+
+Minimal example of running a console agent:
+```csharp
+using Microsoft.Extensions.Logging;
+using VulcanAI.Agent;
+using VulcanAI.LLM;
+using VulcanAI.Connectors;
+
+var loggerFactory = LoggerFactory.Create(builder =>
+{
+    builder.SetMinimumLevel(LogLevel.Error).AddConsole();
+});
+var logger = loggerFactory.CreateLogger<Program>();
+var llmLogger = loggerFactory.CreateLogger<LocalLLMClient>();
+var httpClient = new HttpClient();
+var llmClient = new LocalLLMClient(new HttpClientWrapper(httpClient), "local-model", "http://localhost:1234", llmLogger, useOpenAIFormat: false);
+llmClient.MaxPromptLength = 6000;
+var agentConfig = new AgentConfig { SystemPrompt = "You are VulcanAI, a helpful digital assistant.", Name = "VulcanAI" };
+var consoleLogger = loggerFactory.CreateLogger<ConsoleConnector>();
+var messageInterface = new ConsoleConnector(consoleLogger);
+var agentLogger = loggerFactory.CreateLogger<Chatbot>();
+var agent = new Chatbot(llmClient, agentLogger, agentConfig, messageInterface);
+await messageInterface.StartAsync();
+```
+
+### Using VulcanAI.Discord
+
+Install the package:
+```sh
+dotnet add package VulcanAI.Discord
+```
+
+Add your Discord configuration to `secrets.json`:
+```json
+{
+    "Discord": {
+        "Token": "your_discord_bot_token",
+        "ChannelId": 123456789012345678
+    }
+}
+```
+
+Minimal example of running a Discord bot:
+```csharp
+using Microsoft.Extensions.Logging;
+using VulcanAI.Agent;
+using VulcanAI.LLM;
+using VulcanAI.Connectors;
+using Discord.WebSocket;
+
+var loggerFactory = LoggerFactory.Create(builder =>
+{
+    builder.SetMinimumLevel(LogLevel.Debug).AddConsole();
+});
+var logger = loggerFactory.CreateLogger<Program>();
+var llmLogger = loggerFactory.CreateLogger<LocalLLMClient>();
+var httpClient = new HttpClient();
+var llmClient = new LocalLLMClient(new HttpClientWrapper(httpClient), "local-model", "http://localhost:1234", llmLogger, useOpenAIFormat: false);
+llmClient.MaxPromptLength = 6000;
+var agentConfig = new AgentConfig { SystemPrompt = "You are VulcanAI, a helpful digital assistant.", Name = "VulcanAI" };
+var discordLogger = loggerFactory.CreateLogger<DiscordConnector>();
+var socketConfig = new DiscordSocketConfig { GatewayIntents = GatewayIntents.All };
+var discordClient = new DiscordSocketClient(socketConfig);
+var discordConfig = new DiscordConfig { Token = "your_discord_bot_token", ChannelId = 123456789012345678 };
+var messageInterface = new DiscordConnector(discordClient, discordLogger, discordConfig.Token, discordConfig.ChannelId);
+var agentLogger = loggerFactory.CreateLogger<Chatbot>();
+var agent = new Chatbot(llmClient, agentLogger, agentConfig, messageInterface);
+await messageInterface.StartAsync();
+```
 
 ## Contributing
 
