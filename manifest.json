@@ -74,26 +74,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Connectors.DiscordConfig.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Connectors.DiscordConfig.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Connectors.DiscordConnector.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/VulcanAI.Connectors.DiscordConnector.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/VulcanAI.Connectors.IKnowledgeConnector.yml",
       "output": {
         ".html": {
@@ -134,10 +114,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/VulcanAI.Connectors.ObsidianKnowledge.yml",
+      "source_relative_path": "api/VulcanAI.Connectors.SearchEngineConnector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/VulcanAI.Connectors.ObsidianKnowledge.html"
+          "relative_path": "api/VulcanAI.Connectors.SearchEngineConnector.html"
         }
       },
       "version": ""

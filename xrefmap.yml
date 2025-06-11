@@ -693,134 +693,6 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Connectors.ConsoleConnector.StopAsync
   nameWithType: ConsoleConnector.StopAsync
-- uid: VulcanAI.Connectors.DiscordConfig
-  name: DiscordConfig
-  href: api/VulcanAI.Connectors.DiscordConfig.html
-  commentId: T:VulcanAI.Connectors.DiscordConfig
-  fullName: VulcanAI.Connectors.DiscordConfig
-  nameWithType: DiscordConfig
-- uid: VulcanAI.Connectors.DiscordConfig.ChannelId
-  name: ChannelId
-  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_ChannelId
-  commentId: P:VulcanAI.Connectors.DiscordConfig.ChannelId
-  fullName: VulcanAI.Connectors.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Connectors.DiscordConfig.ChannelId*
-  name: ChannelId
-  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_ChannelId_
-  commentId: Overload:VulcanAI.Connectors.DiscordConfig.ChannelId
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConfig.ChannelId
-  nameWithType: DiscordConfig.ChannelId
-- uid: VulcanAI.Connectors.DiscordConfig.Token
-  name: Token
-  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_Token
-  commentId: P:VulcanAI.Connectors.DiscordConfig.Token
-  fullName: VulcanAI.Connectors.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
-- uid: VulcanAI.Connectors.DiscordConfig.Token*
-  name: Token
-  href: api/VulcanAI.Connectors.DiscordConfig.html#VulcanAI_Connectors_DiscordConfig_Token_
-  commentId: Overload:VulcanAI.Connectors.DiscordConfig.Token
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConfig.Token
-  nameWithType: DiscordConfig.Token
-- uid: VulcanAI.Connectors.DiscordConnector
-  name: DiscordConnector
-  href: api/VulcanAI.Connectors.DiscordConnector.html
-  commentId: T:VulcanAI.Connectors.DiscordConnector
-  fullName: VulcanAI.Connectors.DiscordConnector
-  nameWithType: DiscordConnector
-- uid: VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
-  name: DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_Discord_WebSocket_DiscordSocketClient_Microsoft_Extensions_Logging_ILogger_VulcanAI_Connectors_DiscordConnector__System_String_System_UInt64_
-  commentId: M:VulcanAI.Connectors.DiscordConnector.#ctor(Discord.WebSocket.DiscordSocketClient,Microsoft.Extensions.Logging.ILogger{VulcanAI.Connectors.DiscordConnector},System.String,System.UInt64)
-  name.vb: New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger<VulcanAI.Connectors.DiscordConnector>, string, ulong)
-  fullName.vb: VulcanAI.Connectors.DiscordConnector.New(Discord.WebSocket.DiscordSocketClient, Microsoft.Extensions.Logging.ILogger(Of VulcanAI.Connectors.DiscordConnector), String, ULong)
-  nameWithType: DiscordConnector.DiscordConnector(DiscordSocketClient, ILogger<DiscordConnector>, string, ulong)
-  nameWithType.vb: DiscordConnector.New(DiscordSocketClient, ILogger(Of DiscordConnector), String, ULong)
-- uid: VulcanAI.Connectors.DiscordConnector.#ctor*
-  name: DiscordConnector
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector__ctor_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: VulcanAI.Connectors.DiscordConnector.DiscordConnector
-  fullName.vb: VulcanAI.Connectors.DiscordConnector.New
-  nameWithType: DiscordConnector.DiscordConnector
-  nameWithType.vb: DiscordConnector.New
-- uid: VulcanAI.Connectors.DiscordConnector.IsReady
-  name: IsReady
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_IsReady
-  commentId: P:VulcanAI.Connectors.DiscordConnector.IsReady
-  fullName: VulcanAI.Connectors.DiscordConnector.IsReady
-  nameWithType: DiscordConnector.IsReady
-- uid: VulcanAI.Connectors.DiscordConnector.IsReady*
-  name: IsReady
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_IsReady_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.IsReady
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.IsReady
-  nameWithType: DiscordConnector.IsReady
-- uid: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  name: OnMessageReceived
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_OnMessageReceived
-  commentId: E:VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  fullName: VulcanAI.Connectors.DiscordConnector.OnMessageReceived
-  nameWithType: DiscordConnector.OnMessageReceived
-- uid: VulcanAI.Connectors.DiscordConnector.ReadyTask
-  name: ReadyTask
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_ReadyTask
-  commentId: P:VulcanAI.Connectors.DiscordConnector.ReadyTask
-  fullName: VulcanAI.Connectors.DiscordConnector.ReadyTask
-  nameWithType: DiscordConnector.ReadyTask
-- uid: VulcanAI.Connectors.DiscordConnector.ReadyTask*
-  name: ReadyTask
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_ReadyTask_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.ReadyTask
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.ReadyTask
-  nameWithType: DiscordConnector.ReadyTask
-- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  name: SendMessageAsync(Message)
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_VulcanAI_Connectors_Message_
-  commentId: M:VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync(VulcanAI.Connectors.Message)
-  nameWithType: DiscordConnector.SendMessageAsync(Message)
-- uid: VulcanAI.Connectors.DiscordConnector.SendMessageAsync*
-  name: SendMessageAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_SendMessageAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.SendMessageAsync
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.SendMessageAsync
-  nameWithType: DiscordConnector.SendMessageAsync
-- uid: VulcanAI.Connectors.DiscordConnector.StartAsync
-  name: StartAsync()
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync
-  commentId: M:VulcanAI.Connectors.DiscordConnector.StartAsync
-  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync()
-  nameWithType: DiscordConnector.StartAsync()
-- uid: VulcanAI.Connectors.DiscordConnector.StartAsync*
-  name: StartAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StartAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StartAsync
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.StartAsync
-  nameWithType: DiscordConnector.StartAsync
-- uid: VulcanAI.Connectors.DiscordConnector.StopAsync
-  name: StopAsync()
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync
-  commentId: M:VulcanAI.Connectors.DiscordConnector.StopAsync
-  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync()
-  nameWithType: DiscordConnector.StopAsync()
-- uid: VulcanAI.Connectors.DiscordConnector.StopAsync*
-  name: StopAsync
-  href: api/VulcanAI.Connectors.DiscordConnector.html#VulcanAI_Connectors_DiscordConnector_StopAsync_
-  commentId: Overload:VulcanAI.Connectors.DiscordConnector.StopAsync
-  isSpec: "True"
-  fullName: VulcanAI.Connectors.DiscordConnector.StopAsync
-  nameWithType: DiscordConnector.StopAsync
 - uid: VulcanAI.Connectors.IKnowledgeConnector
   name: IKnowledgeConnector
   href: api/VulcanAI.Connectors.IKnowledgeConnector.html
@@ -1061,86 +933,86 @@ references:
   isSpec: "True"
   fullName: VulcanAI.Connectors.NullMessageInterface.StopAsync
   nameWithType: NullMessageInterface.StopAsync
-- uid: VulcanAI.Connectors.ObsidianKnowledge
-  name: ObsidianKnowledge
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html
-  commentId: T:VulcanAI.Connectors.ObsidianKnowledge
-  fullName: VulcanAI.Connectors.ObsidianKnowledge
-  nameWithType: ObsidianKnowledge
-- uid: VulcanAI.Connectors.ObsidianKnowledge.#ctor(System.String)
-  name: ObsidianKnowledge(string)
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge__ctor_System_String_
-  commentId: M:VulcanAI.Connectors.ObsidianKnowledge.#ctor(System.String)
+- uid: VulcanAI.Connectors.SearchEngineConnector
+  name: SearchEngineConnector
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html
+  commentId: T:VulcanAI.Connectors.SearchEngineConnector
+  fullName: VulcanAI.Connectors.SearchEngineConnector
+  nameWithType: SearchEngineConnector
+- uid: VulcanAI.Connectors.SearchEngineConnector.#ctor(System.String)
+  name: SearchEngineConnector(string)
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector__ctor_System_String_
+  commentId: M:VulcanAI.Connectors.SearchEngineConnector.#ctor(System.String)
   name.vb: New(String)
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.ObsidianKnowledge(string)
-  fullName.vb: VulcanAI.Connectors.ObsidianKnowledge.New(String)
-  nameWithType: ObsidianKnowledge.ObsidianKnowledge(string)
-  nameWithType.vb: ObsidianKnowledge.New(String)
-- uid: VulcanAI.Connectors.ObsidianKnowledge.#ctor*
-  name: ObsidianKnowledge
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge__ctor_
-  commentId: Overload:VulcanAI.Connectors.ObsidianKnowledge.#ctor
+  fullName: VulcanAI.Connectors.SearchEngineConnector.SearchEngineConnector(string)
+  fullName.vb: VulcanAI.Connectors.SearchEngineConnector.New(String)
+  nameWithType: SearchEngineConnector.SearchEngineConnector(string)
+  nameWithType.vb: SearchEngineConnector.New(String)
+- uid: VulcanAI.Connectors.SearchEngineConnector.#ctor*
+  name: SearchEngineConnector
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector__ctor_
+  commentId: Overload:VulcanAI.Connectors.SearchEngineConnector.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.ObsidianKnowledge
-  fullName.vb: VulcanAI.Connectors.ObsidianKnowledge.New
-  nameWithType: ObsidianKnowledge.ObsidianKnowledge
-  nameWithType.vb: ObsidianKnowledge.New
-- uid: VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
+  fullName: VulcanAI.Connectors.SearchEngineConnector.SearchEngineConnector
+  fullName.vb: VulcanAI.Connectors.SearchEngineConnector.New
+  nameWithType: SearchEngineConnector.SearchEngineConnector
+  nameWithType.vb: SearchEngineConnector.New
+- uid: VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
   name: AddKnowledgeAsync(Knowledge)
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_AddKnowledgeAsync_VulcanAI_Knowledge_Knowledge_
-  commentId: M:VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
-  nameWithType: ObsidianKnowledge.AddKnowledgeAsync(Knowledge)
-- uid: VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync*
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_AddKnowledgeAsync_VulcanAI_Knowledge_Knowledge_
+  commentId: M:VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
+  fullName: VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync(VulcanAI.Knowledge.Knowledge)
+  nameWithType: SearchEngineConnector.AddKnowledgeAsync(Knowledge)
+- uid: VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync*
   name: AddKnowledgeAsync
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_AddKnowledgeAsync_
-  commentId: Overload:VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_AddKnowledgeAsync_
+  commentId: Overload:VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync
   isSpec: "True"
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.AddKnowledgeAsync
-  nameWithType: ObsidianKnowledge.AddKnowledgeAsync
-- uid: VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
+  fullName: VulcanAI.Connectors.SearchEngineConnector.AddKnowledgeAsync
+  nameWithType: SearchEngineConnector.AddKnowledgeAsync
+- uid: VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
   name: QueryKnowledgeAsync(string, int?)
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__
-  commentId: M:VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_QueryKnowledgeAsync_System_String_System_Nullable_System_Int32__
+  commentId: M:VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync(System.String,System.Nullable{System.Int32})
   name.vb: QueryKnowledgeAsync(String, Integer?)
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync(string, int?)
-  fullName.vb: VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync(String, Integer?)
-  nameWithType: ObsidianKnowledge.QueryKnowledgeAsync(string, int?)
-  nameWithType.vb: ObsidianKnowledge.QueryKnowledgeAsync(String, Integer?)
-- uid: VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync*
+  fullName: VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync(string, int?)
+  fullName.vb: VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync(String, Integer?)
+  nameWithType: SearchEngineConnector.QueryKnowledgeAsync(string, int?)
+  nameWithType.vb: SearchEngineConnector.QueryKnowledgeAsync(String, Integer?)
+- uid: VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync*
   name: QueryKnowledgeAsync
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_QueryKnowledgeAsync_
-  commentId: Overload:VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_QueryKnowledgeAsync_
+  commentId: Overload:VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync
   isSpec: "True"
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.QueryKnowledgeAsync
-  nameWithType: ObsidianKnowledge.QueryKnowledgeAsync
-- uid: VulcanAI.Connectors.ObsidianKnowledge.StartAsync
+  fullName: VulcanAI.Connectors.SearchEngineConnector.QueryKnowledgeAsync
+  nameWithType: SearchEngineConnector.QueryKnowledgeAsync
+- uid: VulcanAI.Connectors.SearchEngineConnector.StartAsync
   name: StartAsync()
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_StartAsync
-  commentId: M:VulcanAI.Connectors.ObsidianKnowledge.StartAsync
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.StartAsync()
-  nameWithType: ObsidianKnowledge.StartAsync()
-- uid: VulcanAI.Connectors.ObsidianKnowledge.StartAsync*
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_StartAsync
+  commentId: M:VulcanAI.Connectors.SearchEngineConnector.StartAsync
+  fullName: VulcanAI.Connectors.SearchEngineConnector.StartAsync()
+  nameWithType: SearchEngineConnector.StartAsync()
+- uid: VulcanAI.Connectors.SearchEngineConnector.StartAsync*
   name: StartAsync
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_StartAsync_
-  commentId: Overload:VulcanAI.Connectors.ObsidianKnowledge.StartAsync
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_StartAsync_
+  commentId: Overload:VulcanAI.Connectors.SearchEngineConnector.StartAsync
   isSpec: "True"
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.StartAsync
-  nameWithType: ObsidianKnowledge.StartAsync
-- uid: VulcanAI.Connectors.ObsidianKnowledge.StopAsync
+  fullName: VulcanAI.Connectors.SearchEngineConnector.StartAsync
+  nameWithType: SearchEngineConnector.StartAsync
+- uid: VulcanAI.Connectors.SearchEngineConnector.StopAsync
   name: StopAsync()
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_StopAsync
-  commentId: M:VulcanAI.Connectors.ObsidianKnowledge.StopAsync
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.StopAsync()
-  nameWithType: ObsidianKnowledge.StopAsync()
-- uid: VulcanAI.Connectors.ObsidianKnowledge.StopAsync*
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_StopAsync
+  commentId: M:VulcanAI.Connectors.SearchEngineConnector.StopAsync
+  fullName: VulcanAI.Connectors.SearchEngineConnector.StopAsync()
+  nameWithType: SearchEngineConnector.StopAsync()
+- uid: VulcanAI.Connectors.SearchEngineConnector.StopAsync*
   name: StopAsync
-  href: api/VulcanAI.Connectors.ObsidianKnowledge.html#VulcanAI_Connectors_ObsidianKnowledge_StopAsync_
-  commentId: Overload:VulcanAI.Connectors.ObsidianKnowledge.StopAsync
+  href: api/VulcanAI.Connectors.SearchEngineConnector.html#VulcanAI_Connectors_SearchEngineConnector_StopAsync_
+  commentId: Overload:VulcanAI.Connectors.SearchEngineConnector.StopAsync
   isSpec: "True"
-  fullName: VulcanAI.Connectors.ObsidianKnowledge.StopAsync
-  nameWithType: ObsidianKnowledge.StopAsync
+  fullName: VulcanAI.Connectors.SearchEngineConnector.StopAsync
+  nameWithType: SearchEngineConnector.StopAsync
 - uid: VulcanAI.Knowledge
   name: VulcanAI.Knowledge
   href: api/VulcanAI.Knowledge.html
