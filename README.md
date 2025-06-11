@@ -14,7 +14,9 @@ VulcanAI is a powerful, modular toolkit designed for building AI-powered applica
 
 ## Project Structure
 
-- `VulcanAI/`: Core library containing the main framework components
+- `VulcanAI/`: Core library containing the main framework components, interface definitions, top-level logic, and some basic implementations. Released builds can be found on NuGet: [VulcanAI](https://www.nuget.org/packages/VulcanAI/)
+- `VulcanAI.Discord/`: Contains all Discord-related functionality and integration for building AI-powered Discord bots and applications. Released builds can be found on NuGet: [VulcanAI.Discord](https://www.nuget.org/packages/VulcanAI.Discord/)
+- `VulcanAI.Obsidian/`: Contains all Obsidian-related functionality. This package has not been published yet because it depends on ObsidianDB, which is not yet available on NuGet.
 - `VulcanAI.Demo/`: Example applications demonstrating various use cases
 
 ### Submodules
