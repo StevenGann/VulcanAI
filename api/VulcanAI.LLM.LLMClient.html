@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width">
       <meta name="title" content="Class LLMClient ">
     
-    
+    <meta name="description" content="Base abstract class for LLM clients that handle communication with language model services.">
       <link rel="shortcut icon" href="../favicon.ico">
       <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
       <link rel="stylesheet" href="../styles/docfx.css">
@@ -71,7 +71,8 @@
 
 
   <h1 id="VulcanAI_LLM_LLMClient" data-uid="VulcanAI.LLM.LLMClient" class="text-break">Class LLMClient</h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Base abstract class for LLM clients that handle communication with language model services.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -113,6 +114,11 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public abstract class LLMClient : ILLMClient</code></pre>
   </div>
+  <h5 id="VulcanAI_LLM_LLMClient_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class provides common functionality for sending requests to language model endpoints,
+handling JSON serialization/deserialization, and logging. It is designed to be extended
+by specific implementations that handle different LLM service formats.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -120,11 +126,12 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient__ctor_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient.%23ctor(System.Net.Http.HttpClient%2CMicrosoft.Extensions.Logging.ILogger)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L19">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L50">View Source</a>
   </span>
   <a id="VulcanAI_LLM_LLMClient__ctor_" data-uid="VulcanAI.LLM.LLMClient.#ctor*"></a>
   <h4 id="VulcanAI_LLM_LLMClient__ctor_System_Net_Http_HttpClient_Microsoft_Extensions_Logging_ILogger_" data-uid="VulcanAI.LLM.LLMClient.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Logging.ILogger)">LLMClient(HttpClient, ILogger?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="VulcanAI.LLM.LLMClient.html">LLMClient</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -143,12 +150,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
         <td><span class="parametername">httpClient</span></td>
-        <td></td>
+        <td><p>The HTTP client to use for requests.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></td>
         <td><span class="parametername">logger</span></td>
-        <td></td>
+        <td><p>Optional logger for recording diagnostic information.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -159,10 +168,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient__httpClient.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient._httpClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L13">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L24">View Source</a>
   </span>
   <h4 id="VulcanAI_LLM_LLMClient__httpClient" data-uid="VulcanAI.LLM.LLMClient._httpClient">_httpClient</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>The HTTP client used for sending requests to the LLM service.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,10 +198,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient__jsonOptions.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient._jsonOptions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L15">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L34">View Source</a>
   </span>
   <h4 id="VulcanAI_LLM_LLMClient__jsonOptions" data-uid="VulcanAI.LLM.LLMClient._jsonOptions">_jsonOptions</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>JSON serialization options used for request and response handling.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -217,10 +228,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient__logger.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient._logger%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L14">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L29">View Source</a>
   </span>
   <h4 id="VulcanAI_LLM_LLMClient__logger" data-uid="VulcanAI.LLM.LLMClient._logger">_logger</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Optional logger for recording diagnostic information.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -248,11 +260,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient_MaxPromptLength.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient.MaxPromptLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L17">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L43">View Source</a>
   </span>
   <a id="VulcanAI_LLM_LLMClient_MaxPromptLength_" data-uid="VulcanAI.LLM.LLMClient.MaxPromptLength*"></a>
   <h4 id="VulcanAI_LLM_LLMClient_MaxPromptLength" data-uid="VulcanAI.LLM.LLMClient.MaxPromptLength">MaxPromptLength</h4>
-  <div class="markdown level1 summary"><p>Maximum length of the prompt that can be sent to the LLM</p>
+  <div class="markdown level1 summary"><p>Gets or sets the maximum length of prompts that can be sent to the LLM.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -274,6 +286,10 @@
       </tr>
     </tbody>
   </table>
+  <h5 id="VulcanAI_LLM_LLMClient_MaxPromptLength_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is used to validate prompts before sending them to the LLM.
+The default value is 4096 tokens, which is a common limit for many language models.</p>
+</div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
@@ -281,11 +297,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient_GetCompletionAsync_System_String_.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient.GetCompletionAsync(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L29">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L65">View Source</a>
   </span>
   <a id="VulcanAI_LLM_LLMClient_GetCompletionAsync_" data-uid="VulcanAI.LLM.LLMClient.GetCompletionAsync*"></a>
   <h4 id="VulcanAI_LLM_LLMClient_GetCompletionAsync_System_String_" data-uid="VulcanAI.LLM.LLMClient.GetCompletionAsync(System.String)">GetCompletionAsync(string)</h4>
-  <div class="markdown level1 summary"><p>Gets a completion from the LLM</p>
+  <div class="markdown level1 summary"><p>Sends a prompt to the language model and returns its response as a string.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -305,7 +321,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">prompt</span></td>
-        <td><p>The prompt to send to the LLM</p>
+        <td><p>The prompt to send.</p>
 </td>
       </tr>
     </tbody>
@@ -321,28 +337,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td><p>The completion from the LLM</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>Thrown when the prompt is null or empty</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Thrown when the prompt length exceeds MaxPromptLength</p>
+        <td><p>A task that represents the asynchronous operation. The task result contains the model's response.</p>
 </td>
       </tr>
     </tbody>
@@ -352,11 +347,11 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient_GetCompletionAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient.GetCompletionAsync%60%601(System.String%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSystem.Object%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L31">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L75">View Source</a>
   </span>
   <a id="VulcanAI_LLM_LLMClient_GetCompletionAsync_" data-uid="VulcanAI.LLM.LLMClient.GetCompletionAsync*"></a>
   <h4 id="VulcanAI_LLM_LLMClient_GetCompletionAsync__1_System_String_System_Collections_Generic_Dictionary_System_String_System_Object__" data-uid="VulcanAI.LLM.LLMClient.GetCompletionAsync``1(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">GetCompletionAsync&lt;T&gt;(string, Dictionary&lt;string, object&gt;?)</h4>
-  <div class="markdown level1 summary"><p>Gets a completion from the LLM and deserializes it into the specified type</p>
+  <div class="markdown level1 summary"><p>Sends a prompt to the language model and returns its response as a strongly-typed object.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -376,13 +371,13 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">prompt</span></td>
-        <td><p>The prompt to send to the LLM</p>
+        <td><p>The prompt to send.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</td>
         <td><span class="parametername">options</span></td>
-        <td><p>Additional options for the completion</p>
+        <td><p>Optional parameters for the completion request.</p>
 </td>
       </tr>
     </tbody>
@@ -398,7 +393,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;T&gt;</td>
-        <td><p>The deserialized completion</p>
+        <td><p>A task that represents the asynchronous operation. The task result contains the deserialized response.</p>
 </td>
       </tr>
     </tbody>
@@ -414,7 +409,7 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type to deserialize the completion into</p>
+        <td><p>The type to deserialize the response into.</p>
 </td>
       </tr>
     </tbody>
@@ -429,13 +424,8 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>Thrown when the prompt is null or empty</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Thrown when the prompt length exceeds MaxPromptLength or deserialization fails</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.jsonexception">JsonException</a></td>
+        <td><p>Thrown when the response cannot be deserialized into the specified type.</p>
 </td>
       </tr>
     </tbody>
@@ -445,11 +435,12 @@
     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient_SendRequestAsync_System_String_System_Object_.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient.SendRequestAsync(System.String%2CSystem.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L46">View Source</a>
+    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L97">View Source</a>
   </span>
   <a id="VulcanAI_LLM_LLMClient_SendRequestAsync_" data-uid="VulcanAI.LLM.LLMClient.SendRequestAsync*"></a>
   <h4 id="VulcanAI_LLM_LLMClient_SendRequestAsync_System_String_System_Object_" data-uid="VulcanAI.LLM.LLMClient.SendRequestAsync(System.String,System.Object)">SendRequestAsync(string, object)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Sends a request to the specified endpoint with the given request body.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -468,12 +459,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">endpoint</span></td>
-        <td></td>
+        <td><p>The endpoint to send the request to.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">requestBody</span></td>
-        <td></td>
+        <td><p>The request body to send.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -488,7 +481,24 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</td>
-        <td></td>
+        <td><p>A task that represents the asynchronous operation. The task result contains the response content.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestexception">HttpRequestException</a></td>
+        <td><p>Thrown when the request fails.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -508,7 +518,7 @@
                     <a href="https://github.com/StevenGann/VulcanAI/new/main/apiSpec/new?filename=VulcanAI_LLM_LLMClient.md&amp;value=---%0Auid%3A%20VulcanAI.LLM.LLMClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/StevenGann/VulcanAI/blob/main/VulcanAI/LLM/LLMClient.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
