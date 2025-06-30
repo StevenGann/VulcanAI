@@ -287,6 +287,16 @@
         }
       },
       "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "uml.md",
+      "output": {
+        ".html": {
+          "relative_path": "uml.html"
+        }
+      },
+      "version": ""
     }
   ],
   "groups": [
