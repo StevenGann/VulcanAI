@@ -16,6 +16,160 @@ using VulcanAI.Connectors;
 
 namespace VulcanAI.Agent;
 
+/*
+UML Class Diagram for Chatbot
+
+```mermaid
+classDiagram
+    class Chatbot {
+        -ILLMClient _llmClient
+        -ILogger~Chatbot~ _logger
+        -IMessageConnector? _messageInterface
+        -string _agentName
+        -AgentContext _context
+        -Timer _contextPersistenceTimer
+        -Timer _periodicMessageTimer
+        -Random _random
+        -int _minPeriodicMessageIntervalMinutes
+        -int _maxPeriodicMessageIntervalMinutes
+        -string _contextFilePath
+        -JsonSerializerOptions _jsonOptions
+        
+        +int MinPeriodicMessageIntervalMinutes
+        +int MaxPeriodicMessageIntervalMinutes
+        +Message[] ConversationHistory
+        +IReadOnlyDictionary~string,string~ Context
+        
+        +Chatbot(llmClient, logger, systemPrompt, messageInterface, agentName, contextFields)
+        +Chatbot(llmClient, logger, config, messageInterface, contextFields)
+        +Task~string~ SendPromptAsync(string prompt)
+        +Task~T~ SendPromptAsync~T~(string prompt, Dictionary~string,object~ options)
+        +Task SendMessageAsync(string content)
+        +void SetContext(string key, object value)
+        +bool RemoveContext(string key)
+        +string ToJson()
+        +IAgent FromJson(llmClient, logger, json, messageInterface, agentName)
+        +void Dispose()
+        -TimeSpan GetRandomInterval()
+        -void ResetPeriodicMessageTimer()
+        -void OnPeriodicMessageTimerCallback()
+        -AgentContext? LoadContext()
+        -void PersistContext()
+        -void PersistContext(object state)
+        -void HandleMessageReceived(object sender, Message e)
+        -string BuildFullPrompt(string userPrompt)
+        -Task PersistContextAsync()
+    }
+
+    class IAgent {
+        <<interface>>
+        +Message[] ConversationHistory
+        +IReadOnlyDictionary~string,string~ Context
+        +Task~string~ SendPromptAsync(string prompt)
+        +Task~T~ SendPromptAsync~T~(string prompt, Dictionary~string,object~ options)
+        +Task SendMessageAsync(string content)
+        +void SetContext(string key, object value)
+        +bool RemoveContext(string key)
+        +string ToJson()
+        +IAgent FromJson(llmClient, logger, json, messageInterface, agentName)
+    }
+
+    class IDisposable {
+        <<interface>>
+        +void Dispose()
+    }
+
+    class ILLMClient {
+        <<interface>>
+        +int MaxPromptLength
+        +Task~string~ GetCompletionAsync(string prompt)
+        +Task~T~ GetCompletionAsync~T~(string prompt, Dictionary~string,object~ options)
+    }
+
+    class IMessageConnector {
+        <<interface>>
+        +event EventHandler~Message~ OnMessageReceived
+        +Task SendMessageAsync(Message message)
+        +Task StartAsync()
+        +Task StopAsync()
+    }
+
+    class AgentContext {
+        -List~Message~ _conversationHistory
+        -Dictionary~string,string~ _contextFields
+        -ILogger~AgentContext~ _logger
+        +int MaxTokens
+        +string SystemPrompt
+        +Message[] ConversationHistory
+        +IReadOnlyDictionary~string,string~ ContextFields
+        
+        +AgentContext(systemPrompt, logger, initialContextFields)
+        +void AddMessage(Message message)
+        +void SetContextField(string key, string value)
+        +bool RemoveContextField(string key)
+        +string ToJson()
+        +static AgentContext FromJson(string json, logger)
+    }
+
+    class AgentConfig {
+        +string SystemPrompt
+        +string Name
+    }
+
+    class Message {
+        +string Content
+        +string Sender
+        +DateTime Timestamp
+        +string? Channel
+        
+        +Message(content, sender, channel)
+    }
+
+    class Timer {
+        +Timer(callback, state, dueTime, period)
+        +void Change(dueTime, period)
+        +void Dispose()
+    }
+
+    class Random {
+        +Random()
+        +int Next(minValue, maxValue)
+    }
+
+    class JsonSerializerOptions {
+        +bool WriteIndented
+        +JsonIgnoreCondition DefaultIgnoreCondition
+    }
+
+    %% Relationships
+    Chatbot ..|> IAgent : implements
+    Chatbot ..|> IDisposable : implements
+    
+    Chatbot --> ILLMClient : uses
+    Chatbot --> IMessageConnector : uses
+    Chatbot --> AgentContext : contains
+    Chatbot --> AgentConfig : uses
+    Chatbot --> Timer : uses (2 instances)
+    Chatbot --> Random : uses
+    Chatbot --> JsonSerializerOptions : uses
+    Chatbot --> Message : creates
+    
+    IMessageConnector --> Message : raises event
+    
+    AgentContext --> Message : contains
+    AgentContext --> ILogger~AgentContext~ : uses
+    
+    %% Note about dependencies
+    note for Chatbot "Manages conversation history,\ncontext persistence, and\nperiodic messaging"
+    
+    note for AgentContext "Handles token limits and\ncontext serialization"
+    
+    note for ILLMClient "Abstracts LLM service\ncommunication"
+    
+    note for IMessageConnector "Abstracts message\ncommunication channels"
+```
+*/
+
 
 /// <summary>
 /// A reference implementation of `IAgent` that represents an AI agent that can process messages and generate responses using a language model.
